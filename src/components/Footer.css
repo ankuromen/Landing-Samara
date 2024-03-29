@@ -1,0 +1,136 @@
+.Footer-Section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 2rem;
+  gap: 1rem; /* Add some gap between elements for a better visual experience */
+}
+
+.Footer-Heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Footer-Heading h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.Footer-Heading button {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.8rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.Footer-Heading #Reserve-btn {
+  background-color: #0096f7;
+  color: white;
+}
+
+.Footer-Heading h3 {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 1rem;
+}
+
+.Footer-Mid {
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer-Mid table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.Footer-Mid th,
+.Footer-Mid td {
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  color: white;
+  
+}
+
+.Footer-Mid div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.Footer-bottom button,
+input {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 0.75em;
+  color: white;
+  padding: 1em;
+}
+.Footer-note {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+.Footer-note-terms {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.Footer-note-terms button {
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5em 1em;
+}
+
+.Footer-note-terms button:hover {
+  color: white;
+}
+
+
+@media (min-width: 768px) {
+  .Footer-Section {
+    grid-template-columns: 1fr;
+  }
+
+  .Footer-Mid table {
+    width: auto;
+    text-align: left;
+    
+  }
+  .Footer-Mid {
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+  }
+  .Footer-bottom {
+    flex-direction: column;
+  }
+  .Footer-Mid div {
+    margin-top: 0em;
+    flex-direction: column;
+  }
+
+  .Footer-Heading h1 {
+    font-size: 1.5rem;
+  }
+}
