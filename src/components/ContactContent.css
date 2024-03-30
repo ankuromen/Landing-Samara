@@ -1,0 +1,46 @@
+.Contactus-banner {
+  background-image: url("../Assets/Contactusimg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Contact-header {
+  font-size: 4em;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+}
+.Contact-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  padding: 2em;
+  gap: 2em;
+}
+.ContactOpt-image {
+  width: 100%;
+  height: 65%;
+  border-radius: 5%;
+}
+.ContactOpt-header {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.ContactOpt-para {
+  margin-top: 0.5em;
+  padding: 0em 1em;
+}
+@media (max-width:768px){
+  .Contact-options {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 2em;
+  gap: 2em;
+}
+}

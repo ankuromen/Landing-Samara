@@ -36,6 +36,8 @@
 .Footer-Heading #Reserve-btn {
   background-color: #0096f7;
   color: white;
+  letter-spacing: 0.09em;
+  font-weight: 600;
 }
 
 .Footer-Heading h3 {
@@ -60,7 +62,6 @@
   padding: 0.8rem;
   font-size: 1.2rem;
   color: white;
-  
 }
 
 .Footer-Mid div {
@@ -105,7 +106,6 @@ input {
   color: white;
 }
 
-
 @media (min-width: 768px) {
   .Footer-Section {
     grid-template-columns: 1fr;
@@ -114,12 +114,36 @@ input {
   .Footer-Mid table {
     width: auto;
     text-align: left;
-    
   }
   .Footer-Mid {
     flex-direction: row;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+  }
+  .Footer-bottom {
+    flex-direction: column;
+  }
+  .Footer-Mid div {
+    margin-top: 0em;
+    flex-direction: column;
+  }
+
+  .Footer-Heading h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width : 768px){
+   .Footer-Section {
+    grid-template-columns: 1fr;
+  }
+
+  .Footer-Mid table {
+    width: auto;
+    text-align: left;
+  }
+  .Footer-Mid {
+    flex-direction:column;
     gap: 2rem;
   }
   .Footer-bottom {
