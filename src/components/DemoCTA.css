@@ -1,0 +1,29 @@
+.demo-cta-container {
+    background-color: white; /* Assuming a dark background is needed */
+    color: black;
+    text-align: center;
+    padding: 40px 20px;
+    height: 30vh;
+    align-items: center center;
+}
+
+.cta-message {
+    margin-top: 50px;
+    font-size: 1.25rem; /* Adjust size as needed */
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #9C27B0; /* A purple shade */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #7B1FA2; /* Darker purple on hover */
+}

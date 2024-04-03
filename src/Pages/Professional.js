@@ -1,8 +1,15 @@
 import React from 'react'
+import FinalIntro from "../components/FinalIntro";
+import LineSteps from "../components/LineSteps";
+import ShortIntro from "../components/ShortIntro";
 
 const Professional = () => {
   return (
-    <div>Professional</div>
+    <div>
+      <ShortIntro />
+      <LineSteps />
+      <FinalIntro />
+    </div>
   )
 }
 

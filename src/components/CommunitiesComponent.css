@@ -1,0 +1,52 @@
+.Communities-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Assuming a dark background is needed */
+    color: black;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.Communities-Text {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 20px; /* Ensure text does not touch the images */
+    z-index: 2;
+}
+
+.Communities-ImageCluster {
+    width: 150px; /* Or the size that fits your design */
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.Communities-ImageCluster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the images cover the circles */
+}
+
+.Communities-ImageCluster.left {
+    margin-right: auto; /* Pushes the cluster to the left side */
+}
+
+.Communities-ImageCluster.right {
+    margin-left: auto; /* Pushes the cluster to the right side */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .Communities-Container {
+        flex-direction: column;
+    }
+    .Communities-Text {
+        margin: 20px 0; /* Add space between text and image clusters on smaller screens */
+    }
+}
