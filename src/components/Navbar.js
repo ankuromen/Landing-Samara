@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { IoCloseOutline } from "react-icons/io5";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -35,22 +35,41 @@ const Navbar = () => {
       </div>
       <div className={isMobile ? "navbar-mobile-menu" : "navbar-menu"}>
         <ul>
-          <Link to="/" id="Hover-Nav" onClick={() => setIsMobile(false)}>
+          <NavLink
+            to="/"
+            className="Nav-links"
+            onClick={() => setIsMobile(false)}
+          >
             Home Page
-          </Link>
-          <Link to="/classic" id="Hover-Nav" onClick={() => setIsMobile(false)}>
+          </NavLink>
+          <NavLink
+            to="/classic"
+            className="Nav-links"
+            onClick={() => setIsMobile(false)}
+          >
             Classic
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/professional"
-            id="Hover-Nav"
+            className="Nav-links"
             onClick={() => setIsMobile(false)}
           >
             Professional
-          </Link>
-          <Link to="/about" id="Hover-Nav" onClick={() => setIsMobile(false)}>
+          </NavLink>
+          <NavLink
+            to="/about"
+            className="Nav-links"
+            onClick={() => setIsMobile(false)}
+          >
             About Us
-          </Link>
+          </NavLink>
+          <NavLink
+            to="/blogs"
+            className="Nav-links"
+            onClick={() => setIsMobile(false)}
+          >
+            Blogs
+          </NavLink>
         </ul>
       </div>
       <button className="navbar-button">

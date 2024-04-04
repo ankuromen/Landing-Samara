@@ -1,0 +1,13 @@
+.Blogs{
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.Blogs-card{
+  width: 20vw;
+  height: 30vh;
+  border:1px solid black;
+  border-radius: 1em;
+  margin-bottom: 1em;
+}

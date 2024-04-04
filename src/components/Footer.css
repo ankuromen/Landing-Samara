@@ -6,7 +6,7 @@
   background: black;
   color: white;
   padding: 2rem;
-  gap: 1rem; /* Add some gap between elements for a better visual experience */
+  gap: 1rem;
 }
 
 .Footer-Heading {
@@ -14,6 +14,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.Footer-brandname {
+  letter-spacing: 0.08em;
+  font-weight: 400;
 }
 
 .Footer-Heading h1 {
@@ -45,7 +50,11 @@
   color: rgba(255, 255, 255, 0.4);
   margin-bottom: 1rem;
 }
-
+.Footer-Heading h4 {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 1rem;
+}
 .Footer-Mid {
   display: flex;
   flex-direction: column;
@@ -105,6 +114,11 @@ input {
 .Footer-note-terms button:hover {
   color: white;
 }
+.Social-links{
+  display: flex;
+  gap: 2em;
+  margin-bottom: 0.5em;
+}
 
 @media (min-width: 768px) {
   .Footer-Section {
@@ -133,8 +147,8 @@ input {
     font-size: 1.5rem;
   }
 }
-@media (max-width : 768px){
-   .Footer-Section {
+@media (max-width: 768px) {
+  .Footer-Section {
     grid-template-columns: 1fr;
   }
 
@@ -143,7 +157,7 @@ input {
     text-align: left;
   }
   .Footer-Mid {
-    flex-direction:column;
+    flex-direction: column;
     gap: 2rem;
   }
   .Footer-bottom {
