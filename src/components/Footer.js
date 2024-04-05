@@ -3,24 +3,34 @@ import "../components/Footer.css";
 const Footer = () => {
   return (
     <div className="Footer-Section">
-      <div className="Footer-Heading">
-        <h1 className="Footer-brandname">Eventiq</h1>
-        <h1>
+      <div className="Footer-top">
+        <div className="Footer-Subscribe">
+          <h4>Get updates</h4>
+          <p>Drop us your email to learn what’s next.</p>
+          <input type="text" name="email" placeholder="Email"></input>
+        </div>
+        <div className="Footer-Heading">
+          <h1 className="Footer-brandname">Eventiq</h1>
+          {/* <h1>
           Starting at $269k or $1,611/mo
           <br />
           including installation.
-        </h1>
-        <button id="Reserve-btn">Sign Up For Updates</button>
-        <h4>Already signed Up ?</h4>
-        <button id="Footer-signin-btn">Sign in {">"}</button>
+        </h1> */}
+          <button id="Reserve-btn">Sign Up For Updates</button>
+          <div className="Footer-signin">
+            <h4>Already signed Up ?</h4>
+            <button id="Footer-signin-btn">Sign in {">"}</button>{" "}
+          </div>
+        </div>
       </div>
+
       <div className="Footer-Mid">
         <table>
           <tbody>
             <tr>
-              <td>About us </td>
+              <td>About Us </td>
               <td>Pricing</td>
-              <td>News / Blogs</td>
+              <td>News & Blogs</td>
               <td>Contact Us</td>
             </tr>
           </tbody>
@@ -30,11 +40,6 @@ const Footer = () => {
             <h4>Have questions?</h4>
             <button>Contact Us</button>
           </div> */}
-          <div>
-            <h4>Get updates</h4>
-            <p>Drop us your email to learn what’s next.</p>
-            <input type="text" name="email" placeholder="email address"></input>
-          </div>
         </div>
       </div>
 

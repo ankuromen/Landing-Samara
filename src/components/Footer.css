@@ -1,14 +1,23 @@
 .Footer-Section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 1rem;
   align-items: center;
   background: black;
   color: white;
   padding: 2rem;
   gap: 1rem;
 }
-
+.Footer-top {
+  position: relative;
+}
+.Footer-Subscribe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1em;
+}
 .Footer-Heading {
   display: flex;
   flex-direction: column;
@@ -41,10 +50,19 @@
 .Footer-Heading #Reserve-btn {
   background-color: #0096f7;
   color: white;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.07em;
   font-weight: 600;
 }
-
+#Footer-signin-btn {
+  font-size: 1em;
+  padding: 0.3rem 1.8rem;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
 .Footer-Heading h3 {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.4);
@@ -54,6 +72,10 @@
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.4);
   margin-bottom: 1rem;
+}
+.Footer-signin {
+  display: flex;
+  align-items: baseline;
 }
 .Footer-Mid {
   display: flex;
@@ -99,8 +121,8 @@ input {
 }
 .Footer-note-terms {
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  align-items: end;
+  justify-content: end;
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -114,7 +136,7 @@ input {
 .Footer-note-terms button:hover {
   color: white;
 }
-.Social-links{
+.Social-links {
   display: flex;
   gap: 2em;
   margin-bottom: 0.5em;
@@ -132,8 +154,9 @@ input {
   .Footer-Mid {
     flex-direction: row;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 2fr;
     gap: 2rem;
+    margin-bottom: 1em;
   }
   .Footer-bottom {
     flex-direction: column;

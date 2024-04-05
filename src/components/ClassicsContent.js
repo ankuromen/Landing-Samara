@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -44,7 +44,7 @@ const ClassicsContent = () => {
       image: Image6,
     },
   ];
-
+  const [slideIndex, setSlideIndex] = useState(1);
   return (
     <div>
       <div className="Classic-Card">
@@ -73,6 +73,7 @@ const ClassicsContent = () => {
             sensitivity: 2,
             releaseOnEdges: true,
           }}
+          onSlideChange={(swiper) => setSlideIndex(swiper.activeIndex + 1)}
           onSlideChangeTransitionStart={() => {
             document.querySelectorAll(".slide-para").forEach((p) => {
               p.classList.remove("animate-popup");
@@ -114,7 +115,11 @@ const ClassicsContent = () => {
           <div
             className="slider-progress-bar-current"
             style={{
-              height: `calc(${(1 /(document.querySelectorAll(".swiper-slide").length)) * 100}%)`,
+              height: `calc(${
+                (slideIndex /
+                  document.querySelectorAll(".swiper-slide").length) *
+                100
+              }%)`,
             }}
           ></div>
         </div>
