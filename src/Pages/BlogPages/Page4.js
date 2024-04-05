@@ -1,8 +1,9 @@
 import React from 'react'
-
+import BlogsNav from '../../components/BlogsNav'
 const Page4 = () => {
     return (
         <div>
+             <BlogsNav />
            <h1> Social Media and Event Promotion: A Perfect Match</h1>
            <p>Social media is a powerful tool for event promotion, capable of increasing visibility, driving engagement, and boosting ticket sales. Here are essential tips for leveraging social media platforms to enhance your event's success, with Eventiq supporting your promotional strategies every step of the way.</p>
            <h2>Choose the Right Platforms</h2>

@@ -1,8 +1,9 @@
 import React from 'react'
-
+import BlogsNav from '../../components/BlogsNav'
 const Page3 = () => {
     return (
         <div>
+             <BlogsNav />
             <h1>The Ultimate Checklist for Event Organizers with Eventiq</h1>
             <p>Organizing an event is a monumental task that requires meticulous planning and execution. With Eventiq, you have a partner that streamlines this process, integrating essential tools and services into one comprehensive platform. Here’s your ultimate event planning checklist, enhanced with Eventiq's solutions.</p>
             <h2>Conceptualization and Goals</h2>

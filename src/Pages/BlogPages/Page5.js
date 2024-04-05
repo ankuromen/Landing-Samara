@@ -1,8 +1,9 @@
 import React from 'react'
-
+import BlogsNav from '../../components/BlogsNav'
 const Page5 = () => {
     return (
         <div>
+             <BlogsNav />
             <h1>The Rise of Hybrid Events: Combining the Best of Both Worlds</h1>
             <p>Hybrid events, which blend in-person and online experiences, are becoming increasingly popular, offering the best of both worlds. These events not only cater to local attendees but also reach a global audience, expanding their impact and potential revenue streams. Let’s delve into how hybrid events are shaping the future and how they can lead to increased monetization and global reach.</p>
             <h2>Expanded Audience Reach</h2>

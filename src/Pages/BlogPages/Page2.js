@@ -1,8 +1,9 @@
 import React from 'react'
-
+import BlogsNav from '../../components/BlogsNav'
 const Page2 = () => {
     return (
         <div>
+             <BlogsNav />
             <h1>How Technology is Transforming Event Management with Eventiq?</h1>
             <p>The event industry is being revolutionized by technology, offering unprecedented benefits to organizers and attendees. Eventiq is leading this change, integrating AI, VR, and blockchain technologies to provide enhanced experiences and efficiencies. Here’s how these advancements are benefiting our users:</p>
             <h2>Artificial Intelligence (AI)</h2>

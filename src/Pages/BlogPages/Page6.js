@@ -1,8 +1,9 @@
 import React from 'react'
-
+import BlogsNav from '../../components/BlogsNav'
 const Page6 = () => {
   return (
     <div>
+         <BlogsNav />
         <h1>Exploring the Future: VR Events and Their Potential</h1>
         <p>Virtual Reality (VR) events are on the cusp of transforming the event industry, offering immersive and engaging experiences that are unrivaled by traditional formats. As we look towards the future, the potential of VR events to revolutionize how we connect, learn, and interact in virtual spaces is immense. Here’s how VR is shaping the next wave of event experiences and the opportunities it presents.</p>
         <h2>Immersive Experiences</h2>

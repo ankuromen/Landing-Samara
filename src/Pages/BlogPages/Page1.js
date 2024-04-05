@@ -1,8 +1,10 @@
 import React from 'react'
+import BlogsNav from '../../components/BlogsNav'
 
 const Page1 = () => {
     return (
         <div>
+             <BlogsNav />
             <h1>Building Engaged Communities: Secrets to Success</h1>
             <p>Creating and nurturing an engaged community is vital for the success of any event. It’s about fostering a sense of belonging and interaction that extends beyond the event itself. Here, we delve into the secrets to building successful, vibrant communities, highlighting how Eventiq can be a pivotal tool in this process.</p>
             <h2>Understand Your Audience</h2>
