@@ -11,7 +11,6 @@ import Image3 from "../Assets/image3.jpeg";
 import Image4 from "../Assets/image4.jpeg";
 import Image5 from "../Assets/image5.jpeg";
 import Image6 from "../Assets/image6.jpeg";
-
 const ClassicsContent = () => {
   const classicFeatures = [
     {
@@ -66,39 +65,60 @@ const ClassicsContent = () => {
         Our features helps you express yourself and connect with people you
         love.
       </h1>
-      <Swiper
-        direction={"vertical"}
-        mousewheel={{
-          sensitivity: 2,
-          releaseOnEdges: true,
-        }}
-        pagination={{ clickable: true }}
-        onSlideChangeTransitionStart={() => {
-          console.log("changed");
-          document.querySelectorAll(".slide-text").forEach((p) => {
-            p.classList.remove("animate-popup");
-          });
-          const activeSlideText = document.querySelector(
-            ".swiper-slide-active .slide-para .slide-text"
-          );
-          activeSlideText.classList.add("animate-popup");
-        }}
-        modules={[Pagination, Mousewheel]}
-        className="mySwiper"
-      >
-        {classicFeatures.map((feature, key) => (
-          <SwiperSlide key={key}>
-            <div className="slide-img">
-              <img src={feature.image} alt="" />
+      <div style={{ position: "relative" }}>
+        <Swiper
+          direction={"vertical"}
+          speed={900}
+          mousewheel={{
+            sensitivity: 2,
+            releaseOnEdges: true,
+          }}
+          onSlideChangeTransitionStart={() => {
+            document.querySelectorAll(".slide-para").forEach((p) => {
+              p.classList.remove("animate-popup");
+            });
+            const activeSlideText = document.querySelector(
+              ".swiper-slide-active .slide-para"
+            );
+            activeSlideText.classList.add("animate-popup");
+          }}
+          modules={[Pagination, Mousewheel, Scrollbar]}
+          className="mySwiper"
+        >
+          {classicFeatures.map((feature, key) => (
+            <div>
+              <SwiperSlide key={key}>
+                <div className="slide-img">
+                  <img src={feature.image} alt="" />
+                </div>
+                <div className="slide-para animate-popup">
+                  <h2>{feature.title}</h2>
+                  <p className="slide-text">{feature.para}</p>
+                  <button className="demo-btn">Request a Demo</button>
+                </div>
+                {/* <div className="slider-progress-bar">
+                  <div
+                    className="slider-progress-bar-current"
+                    style={{
+                      height: `calc(${
+                        ((key + 1) / classicFeatures.length) * 100
+                      }%)`,
+                    }}
+                  ></div>
+                </div> */}
+              </SwiperSlide>
             </div>
-            <div className="slide-para">
-              <h2>{feature.title}</h2>
-              <p className="slide-text animate-popup">{feature.para}</p>
-              <button className="demo-btn">Request a Demo</button>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          ))}
+        </Swiper>
+        <div className="slider-progress-bar">
+          <div
+            className="slider-progress-bar-current"
+            style={{
+              height: `calc(${(1 /(document.querySelectorAll(".swiper-slide").length)) * 100}%)`,
+            }}
+          ></div>
+        </div>
+      </div>
     </div>
   );
 };
