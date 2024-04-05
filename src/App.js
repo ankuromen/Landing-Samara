@@ -6,6 +6,13 @@ import Professional from "./Pages/Professional";
 import Layout from "./Pages/Layout";
 import AboutPage from "./Pages/AboutPage";
 import BlogsPage from "./Pages/BlogsPage";
+import Page1 from "./Pages/BlogPages/Page1";
+import Page2 from "./Pages/BlogPages/Page2";
+import Page3 from "./Pages/BlogPages/Page3";
+import Page4 from "./Pages/BlogPages/Page4";
+import Page5 from "./Pages/BlogPages/Page5";
+import Page6 from "./Pages/BlogPages/Page6";
+
 function App() {
   return (
     <Routes>
@@ -15,6 +22,12 @@ function App() {
         <Route path="/professional" element={<Professional />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
+        <Route path="/page1" element={<Page1 />} />
+        <Route path="/page2" element={<Page2 />} />
+        <Route path="/page3" element={<Page3 />} />
+        <Route path="/page4" element={<Page4 />} />
+        <Route path="/page5" element={<Page5 />} />
+        <Route path="/page6" element={<Page6 />} />
       </Route>
     </Routes>
   );
