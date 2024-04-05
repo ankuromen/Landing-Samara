@@ -50,6 +50,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.2em;
+  text-align: center;
 }
 .right {
   position: relative;
@@ -85,6 +87,7 @@
     padding: 0.5em 1em;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    font-weight: bolder;
   }
 }
 
@@ -122,6 +125,7 @@
     padding: 0.5em 1em;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    font-weight: bolder;
   }
 }
 .center {
@@ -141,5 +145,7 @@
     padding: 0.5em 1em;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
   }
 }
