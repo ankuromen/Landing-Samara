@@ -1,13 +1,20 @@
 import React from "react";
-import FinalIntro from "../components/FinalIntro";
-import LineSteps from "../components/LineSteps";
-import ShortIntro from "../components/ShortIntro";
+import '../App.css';
+import CTA from "../components/CTA";
+import MemoriesComponent from "../components/MemoriesComponent";
+import CommunitiesComponent from "../components/CommunitiesComponent";
+import AudienceComponent from "../components/AudienceComponent";
+import DemoCTA from "../components/DemoCTA";
+import ScrollingBanner from "../components/ScrollingBanner";
 const Homepage = () => {
   return (
-    <div>
-      <ShortIntro />
-      <LineSteps />
-      <FinalIntro />
+    <div className="Homepage-Conatiner">
+      <CTA />
+      <MemoriesComponent />
+      <CommunitiesComponent />
+      <AudienceComponent />
+      <DemoCTA />
+      <ScrollingBanner />
     </div>
   );
 };

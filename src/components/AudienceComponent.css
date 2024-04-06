@@ -1,35 +1,38 @@
 .audience-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    width: 70vw;
+    height: 50vh;
+    margin: auto;
 }
 
 .audience-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius:3em;
     overflow: hidden;
     cursor: pointer;
     flex-grow: 1;
-    margin: 10px;
-    height: 500px; /* Adjust as needed */
+    margin: 1em;
+    height: 40vh; /* Adjust as needed */
     text-decoration: none; /* Removes underline from links */
     position: relative;
 }
 
 .section-content {
     color: white;
-    font-size: 2rem;
-    text-align: center;
+    font-size: 4em;
+    padding: 1em;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.5); /* Overlay for better readability */
+    background: rgba(0, 0, 0, 0.3); /* Overlay for better readability */
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:last baseline;
+    justify-content: left;
+
 }
 
 .audience-section::before {
