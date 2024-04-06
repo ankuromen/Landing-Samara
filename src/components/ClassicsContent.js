@@ -116,9 +116,7 @@ const ClassicsContent = () => {
             className="slider-progress-bar-current"
             style={{
               height: `calc(${
-                (slideIndex /
-                  document.querySelectorAll(".swiper-slide").length) *
-                100
+                (slideIndex / document.querySelectorAll(".swiper-slide").length) * 100
               }%)`,
             }}
           ></div>

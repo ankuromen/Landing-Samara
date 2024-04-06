@@ -1,0 +1,46 @@
+.Blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Blog-content-header{
+    height: 70vh;
+    background: #121212;
+    padding-top: 5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    color: white;
+}
+.Blog-content-header h1{
+    font-size: 4em;
+    text-transform: uppercase;
+    margin-bottom:0.5em;
+}
+.Blog-content-img{
+    width: 90vw;
+    max-height: 80vh;
+    margin-top: -10em;
+    margin-bottom: 3em;
+}
+.Blog-content-text{
+    padding-left: 15em;
+    padding-right: 15em;
+    font-weight: 400;
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
+    padding-bottom: 5em;
+    font-size: 1.2em;
+    h3{
+        font-weight: 400;
+    }
+}
+.Blog-content-text-points{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    h2{
+        font-weight: 500;
+    }
+}
