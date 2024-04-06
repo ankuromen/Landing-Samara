@@ -10,17 +10,6 @@ const Footer = () => {
           <input type="text" name="email" placeholder="Email"></input>
         </div>
         <div className="Footer-Heading">
-          <h1 className="Footer-brandname">Eventiq</h1>
-          {/* <h1>
-          Starting at $269k or $1,611/mo
-          <br />
-          including installation.
-        </h1> */}
-          <button id="Reserve-btn">Sign Up For Updates</button>
-          <div className="Footer-signin">
-            <h4>Already signed Up ?</h4>
-            <button id="Footer-signin-btn">Sign in {">"}</button>{" "}
-          </div>
         </div>
       </div>
 

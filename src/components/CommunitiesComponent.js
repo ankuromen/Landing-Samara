@@ -1,20 +1,31 @@
 import React from 'react';
+import Typewriter from 'typewriter-effect';
 import './CommunitiesComponent.css';
-import imageClusterLeft from '../Assets/left-image.jpg'; // Replace with the actual path to your left image cluster
-import imageClusterRight from '../Assets/right-image.jpg'; // Replace with the actual path to your right image cluster
+import imageClusterLeft from '../Assets/left-image.jpg';
+import imageClusterRight from '../Assets/right-image.jpg';
 
 const CommunitiesComponent = () => {
+    const eventiqFor = [
+        'Resource Planning',
+        'Gamefied for Users',
+        'Analytics',
+        'Event Management',
+        'Customizable Events',
+        'Engagement Tools',
+        // Add more items as needed
+    ];
+
     return (
         <div className="Communities-Container">
-            <div className="Communities-ImageCluster left">
-                <img src={imageClusterLeft} alt="Community Left" />
-            </div>
             <div className="Communities-Text">
-                Discover communities worldwide.<br />
-                Join them. Make friends.
-            </div>
-            <div className="Communities-ImageCluster right">
-                <img src={imageClusterRight} alt="Community Right" />
+                Eventiq is for: <br />
+                <Typewriter
+                  options={{
+                    strings: eventiqFor,
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
             </div>
         </div>
     );

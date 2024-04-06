@@ -9,7 +9,7 @@
 
 .scrolling-banner-text {
     display: inline-block;
-    animation: scrollText 70s linear infinite;
+    animation: scrollText 200s linear infinite;
     font-size: 5rem;
 }
 

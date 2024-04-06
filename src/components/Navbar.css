@@ -1,5 +1,6 @@
 @media (min-width: 768px) {
   .navbar {
+    background-color: transparent;
     display: flex;
     position: fixed;
     box-sizing: border-box;
@@ -12,7 +13,7 @@
     font-family: regola-book, sans-serif;
     a {
       font-size: 1em;
-      color: black;
+      color: white;
       text-decoration: none;
     }
     h1 {
