@@ -1,7 +1,6 @@
 import React from "react";
 import "./BlogsNav.css";
 import { NavLink } from "react-router-dom";
-import { CiSearch } from "react-icons/ci";
 
 const BlogsNav = () => {
   return (
@@ -14,9 +13,6 @@ const BlogsNav = () => {
           <NavLink>Inside Help Scout</NavLink>
           <NavLink>Support Toolkit</NavLink>
         </ul>
-        <div>
-          <CiSearch size={20} />
-        </div>
       </div>
     </div>
   );
