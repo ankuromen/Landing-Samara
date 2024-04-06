@@ -7,25 +7,32 @@
     height: 50vh; /* Adjust the height for mobile view */
     width: 90vw; /* Adjust the width for card-like appearance */
     margin: 5vh auto; /* Center the card on the screen */
-    border-radius: 20px; /* More subtle rounded corners */
+    border-radius: 2em; /* More subtle rounded corners */
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 6em;
 }
 
 .CTA-Overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.CTA-Content {
+    padding: 2rem; 
+}
+.Text2{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height:35vh
+}
+.Text3{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.CTA-Content {
-    text-align: center;
-    padding: 2rem; /* Add padding around the content */
-}
-
 .CTA-Content h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
@@ -40,7 +47,8 @@
     font-size: 1.2rem;
     padding: 0.8rem 2rem;
     background-color: #0096f7;
-    color: white;
+    color: black;
+    background-color: white;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -48,7 +56,8 @@
 }
 
 #CTA-Register-btn:hover {
-    background-color: #0077cc;
+    background-color: black;
+    color: white;
 }
 
 /* Responsive styling */

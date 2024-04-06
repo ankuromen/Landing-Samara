@@ -2,10 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white; /* Assuming a dark background is needed */
-    color: black;
+    background-color:black; /* Assuming a dark background is needed */
+    color:white;
     padding: 40px;
     border-radius: 8px;
+    height: 40vh;
 }
 
 .Communities-Text {
