@@ -59,11 +59,26 @@
   text-align: center;
 }
 
-.swiper {
-  width: 100%;
-  max-height: 85vh;
+.swiper-full {
+  position: sticky;
+  top: 0;
+}
+.swiper-with-progress {
+  position: relative;
 }
 
+.swiper {
+  width: 100%;
+  max-height: 100vh;
+  animation: moveToTop 0.5s forwards;
+}
+.swiper-animate-top {
+  position: fixed;
+  animation: moveToTop 0.5s forwards;
+}
+#feature-text{
+  width: 100%;
+}
 .swiper-slide {
   box-sizing: border-box;
   text-align: center;
@@ -101,6 +116,7 @@
   gap: 2em;
   width: 30%;
   padding-left: 5em;
+  text-align: left;
   p {
     font-size: 0.8em;
   }
@@ -139,5 +155,15 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes moveToTop {
+  0% {
+    position: relative;
+    top: 100%;
+  }
+  100% {
+    position: sticky;
+    top: 3em;
   }
 }
