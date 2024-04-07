@@ -38,10 +38,11 @@
   margin-top: 0.5em;
   font-size: 1.3em;
   margin-bottom: 0.5em;
+  color: white;
 }
 .Blogs-link a {
   font-size: 1.2em;
-  color: black;
+  color:white;
   display: flex;
   align-items: center;
   gap: 1em;
