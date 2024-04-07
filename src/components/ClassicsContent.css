@@ -77,7 +77,11 @@
   animation: moveToTop 0.5s forwards;
 }
 #feature-text{
-  width: 100%;
+  width: 70%;
+  margin: auto;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0em;
 }
 .swiper-slide {
   box-sizing: border-box;
