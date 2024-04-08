@@ -18,7 +18,8 @@ const CommunitiesComponent = () => {
     return (
         <div className="Communities-Container">
             <div className="Communities-Text">
-                Eventiq is for: <br />
+                <span id='Communities-Heading'>Eventiq is for:</span><br />
+                <span id='Communities-Writer'>
                 <Typewriter
                   options={{
                     strings: eventiqFor,
@@ -26,6 +27,7 @@ const CommunitiesComponent = () => {
                     loop: true,
                   }}
                 />
+                </span>
             </div>
         </div>
     );

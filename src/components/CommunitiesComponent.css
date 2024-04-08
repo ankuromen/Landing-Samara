@@ -19,7 +19,12 @@
     margin: 0 auto; /* Centering the text block horizontally */
     line-height: 1.2; /* Adjust line-height for better readability */
 }
-
+#Communities-Heading{
+    color: gray;
+}
+#Communities-Writer{
+    text-align: center;
+}
 /* Responsive styling */
 @media (max-width: 1200px) {
     .Communities-Text {
