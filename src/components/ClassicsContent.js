@@ -12,15 +12,6 @@ import Image4 from "../Assets/image4.jpeg";
 import Image5 from "../Assets/image5.jpeg";
 import Image6 from "../Assets/image6.jpeg";
 const ClassicsContent = () => {
-  // {
-  //     title: "Helping Businesses Build Something Bigger",
-  //     para: "Wheather you are planning for tomorrow or budgeting for today.Evntiq connects you with working capital you need to run your business on your terms.",
-  //     image: Portrait,
-  //   },
-  //   {
-  //     title:
-  //       "Our features helps you express yourself and connect with people you love.",
-  //   },
   const classicFeatures = [
     {
       title: "Profile",
@@ -55,48 +46,16 @@ const ClassicsContent = () => {
   ];
   const [slideIndex, setSlideIndex] = useState(1);
 
-  //   useEffect(() => {
-  //   const swiperFull = document.querySelector(".swiper-full");
+  const [showProgressBar, setShowProgressBar] = useState(false);
 
-  //   if (swiperFull) { // Check if element exists
-  //     const handleScroll = () => {
-  //       // ... rest of your scroll handling code
-  //     };
+  const handleSlideChange = (swiper) => {
+    setSlideIndex(swiper.activeIndex + 1);
+    // Show progress bar only if we are past the first slide
+    setShowProgressBar(swiper.activeIndex > 0);
+  };
 
-  //     window.addEventListener("scroll", handleScroll);
-  //   }
-
-  //   // Cleanup function
-  //   return () => {
-  //     if (swiperFull) {
-  //       window.removeEventListener("scroll", handleScroll);
-  //     }
-  //   };
-  // }, []);
-
-  //   document.addEventListener("scroll", (event) => {
-  //     console.log("event");
-  //   });
   return (
     <div>
-      {/* <div className="Classic-Card">
-        <section className="Classic-Card-Sec1">
-          <h1>Helping Businesses Build Something Bigger</h1>
-          <p>
-            Wheather you are planning for tomorrow or budgeting for today.
-            Evntiq connects you with working capital you need to run your
-            business on your terms.
-          </p>
-          <button>Unlock Capital</button>
-        </section>
-        <section>
-          <img src={Portrait} alt="img" />
-        </section>
-      </div> */}
-      {/* <h1 className="Body-Classic-Text">
-        Our features helps you express yourself and connect with people you
-        love.
-      </h1> */}
       <div className="swiper-full">
         <div className="swiper-with-progress">
           <Swiper
@@ -106,7 +65,7 @@ const ClassicsContent = () => {
               sensitivity: 2,
               releaseOnEdges: true,
             }}
-            onSlideChange={(swiper) => setSlideIndex(swiper.activeIndex + 1)}
+            onSlideChange={handleSlideChange}
             onSlideChangeTransitionStart={() => {
               document.querySelectorAll(".slide-para").forEach((p) => {
                 p.classList.remove("animate-popup");
@@ -152,16 +111,6 @@ const ClassicsContent = () => {
                     <p className="slide-text">{feature.para}</p>
                     <button className="demo-btn">Request a Demo</button>
                   </div>
-                  {/* <div className="slider-progress-bar">
-                  <div
-                    className="slider-progress-bar-current"
-                    style={{
-                      height: `calc(${
-                        ((key + 1) / classicFeatures.length) * 100
-                      }%)`,
-                    }}
-                  ></div>
-                </div> */}
                 </SwiperSlide>
               </div>
             ))}

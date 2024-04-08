@@ -3,8 +3,8 @@ import '../App.css';
 import CTA from "../components/CTA";
 import MemoriesComponent from "../components/MemoriesComponent";
 import CommunitiesComponent from "../components/CommunitiesComponent";
-import ForBusiness from "../components/ForBusiness";
-import ForFans from "../components/ForFans";
+import ClassicsBusiness from "../components/ClassicsBusiness";
+import ClassicsFans from "../components/ClassicsFans";
 import DemoCTA from "../components/DemoCTA";
 import ScrollingBanner from "../components/ScrollingBanner";
 const Homepage = () => {
@@ -13,8 +13,8 @@ const Homepage = () => {
       <CTA />
       <MemoriesComponent />
       <CommunitiesComponent />
-      <ForBusiness />
-      <ForFans />
+      <ClassicsBusiness/>
+      <ClassicsFans/>
       <DemoCTA />
       <ScrollingBanner />
     </div>
