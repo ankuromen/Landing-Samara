@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { Link } from "react-router-dom";
 import "./BlogsPage.css";
 // import BlogContent from "../components/BlogContent";
@@ -6,6 +6,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import BlogsNav from "../components/BlogsNav";
 
 const BlogsPage = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   const Blogs = [
     {
       title: "Building Engaged Communities: Secrets to Success",

@@ -23,9 +23,6 @@
   .brand {
     letter-spacing: 0.1em;
     font-family: regola-book, sans-serif;
-    :hover {
-      font-weight: 600;
-    }
   }
   a.active {
     font-weight: 700;

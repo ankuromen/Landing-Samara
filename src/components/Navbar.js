@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { IoCloseOutline } from "react-icons/io5";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -55,20 +55,6 @@ const Navbar = () => {
             onClick={() => setIsMobile(false)}
           >
             Professional
-          </NavLink>
-          <NavLink
-            to="/about"
-            className="Nav-links"
-            onClick={() => setIsMobile(false)}
-          >
-            About Us
-          </NavLink>
-          <NavLink
-            to="/blogs"
-            className="Nav-links"
-            onClick={() => setIsMobile(false)}
-          >
-            Blogs
           </NavLink>
         </ul>
       </div>
