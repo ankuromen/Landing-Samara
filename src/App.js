@@ -12,6 +12,7 @@ import Page3 from "./Pages/BlogPages/Page3";
 import Page4 from "./Pages/BlogPages/Page4";
 import Page5 from "./Pages/BlogPages/Page5";
 import Page6 from "./Pages/BlogPages/Page6";
+import ClassicUsers from "./Pages/ClassicUsers";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/professional" element={<Professional />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
+        <Route path="/ClassicsUsers" element={<ClassicUsers/>}/>
         <Route path="/page1" element={<Page1 />} />
         <Route path="/page2" element={<Page2 />} />
         <Route path="/page3" element={<Page3 />} />

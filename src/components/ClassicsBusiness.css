@@ -1,0 +1,42 @@
+.Classic-Business-Container{
+    height: 100vh;
+    color: white;
+}
+.Classics-Content{
+    height: 70vh;
+    display: flex;
+}
+.Bus-Img-Section{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Bus-Text-Section{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3em;
+    padding: 3em;
+    text-align: center;
+    gap: 1em;
+}
+#Bus-Img{
+    height:80%;
+    width: 38vw;
+    border-radius: 2em;
+}
+#Bus-Btn{
+    width: 10em;
+    height: 3em;
+    border-radius: 2em;
+    background-color: rgb(235, 152, 235);
+    color: black;
+    font-size: 1em;
+}
+#Bus-Btn:hover{
+    background-color: rgb(248, 230, 248);
+    cursor: pointer;
+}
