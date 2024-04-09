@@ -1,8 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import './CommunitiesComponent.css';
-import imageClusterLeft from '../Assets/left-image.jpg';
-import imageClusterRight from '../Assets/right-image.jpg';
 
 const CommunitiesComponent = () => {
     const eventiqFor = [

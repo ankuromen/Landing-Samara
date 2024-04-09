@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Already imported
 import './ForBusiness.css';
 import businessBackground from '../Assets/Business.jpeg'; // Adjust with actual path
 

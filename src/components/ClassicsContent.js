@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -46,12 +46,9 @@ const ClassicsContent = () => {
   ];
   const [slideIndex, setSlideIndex] = useState(1);
 
-  const [showProgressBar, setShowProgressBar] = useState(false);
 
   const handleSlideChange = (swiper) => {
     setSlideIndex(swiper.activeIndex + 1);
-    // Show progress bar only if we are past the first slide
-    setShowProgressBar(swiper.activeIndex > 0);
   };
 
   return (

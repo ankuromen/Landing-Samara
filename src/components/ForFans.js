@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './ForBusiness.css';
 import fansBackground from '../Assets/attendee-image.webp'; // Adjust with actual path
 

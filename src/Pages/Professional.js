@@ -1,10 +1,14 @@
 import React from 'react'
-import LineSteps from '../components/LineSteps'
+// import LineSteps from '../components/LineSteps'
 import '../App.css';
+import ProfessionalBanner from '../components/ProfessionalBanner';
+import ProfessionalFeatures from '../components/ProfessionalFeatures';
 const Professional = () => {
   return (
     <div className='Professional-Container'>
-      <LineSteps/>
+      {/* <LineSteps/> */}
+      <ProfessionalBanner/>
+      <ProfessionalFeatures/>
     </div>
   )
 }

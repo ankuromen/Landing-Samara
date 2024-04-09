@@ -161,13 +161,4 @@
     transform: translateY(0);
   }
 }
-@keyframes moveToTop {
-  0% {
-    position: relative;
-    top: 100%;
-  }
-  100% {
-    position: sticky;
-    top: 3em;
-  }
-}
+

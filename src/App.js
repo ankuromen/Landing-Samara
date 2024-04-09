@@ -21,7 +21,7 @@ function App() {
         <Route index element={<Homepage />} />
         <Route path="/classic" element={<Classicpage />} />
         <Route path="/professional" element={<Professional />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<AboutPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/ClassicsUsers" element={<ClassicUsers/>}/>
         <Route path="/page1" element={<Page1 />} />
