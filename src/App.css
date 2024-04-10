@@ -1,13 +1,13 @@
-
-body{
+body {
     background-color: black;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: regola-book, sans-serif;
 }
-.Homepage-Conatiner{
+
+.Homepage-Conatiner {
     background-color: black;
 }

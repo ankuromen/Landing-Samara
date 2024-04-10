@@ -13,8 +13,8 @@ const Homepage = () => {
       <CTA />
       <MemoriesComponent />
       <CommunitiesComponent />
-      <ClassicsBusiness/>
-      <ClassicsFans/>
+      <ClassicsBusiness />
+      <ClassicsFans />
       <DemoCTA />
       <ScrollingBanner />
     </div>

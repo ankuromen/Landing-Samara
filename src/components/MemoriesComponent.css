@@ -2,6 +2,9 @@
     background-color: black;
     color: white;
     height: 50vh;
+    background-image: url('../Assets/BackgroundLine.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Memories-Content {
