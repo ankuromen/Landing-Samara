@@ -1,4 +1,4 @@
-.Professional-features-container{
+.Professional-features-container {
   display: flex;
   flex-direction: column;
 }
@@ -15,9 +15,13 @@
   h1 {
     font-size: 5em;
     text-transform: uppercase;
+    animation: fade-in linear;
+    animation-timeline: view(300px 0px);
   }
   p {
     font-size: 2em;
+    animation: fade-in linear;
+    animation-timeline: view(300px 0px);
   }
   .Professional-features-line {
     width: 0.05em;
@@ -42,6 +46,8 @@
     left: 1.5em;
     width: 30%;
     margin-top: 8em;
+    animation: fade-in linear;
+    animation-timeline: view(350px 0px);
     h1 {
       font-size: 1.7em;
       text-transform: uppercase;
@@ -83,6 +89,8 @@
     overflow: hidden;
     position: absolute;
     bottom: 7em;
+    animation: fade-in linear;
+    animation-timeline: view(350px 0px);
     img {
       height: 100%;
       width: 100%;
@@ -94,5 +102,15 @@
     width: 0.05em;
     height: 7em;
     background: white;
+  }
+}
+@keyframes fade-in {
+  from {
+    scale: 0.8;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
   }
 }

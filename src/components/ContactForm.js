@@ -21,7 +21,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="Contact-form-left">
-          <form>
+          <div className="Contact-form-container"><form>
             <label>Name</label>
             <br />
             <input
@@ -44,7 +44,7 @@ const ContactForm = () => {
             <br />
             <label>Comments</label>
             <br />
-            <input
+            <textarea
               className="comments"
               type="textarea"
               name="message"
@@ -54,7 +54,8 @@ const ContactForm = () => {
             />
             <br />
             <button type="submit">Send</button>
-          </form>
+          </form></div>
+          
         </div>
       </div>
     </div>

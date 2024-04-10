@@ -6,6 +6,7 @@
   padding-left: 1em;
   padding-bottom: 1em;
   color: white;
+  justify-content: space-between;
 }
 .Contact-form-right {
   box-sizing: border-box;
@@ -25,9 +26,16 @@
     font-weight: 400;
   }
 }
-.Contact-form-left input {
-  border: 1px solid gray;
+.Contact-form-container {
+  box-shadow: -12px -8px 53px 0px rgba(99, 96, 120, 0.3);
+  border-radius: 2em;
   width: 60%;
+  padding: 1em 2em;
+  margin: auto;
+}
+.Contact-form-left input {
+  border: 1px solid rgb(60, 60, 60);
+  width: 80%;
   color: black;
 }
 
@@ -45,5 +53,10 @@
   transform: scale(1.1);
 }
 .comments {
-  height: 3em;
+  height: 4em;
+  width: 80%;
+  border-radius: 1em;
+  padding: 1em 1em;
+  background: rgba(255, 255, 255, 0.2);
+  resize: none;
 }
