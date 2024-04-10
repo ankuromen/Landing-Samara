@@ -8,13 +8,22 @@ import ClassicsFans from "../components/ClassicsFans";
 import DemoCTA from "../components/DemoCTA";
 import ScrollingBanner from "../components/ScrollingBanner";
 const Homepage = () => {
+  const BackgroundWrapper = ({ children }) => {
+    return (
+      <div className="background-gif">
+        {children}
+      </div>
+    );
+  };
   return (
     <div className="Homepage-Conatiner">
       <CTA />
       <MemoriesComponent />
       <CommunitiesComponent />
-      <ClassicsBusiness />
-      <ClassicsFans />
+      <BackgroundWrapper>
+        <ClassicsBusiness />
+        <ClassicsFans />
+      </BackgroundWrapper>
       <DemoCTA />
       <ScrollingBanner />
     </div>
