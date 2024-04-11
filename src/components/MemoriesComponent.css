@@ -10,6 +10,8 @@
 .Memories-Content {
     width: 40vw;
     margin: auto;
+    animation: fade-in linear;
+    animation-timeline: view(600px 0px);
 }
 
 .Memories-Content h1 {
@@ -28,6 +30,8 @@
     margin: auto;
     width: 40vw;
     align-items: center;
+    animation: fade-in linear;
+    animation-timeline: view(600px 0px);
 }
 .Memories-Text {
     font-size: 1rem;

@@ -11,6 +11,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: popup-from-side 1s cubic-bezier(.15,.86,.42,.79);
+    animation-timeline: view(800px 0px);
 }
 .Bus-Text-Section{
     width: 50vw;
@@ -22,6 +24,8 @@
     padding: 3em;
     text-align: center;
     gap: 1em;
+    animation: fade-in linear;
+    animation-timeline: view(600px 0px);
 }
 #Bus-Img{
     height:80%;
@@ -39,4 +43,14 @@
 #Bus-Btn:hover{
     background-color: rgb(248, 230, 248);
     cursor: pointer;
+}
+@keyframes popup-from-side{
+    0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
