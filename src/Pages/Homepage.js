@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import '../App.css';
 import CTA from "../components/CTA";
 import MemoriesComponent from "../components/MemoriesComponent";
@@ -8,7 +9,10 @@ import ClassicsFans from "../components/ClassicsFans";
 import DemoCTA from "../components/DemoCTA";
 import ScrollingBanner from "../components/ScrollingBanner";
 const Homepage = () => {
-  const BackgroundWrapper = ({ children }) => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+  const BackgroundWrapper = ({ children }) => { 
     return (
       <div className="background-gif">
         {children}
