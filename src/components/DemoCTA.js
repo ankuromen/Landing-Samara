@@ -5,7 +5,7 @@ const DemoCTA = () => {
     return (
       <div className="demo-cta-container">
         <p className="cta-message">
-          What to learn what we are building?
+          Want to learn what we are building?
           <br />
           Book a call.
         </p>

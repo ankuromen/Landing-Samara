@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ScrollingBanner.css';
 
 const ScrollingBanner = () => {
@@ -7,9 +8,9 @@ const ScrollingBanner = () => {
 
     return (
         <div className="scrolling-banner-container">
-            <div className="scrolling-banner-text">
+            <Link to="/signup"><div className="scrolling-banner-text">
                 {repeatedText}
-            </div>
+            </div></Link>
         </div>
     );
 };

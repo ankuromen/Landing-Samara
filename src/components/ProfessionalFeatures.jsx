@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ProfessionalFeatures.css";
 import featurefirsticon from "../Assets/features-first.png";
 import image1 from "../Assets/Professionalfeature1.jpg";
@@ -76,7 +77,9 @@ const ProfessionalFeatures = () => {
             <img src={feature.image} alt="" />
           </div>
           {ProfessionalFeatures.length === index + 1 && (
-            <button className="register-button">Register</button>
+            <Link to="/signup">
+              <button className="register-button">Register</button>
+            </Link>
           )}
           {ProfessionalFeatures.length !== index + 1 && (
             <div className="Professional-features-last-line"></div>

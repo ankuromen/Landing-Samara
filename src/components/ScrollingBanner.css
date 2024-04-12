@@ -11,6 +11,7 @@
     display: inline-block;
     animation: scrollText 200s linear infinite;
     font-size: 5rem;
+    color: white;
 }
 
 /* Keyframes for the scrolling text */

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { IoCloseOutline } from "react-icons/io5";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -60,9 +60,9 @@ const Navbar = () => {
           
         </ul>
       </div>
-      <button className="navbar-button">
+      <Link to="/signup"><button className="navbar-button">
         Sign Up
-      </button>
+      </button></Link>
     </div>
   );
 };

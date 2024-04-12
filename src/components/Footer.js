@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="Subscribe-input">
             <input type="text" name="Email" placeholder="Email"></input>
             <button>
-              <IoIosArrowForward  size={20}/>
+              <IoIosArrowForward size={20} />
             </button>
           </div>
         </div>
@@ -27,16 +27,16 @@ const Footer = () => {
                 <td>About Us</td>
               </Link>
               <Link to="/blogs">
-                {" "}
+
                 <td>News & Blogs</td>
               </Link>
               <Link to="/contact">
-                {" "}
+
                 <td>Contact Us</td>
               </Link>
-              <Link to="/">
-                {" "}
-                <td>Learn more</td>
+              <Link to="/signup">
+
+                <td>Sign Up</td>
               </Link>
             </tr>
           </tbody>
