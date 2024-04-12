@@ -46,7 +46,24 @@
   cursor: pointer;
   margin-bottom: 1rem;
 }
-
+.Subscribe-input {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  input {
+    width: 100%;
+  }
+  button {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    border: none;
+    padding-right: 0.5em;
+  }
+  svg:hover{
+    color: white;
+  }
+}
 .Footer-Heading #Reserve-btn {
   background-color: #0096f7;
   color: white;

@@ -103,6 +103,42 @@
     background: white;
   }
 }
+.register-button {
+   position: absolute;
+    bottom: 0%;
+    width: 200px;
+    margin: 1em 20px 1em 20px;
+    padding: 10px 20px;
+    height: 55px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 1em;
+    text-align: center;
+    background-image: linear-gradient(to right, #F3B243, #28ABBA, #7584A7, #E33A75);
+    box-shadow: 
+        0 0 20px #F3B243, 
+        0 0 15px #28ABBA, 
+        0 0 20px #7584A7, 
+        0 0 25px #E33A75; /* Multi-color neon glow effect */
+    background-size: 300% 100%;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-button:hover {
+    transform: scale(1.25); /* Scale up on hover */
+    background-position: 100% 0; /* Shift the gradient on hover */
+    box-shadow: 
+        0 0 0px #F3B243, 
+        0 0 0px #28ABBA, 
+        0 0 10px #7584A7, 
+        0 0 40px #E33A75; /* Intensified multi-color neon glow effect */
+}
 @keyframes fade-in {
   from {
     scale: 0.8;

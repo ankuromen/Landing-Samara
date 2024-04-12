@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../components/Footer.css";
+import { IoIosArrowForward } from "react-icons/io";
 const Footer = () => {
   return (
     <div className="Footer-Section">
@@ -8,7 +9,12 @@ const Footer = () => {
         <div className="Footer-Subscribe">
           <h4>Get updates</h4>
           <p>Drop us your email to learn what’s next.</p>
-          <input type="text" name="email" placeholder="Email"></input>
+          <div className="Subscribe-input">
+            <input type="text" name="Email" placeholder="Email"></input>
+            <button>
+              <IoIosArrowForward  size={20}/>
+            </button>
+          </div>
         </div>
         <div className="Footer-Heading"></div>
       </div>

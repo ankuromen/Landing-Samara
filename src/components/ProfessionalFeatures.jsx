@@ -73,11 +73,11 @@ const ProfessionalFeatures = () => {
             <img src={featurefirsticon} alt="" />
           </div>
           <div className="Professional-features-img">
-            <img
-              src={feature.image}
-              alt=""
-            />
+            <img src={feature.image} alt="" />
           </div>
+          {ProfessionalFeatures.length === index + 1 && (
+            <button className="register-button">Register</button>
+          )}
           {ProfessionalFeatures.length !== index + 1 && (
             <div className="Professional-features-last-line"></div>
           )}
