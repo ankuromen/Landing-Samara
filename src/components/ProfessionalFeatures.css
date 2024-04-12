@@ -65,7 +65,6 @@
   .Professional-features-arrow {
     display: flex;
     flex-direction: column;
-    gap: 0.2em;
     align-items: center;
     img {
       position: relative;

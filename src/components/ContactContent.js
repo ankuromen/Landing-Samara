@@ -14,7 +14,7 @@ const ContactContent = () => {
         </div>
         <div className="Contact-options">
           <div>
-            <img className="ContactOpt-image" src={mapImg} alt="newsimage" />
+            {/* <img className="ContactOpt-image" src={mapImg} alt="newsimage" /> */}
             <h2 className="ContactOpt-header">
               <CiLocationOn />
               Address
@@ -26,7 +26,7 @@ const ContactContent = () => {
             </p>
           </div>
           <div>
-            <img className="ContactOpt-image" src={phoneImg} alt="newsimage" />
+            {/* <img className="ContactOpt-image" src={phoneImg} alt="newsimage" /> */}
             <h2 className="ContactOpt-header">
               <CiPhone />
               Phone
@@ -34,7 +34,7 @@ const ContactContent = () => {
             <p className="ContactOpt-para">+1000000000000</p>
           </div>
           <div>
-            <img className="ContactOpt-image" src={emailImg} alt="newsimage" />
+            {/* <img className="ContactOpt-image" src={emailImg} alt="newsimage" /> */}
             <h2 className="ContactOpt-header">
               <MdOutlineMailOutline />
               Email Address
