@@ -19,7 +19,6 @@ const Footer = () => {
           <tbody>
             <tr>
             <Link to="/about"><td>About Us</td></Link>
-            <Link to="/pricing"> <td>Pricing</td></Link>
             <Link to="/blogs"> <td>News & Blogs</td></Link>
             <Link to="/contact"> <td>Contact Us</td></Link>
             </tr>

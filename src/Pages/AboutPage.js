@@ -11,6 +11,7 @@ const AboutPage = () => {
     <div>
       <ContactContent/>
       <ContactForm/>
+      
     </div>
   );
 };
