@@ -3,10 +3,14 @@ import './DemoCTA.css';
 
 const DemoCTA = () => {
     return (
-        <div className="demo-cta-container">
-            <p className="cta-message">Want a demo of what we are <br/>building? Book a call.</p>
-            <button className="merged-button">Demo</button>
-        </div>
+      <div className="demo-cta-container">
+        <p className="cta-message">
+          What to learn what we are building?
+          <br />
+          Book a call.
+        </p>
+        <button className="merged-button">Demo</button>
+      </div>
     );
 };
 

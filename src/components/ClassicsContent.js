@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Mousewheel, Scrollbar } from "swiper/modules";
 import "../components/ClassicsContent.css";
-import Portrait from "../Assets/test123.jpg";
 import Image1 from "../Assets/image1.jpeg";
 import Image2 from "../Assets/image2.jpeg";
 import Image3 from "../Assets/image3.jpeg";
@@ -76,17 +75,13 @@ const ClassicsContent = () => {
             className="mySwiper"
           >
             <SwiperSlide>
-              <div className="slide-img">
-                <img src={Portrait} alt="" />
-              </div>
-              <div className="slide-para animate-popup">
+              <div className="slide-para animate-popup" id="feature-text">
                 <h2>Helping Businesses Build Something Bigger</h2>
                 <p className="slide-text">
                   Wheather you are planning for tomorrow or budgeting for
                   today.Evntiq connects you with working capital you need to run
                   your business on your terms.
                 </p>
-                <button className="demo-btn">Request a Demo</button>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -106,7 +101,6 @@ const ClassicsContent = () => {
                   <div className="slide-para animate-popup">
                     <h2>{feature.title}</h2>
                     <p className="slide-text">{feature.para}</p>
-                    <button className="demo-btn">Request a Demo</button>
                   </div>
                 </SwiperSlide>
               </div>

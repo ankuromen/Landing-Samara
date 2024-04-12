@@ -56,6 +56,7 @@ const Navbar = () => {
           >
             Professional
           </NavLink>
+          
         </ul>
       </div>
       <button className="navbar-button">

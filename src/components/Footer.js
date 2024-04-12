@@ -10,17 +10,28 @@ const Footer = () => {
           <p>Drop us your email to learn what’s next.</p>
           <input type="text" name="email" placeholder="Email"></input>
         </div>
-        <div className="Footer-Heading">
-        </div>
+        <div className="Footer-Heading"></div>
       </div>
 
       <div className="Footer-Mid">
         <table>
           <tbody>
             <tr>
-            <Link to="/about"><td>About Us</td></Link>
-            <Link to="/blogs"> <td>News & Blogs</td></Link>
-            <Link to="/contact"> <td>Contact Us</td></Link>
+              <Link to="/about">
+                <td>About Us</td>
+              </Link>
+              <Link to="/blogs">
+                {" "}
+                <td>News & Blogs</td>
+              </Link>
+              <Link to="/contact">
+                {" "}
+                <td>Contact Us</td>
+              </Link>
+              <Link to="/">
+                {" "}
+                <td>Learn more</td>
+              </Link>
             </tr>
           </tbody>
         </table>
