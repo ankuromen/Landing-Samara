@@ -1,6 +1,7 @@
 .Contact-form {
   display: grid;
   grid-template-columns: 2fr 3fr;
+  padding: 4em;
   box-sizing: border-box;
   padding-right: 1em;
   padding-left: 1em;
@@ -29,14 +30,16 @@
 .Contact-form-container {
   box-shadow: -12px -8px 53px 0px rgba(99, 96, 120, 0.3);
   border-radius: 2em;
-  width: 60%;
+  width: 50%;
   padding: 1em 2em;
   margin: auto;
 }
 .Contact-form-left input {
   border: 1px solid rgb(60, 60, 60);
-  width: 80%;
+  width: 90%;
   color: black;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .Contact-form-left button {
@@ -54,9 +57,10 @@
 }
 .comments {
   height: 4em;
-  width: 80%;
+  width: 90%;
   border-radius: 1em;
   padding: 1em 1em;
   background: rgba(255, 255, 255, 0.2);
   resize: none;
+  margin-top: 0.5em;
 }

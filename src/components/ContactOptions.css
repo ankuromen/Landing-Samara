@@ -1,22 +1,7 @@
-.Contactus-banner {
-  background-image: url("../Assets/Contactimg.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-
-}
-.Contact-header {
-  font-size: 4em;
-  font-weight: 500;
-  letter-spacing: 0.07em;
-}
 .Contact-options {
   display: grid;
+  margin-left: 2em;
+  margin-right: 1em;
   grid-template-columns: 1fr 1fr 1fr;
   box-sizing: border-box;
   padding: 2em;

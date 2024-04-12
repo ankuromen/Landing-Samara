@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { IoCloseOutline } from "react-icons/io5";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 

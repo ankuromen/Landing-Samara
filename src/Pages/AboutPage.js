@@ -1,6 +1,7 @@
 import {React,useEffect} from "react";
-import ContactContent from "../components/ContactContent";
 import ContactForm from "../components/ContactForm";
+import ContactBanner from "../components/ContactBanner";
+import ContactOptions from "../components/ContactOptions";
 
 
 const AboutPage = () => {
@@ -9,8 +10,9 @@ const AboutPage = () => {
   },[])
   return (
     <div>
-      <ContactContent/>
+      <ContactBanner/>
       <ContactForm/>
+      <ContactOptions/>
       
     </div>
   );

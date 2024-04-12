@@ -1,22 +1,20 @@
 import React from "react";
-import BlogsNav from "../../components/BlogsNav";
 import "./Page.css";
 const Page2 = () => {
   return (
     <div>
-      <BlogsNav />
       <div className="Blog-content">
         <div className="Blog-content-header">
+          <img
+            className="Blog-content-img"
+            src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
           <h4>Blog</h4>
           <h1>How Technology is Transforming Event Management with Eventiq?</h1>
           <h4>April 12,2024</h4>
         </div>
 
-        <img
-          className="Blog-content-img"
-          src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt=""
-        />
         <div className="Blog-content-text">
           <p>
             The event industry is being revolutionized by technology, offering

@@ -1,0 +1,38 @@
+.Signup-form-container {
+  width: 100vw;
+}
+
+.Signup-form {
+  width: 25%;
+  display: flex;
+  gap: 0.25em;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5em;
+  background: rgb(27 27 27);
+  margin: auto;
+  label {
+    color: white;
+  }
+  select {
+    height: 3em;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.75em;
+    color: gray;
+  }
+}
+.Signup-form-btn{
+        margin-top: 1em;
+    background: #0096f7;
+    border: none;
+    color: white;
+    padding: 0.75em 1.5em;
+    border-radius: 1em;
+}
+.Signup-form-signin{
+    margin-top: 1em;
+ display: flex;
+ margin: auto;
+ color: white;
+ gap: 0.5em;
+}

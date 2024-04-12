@@ -26,8 +26,8 @@ const ContactForm = () => {
             <br />
             <input
               type="text"
-              name="message"
-              placeholder="name"
+              name="Name"
+              placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -36,8 +36,8 @@ const ContactForm = () => {
             <br />
             <input
               type="email"
-              name="message"
-              placeholder="email"
+              name="Email"
+              placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -47,7 +47,7 @@ const ContactForm = () => {
             <textarea
               className="comments"
               type="textarea"
-              name="message"
+              name="Comments"
               placeholder="Comments"
               value={comments}
               onChange={(e) => setComments(e.target.value)}

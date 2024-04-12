@@ -1,21 +1,19 @@
 import React from "react";
-import BlogsNav from "../../components/BlogsNav";
 const Page5 = () => {
   return (
     <div>
-      <BlogsNav />
       <div className="Blog-content">
         <div className="Blog-content-header">
+          <img
+            className="Blog-content-img"
+            src="https://images.pexels.com/photos/7241416/pexels-photo-7241416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
           <h4>Blog</h4>
           <h1>The Rise of Hybrid Events: Combining the Best of Both Worlds</h1>
           <h4>April 1,2024</h4>
         </div>
 
-        <img
-          className="Blog-content-img"
-          src="https://images.pexels.com/photos/7241416/pexels-photo-7241416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt=""
-        />
         <div className="Blog-content-text">
           <p>
             Hybrid events, which blend in-person and online experiences, are

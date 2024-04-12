@@ -50,20 +50,20 @@ const BlogsPage = () => {
       {/* <BlogContent/> */}
       <div className="Blogs">
         {Blogs.map((blog) => (
-          <div className="Blogs-card">
-            <div className="Blogs-card-img">
-              <img src={blog.image} alt="" />
-            </div>
-            <div className="Blogs-card-text">{blog.title}</div>
-            <div className="Blogs-link">
-              <Link to={blog.link}>
-                View Insight{" "}
-                <div className="Link-arrow">
-                  <FaArrowRightLong size={30} />
+          <Link to={blog.link}>
+            <div className="Blogs-card">
+              <div className="Blogs-card-img">
+                <img src={blog.image} alt="" />
+                <div className="Blogs-link">
+                  View Insight{" "}
+                  <div className="Link-arrow">
+                    <FaArrowRightLong size={30} />
+                  </div>
                 </div>
-              </Link>
+              </div>
+              <div className="Blogs-card-text">{blog.title}</div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

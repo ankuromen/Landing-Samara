@@ -1,20 +1,18 @@
 import React from "react";
-import BlogsNav from "../../components/BlogsNav";
 const Page6 = () => {
   return (
     <div>
-      <BlogsNav />
       <div className="Blog-content">
         <div className="Blog-content-header">
+          <img
+            className="Blog-content-img"
+            src="https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
           <h4>Blog</h4>
           <h1>Exploring the Future: VR Events and Their Potential</h1>
           <h4>April 1,2024</h4>
         </div>
-        <img
-          className="Blog-content-img"
-          src="https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt=""
-        />
 
         <div className="Blog-content-text">
           <p>
