@@ -45,7 +45,6 @@ const ClassicsContent = () => {
   ];
   const [slideIndex, setSlideIndex] = useState(1);
 
-
   const handleSlideChange = (swiper) => {
     setSlideIndex(swiper.activeIndex + 1);
   };
@@ -76,7 +75,8 @@ const ClassicsContent = () => {
           >
             <SwiperSlide>
               <div className="slide-para animate-popup" id="feature-text">
-                <h2>Helping Businesses Build Something Bigger</h2>
+                <h3 className="feature-text-heading">Helping Businesses </h3>
+                <h3 className="feature-text-heading">Build Something Bigger</h3>
                 <p className="slide-text">
                   Wheather you are planning for tomorrow or budgeting for
                   today.Evntiq connects you with working capital you need to run
