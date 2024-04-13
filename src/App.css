@@ -1,7 +1,9 @@
 body {
     background-color: black;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,8 @@ body {
     background-color: black;
 
 }
-.background-gif{
+
+.background-gif {
     background-image: url('./Assets/BackgroundLine.gif');
     background-repeat: no-repeat;
     background-size: cover;

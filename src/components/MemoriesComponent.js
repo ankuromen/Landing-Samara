@@ -1,6 +1,7 @@
 import React from "react";
 import "./MemoriesComponent.css";
 import eventImage from "../Assets/about-image.jpg"; // Replace with the actual path to your image
+import { Link } from "react-router-dom";
 
 const MemoriesComponent = () => {
   return (
@@ -13,15 +14,12 @@ const MemoriesComponent = () => {
         <img src={eventImage} alt="Event" className="Memories-Image" />
         <div className="Memories-Text">
           <p>
-            Each space to discover and nurture these connections, where events
-            are more than occasions—they're the seeds of vibrant communities.
-            Join us in reimagining how we come together, share moments, and
-            build lasting bonds.
+            Envtiq is a video-based events and community discovery platform where event creators and community creators find their space to thrive by attracting fans and members. We help in crafting compelling experiences at events and power communities. Seamlessly tap into events or communities based on interest. Our mission is to bridge the gap between the physical and virtual while cultivating unforgettable encounters.
           </p>
-          <button className="Memories-btn">
+          <Link to="/team"> <button className="Memories-btn">
             <span>Click!</span>
             <span>Learn More</span>
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>

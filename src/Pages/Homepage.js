@@ -12,18 +12,13 @@ const Homepage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const BackgroundWrapper = ({ children }) => {
-    return <div className="background-gif">{children}</div>;
-  };
   return (
     <div className="Homepage-Conatiner">
       <CTA />
       <MemoriesComponent />
       <CommunitiesComponent />
-      <BackgroundWrapper>
-        <ClassicsBusiness />
-        <ClassicsFans />
-      </BackgroundWrapper>
+      <ClassicsBusiness />
+      <ClassicsFans />
       <DemoCTA />
       <ScrollingBanner />
     </div>

@@ -50,8 +50,7 @@ const BlogsPage = () => {
       {/* <BlogContent/> */}
       <div className="Blogs-header">
         <h1>NEWSROOM</h1>
-        <h4>Stay Updated</h4>
-        <h4>Stay Connected</h4>
+        <h4>Stay Updated!</h4>
       </div>
       <div className="Blogs">
         {Blogs.map((blog) => (

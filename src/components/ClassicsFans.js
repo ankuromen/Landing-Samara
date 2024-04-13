@@ -2,15 +2,28 @@ import React from 'react';
 import GlowButton from './GlowButton'; // Adjust the path to where your GlowButton component is located
 import './ClassicsBusiness'; // Make sure you have your CSS correctly linked
 import Test from '../Assets/test123.jpg'; // Adjust the path to your image if necessary
-
+import Typewriter from 'typewriter-effect';
+import { Link } from 'react-router-dom';
 const ClassicsFans = () => {
+    const eventiqFor = [
+        'Capture the Excitement!',
+        // Add more items as needed
+    ];
     return (
         <div className="Classic-Business-Container"> {/* Check if you want to rename this class */}
             <div className="Classics-Content">
                 <section className="Bus-Text-Section">
                     <h1>For Fans</h1>
-                    <h2> sentence, AI changing generated text.</h2>
-                    <GlowButton buttonText="Our Solutions" /> {/* Replacing the old button */}
+                    <h2>  <Typewriter
+                        options={{
+                            strings: eventiqFor,
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    /></h2>
+
+                    <p>Evntiq is where every moment feels like a backstage pass. Connect with your passions, dive into experiences, and savor every moment with the community you choose. Embrace unforgettable moments from physical world and feel the excitement and amazement even if you are visiting the virtual world</p>
+                    <Link to="/classic"><GlowButton buttonText="Our Solutions" /></Link>{/* Replacing the old button */}
                 </section>
                 <section className="Bus-Img-Section">
                     <img src={Test} id="Bus-Img" alt='Business' />

@@ -1,12 +1,16 @@
 .Memories-Container {
   background-color: black;
   color: white;
-  height: fit-content;
+  height: 70vh;
   padding: 2em 0em 2em 0em;
   box-sizing: border-box;
   background-image: url("../Assets/BackgroundLine.gif");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Memories-Content {
@@ -24,19 +28,18 @@
 .Memories-Title {
   font-size: 3.5rem;
   font-weight: lighter;
-  margin-bottom: 1rem;
   text-align: right;
 }
 .Memories-Second {
   display: flex;
   margin: auto;
-  width: 40vw;
+  width: 50vw;
   align-items: center;
   animation: fade-in linear;
   animation-timeline: view(600px 0px);
 }
 .Memories-Text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   padding-left: 3em;
 }
