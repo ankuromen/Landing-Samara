@@ -88,7 +88,7 @@
   margin: auto;
   font-weight: 500;
   font-size: 3.2em;
-  background: linear-gradient(to bottom, #cccccc 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #a9a9a9 0%, #ffffff 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -158,6 +158,7 @@
 .slider-progress-bar-current {
   width: 100%;
   background-color: aliceblue;
+  transition: 0.5s;
 }
 
 @keyframes popup {

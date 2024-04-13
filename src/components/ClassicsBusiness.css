@@ -25,7 +25,7 @@
     text-align: center;
     gap: 1em;
     animation: fade-in linear;
-    animation-timeline: view(600px 0px);
+    animation-timeline: view(600px 15%);
 }
 #Bus-Img{
     height:80%;

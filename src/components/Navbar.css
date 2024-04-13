@@ -110,6 +110,7 @@
     font-family: regola-book, sans-serif;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px) saturate(1.5);
+    transition: 0.3s;
     .navbar-button {
       display: none;
     }
