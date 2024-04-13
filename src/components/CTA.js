@@ -1,6 +1,5 @@
 import React from 'react';
 import './CTA.css'; // Assuming this contains your specific styling for the CTA component
-import GlowButton from './GlowButton'; // Adjust the path to where your GlowButton component is located
 import backgroundImage from '../Assets/cta-image.jpg'; // Adjust the path to your image if necessary
 
 const CTA = () => {
@@ -11,7 +10,7 @@ const CTA = () => {
                     <section><h1>Create Events.</h1></section>
                     <section className="Text2"><h2>Build a powerful <br /> community.</h2></section>
                     <section className="Text3">
-                        <GlowButton buttonText="Register Now" />
+                        <button className="merged-button">Register!</button>
                     </section>
                 </div>
             </div>

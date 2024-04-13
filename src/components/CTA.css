@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    height: 50vh; /* Adjust the height for mobile view */
+    height: 55vh; /* Adjust the height for mobile view */
     width: 90vw; /* Adjust the width for card-like appearance */
     margin: 5vh auto; /* Center the card on the screen */
     border-radius: 2em; /* More subtle rounded corners */

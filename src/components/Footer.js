@@ -23,7 +23,7 @@ const Footer = () => {
         <table>
           <tbody>
             <tr>
-              <Link to="/about">
+              <Link to="/team">
                 <td>About Us</td>
               </Link>
               <Link to="/blogs">

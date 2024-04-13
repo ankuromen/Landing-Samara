@@ -1,0 +1,8 @@
+.Story-Info-Container{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
