@@ -13,32 +13,32 @@ import Image6 from "../Assets/image6.jpeg";
 const ClassicsContent = () => {
   const classicFeatures = [
     {
-      title: "Profile",
-      para: "Customize your personal space with profile settings that reflect your interests and personality, making it easier for like-minded individuals and groups to connect with you.",
+      title: "Connect and Share",
+      para: "Start by connecting with friends and family. Share events, communities, and content effortlessly. Whether it’s a captivating video, an exciting post, or just the anticipation of a shared event, bring everyone closer.",
       image: Image1,
     },
     {
-      title: "Add Artists, Friends, etc. Follows",
-      para: "Connect with your favorite artists, friends, and organizations, keeping you updated on their latest events, activities, and community engagements.",
+      title: "Explore and Follow",
+      para: "Dive into a world of events, creators and communities. Follow your favourite venues, artists, and event pages, and never miss out. Check out past highlights, read reviews, and see what’s trending to find your perfect fit—from finding local art or yoga classes to Coachella!",
       image: Image2,
     },
     {
-      title: "Find Events, Communities, and Content",
+      title: "Build and Participate",
       para: "Discover a wide range of events, join vibrant communities tailored to your interests, and access engaging content all in one place.",
       image: Image3,
     },
     {
-      title: "Buy Tickets, Share",
+      title: "Purchase Experience",
       para: "Purchase tickets effortlessly for the events you love, and share them with friends and family to invite them along or promote your favorite gatherings.",
       image: Image4,
     },
     {
-      title: "Create a Community",
+      title: "Rewarding Loyalty",
       para: "Build and customize your community hub where you can host events, share content, and foster discussions, enhancing engagement and connectivity.",
       image: Image5,
     },
     {
-      title: "Explore the World, Grow Your Network, Have Fun",
+      title: "Engage and Participate",
       para: "Venture into a world of endless possibilities, expand your social circle, and enjoy a plethora of activities and events designed to entertain and inspire.",
       image: Image6,
     },
@@ -75,11 +75,11 @@ const ClassicsContent = () => {
           >
             <SwiperSlide>
               <div className="slide-para animate-popup" id="feature-text">
-                <h3 className="feature-text-heading">Helping Businesses </h3>
-                <h3 className="feature-text-heading">Build Something Bigger</h3>
+                <h3 className="feature-text-heading">Feel the </h3>
+                <h3 className="feature-text-heading">Unforgettable ! </h3>
                 <p className="slide-text">
                   Wheather you are planning for tomorrow or budgeting for
-                  today.Evntiq connects you with working capital you need to run
+                  today. Evntiq connects you with working capital you need to run
                   your business on your terms.
                 </p>
               </div>
@@ -87,8 +87,7 @@ const ClassicsContent = () => {
             <SwiperSlide>
               <div className="slide-para" id="feature-text">
                 <h2>
-                  Our features helps you express yourself and connect with
-                  people you love.
+                  Our features don't just bring the world closer—they're the very threads binding the tapestry of joy, community and memories. Each click isn’t meaningless, it opens a door that invites you to create and share unforgettable moments.
                 </h2>
               </div>
             </SwiperSlide>
@@ -104,17 +103,25 @@ const ClassicsContent = () => {
                   </div>
                 </SwiperSlide>
               </div>
+
             ))}
+            <SwiperSlide>
+              <div className="slide-para" id="feature-text">
+                <h2>
+                  Ready for the extraordinary? Join the the waitlist today and be among the first to discover a new universe. Sign up to get exclusive early access and start your journey to unforgettable moments.
+                </h2>
+                <button className="merged-button" id="Classics-Slide-Btn">SIGN UP!</button>
+              </div>
+            </SwiperSlide>
           </Swiper>
           <div className="slider-progress-bar">
             <div
               className="slider-progress-bar-current"
               style={{
-                height: `calc(${
-                  (slideIndex /
-                    document.querySelectorAll(".swiper-slide").length) *
+                height: `calc(${(slideIndex /
+                  document.querySelectorAll(".swiper-slide").length) *
                   100
-                }%)`,
+                  }%)`,
               }}
             ></div>
           </div>

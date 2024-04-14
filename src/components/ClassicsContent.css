@@ -87,7 +87,7 @@
 .feature-text-heading {
   margin: auto;
   font-weight: 500;
-  font-size: 3.2em;
+  font-size: 7em;
   background: linear-gradient(to bottom, #a9a9a9 0%, #ffffff 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -131,7 +131,7 @@
   padding-left: 5em;
   text-align: left;
   p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 }
 .demo-btn {
@@ -160,7 +160,9 @@
   background-color: aliceblue;
   transition: 0.5s;
 }
-
+#Classics-Slide-Btn{
+  margin: auto;
+}
 @keyframes popup {
   0% {
     opacity: 0;
