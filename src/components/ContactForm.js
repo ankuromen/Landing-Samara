@@ -15,10 +15,6 @@ const ContactForm = () => {
             hesitate to reach out to us. We value your input and are here to
             help.
           </p>
-          <div className="Contact-form-brand">
-            <h3>Eventiq</h3>
-            <p>example@gmail.com</p>
-          </div>
         </div>
         <div className="Contact-form-left">
           <div className="Contact-form-container"><form>
@@ -27,7 +23,6 @@ const ContactForm = () => {
             <input
               type="text"
               name="Name"
-              placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
@@ -37,7 +32,7 @@ const ContactForm = () => {
             <input
               type="email"
               name="Email"
-              placeholder="Email"
+
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -48,14 +43,13 @@ const ContactForm = () => {
               className="comments"
               type="textarea"
               name="Comments"
-              placeholder="Comments"
               value={comments}
               onChange={(e) => setComments(e.target.value)}
             />
             <br />
             <button type="submit">Send</button>
           </form></div>
-          
+
         </div>
       </div>
     </div>

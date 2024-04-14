@@ -15,6 +15,12 @@
   padding-left: 2em;
   h2 {
     margin-bottom: 1em;
+    font-size: 3em;
+    text-align: center;
+  }
+  p{
+    font-size: 1.5em;
+    text-align: center;
   }
 }
 .Contact-form-brand {
@@ -37,7 +43,7 @@
 .Contact-form-left input {
   border: 1px solid rgb(60, 60, 60);
   width: 90%;
-  color: black;
+  color: white;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -61,6 +67,7 @@
   border-radius: 1em;
   padding: 1em 1em;
   background: rgba(255, 255, 255, 0.2);
+  color: white;
   resize: none;
   margin-top: 0.5em;
 }
