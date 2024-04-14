@@ -4,15 +4,16 @@ import React from 'react'
 import '../App.css';
 import ProfessionalBanner from '../components/ProfessionalBanner';
 import ProfessionalFeatures from '../components/ProfessionalFeatures';
+import SignupFormModal from '../components/SignupFormModal';
 const Professional = () => {
   useEffect(()=>{
     window.scrollTo(0, 0);
   },[])
   return (
     <div className='Professional-Container'>
-      {/* <LineSteps/> */}
       <ProfessionalBanner/>
       <ProfessionalFeatures/>
+      
     </div>
   )
 }

@@ -13,7 +13,6 @@ import Page4 from "./Pages/BlogPages/Page4";
 import Page5 from "./Pages/BlogPages/Page5";
 import Page6 from "./Pages/BlogPages/Page6";
 import ClassicUsers from "./Pages/ClassicUsers";
-import SignupPage from "./Pages/SignupPage";
 import TeamInfo from "./Pages/TeamInfo";
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
         <Route path="/professional" element={<Professional />} />
         <Route path="/contact" element={<AboutPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
-        <Route path="/signup" element={<SignupPage />} />
         <Route path="/team" element={<TeamInfo />} />
         <Route path="/ClassicsUsers" element={<ClassicUsers />} />
         <Route path="/page1" element={<Page1 />} />

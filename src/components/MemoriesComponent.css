@@ -1,7 +1,7 @@
 .Memories-Container {
   background-color: black;
   color: white;
-  height: 70vh;
+  height: auto;
   padding: 2em 0em 2em 0em;
   box-sizing: border-box;
   background-image: url("../Assets/BackgroundLine.gif");

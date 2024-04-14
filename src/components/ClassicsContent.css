@@ -87,7 +87,7 @@
 .feature-text-heading {
   margin: auto;
   font-weight: 500;
-  font-size: 7em;
+  font-size: 4em;
   background: linear-gradient(to bottom, #a9a9a9 0%, #ffffff 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -148,7 +148,7 @@
 }
 .slider-progress-bar {
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 25%;
   width: 0.05em;
   height: 40%;

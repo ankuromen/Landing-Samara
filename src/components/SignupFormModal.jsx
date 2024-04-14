@@ -1,10 +1,17 @@
 import React from "react";
-import "./SignupForm.css";
+import "./SignupFormModal.css";
 import { Link } from "react-router-dom";
-const SignupForm = () => {
+import { IoCloseOutline } from "react-icons/io5";
+const SignupFormModal = ({onClose}) => {
   return (
     <div className="Signup-form-container">
       <div className="Signup-form">
+        <div className="Signup-form-close">
+          <button onClick={onClose}>
+            <IoCloseOutline size={15} />
+          </button>
+        </div>
+
         <label>Full Name</label>
         <input type="text" placeholder="Full Name" />
         <label>Email</label>
@@ -34,4 +41,4 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default SignupFormModal;

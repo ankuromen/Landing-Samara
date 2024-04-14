@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./ProfessionalFeatures.css";
 import featurefirsticon from "../Assets/features-first.png";
 import image1 from "../Assets/Professionalfeature1.jpg";
@@ -10,8 +10,12 @@ import image5 from "../Assets/Professionalfeature5.jpg";
 import image6 from "../Assets/Professionalfeature6.jpg";
 import image7 from "../Assets/Professionalfeature7.jpg";
 import image8 from "../Assets/Professionalfeature8.jpg";
+import SignupFormModal from "./SignupFormModal";
+
 
 const ProfessionalFeatures = () => {
+  const [showSignup,setShowSignup] = useState(false)
+  let navigate = useNavigate();
   const ProfessionalFeatures = [
     {
       title: "Make a Profile",
@@ -77,15 +81,19 @@ const ProfessionalFeatures = () => {
             <img src={feature.image} alt="" />
           </div>
           {ProfessionalFeatures.length === index + 1 && (
-            <Link to="/signup">
-              <button className="register-button">Register</button>
-            </Link>
+            <button
+              className="register-button"
+              onClick={() => setShowSignup(!showSignup)}
+            >
+              Register
+            </button>
           )}
           {ProfessionalFeatures.length !== index + 1 && (
             <div className="Professional-features-last-line"></div>
           )}
         </div>
       ))}
+      {showSignup && <SignupFormModal onClose={()=>setShowSignup(false)}/>}
     </div>
   );
 };

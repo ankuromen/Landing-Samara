@@ -78,16 +78,19 @@ const ClassicsContent = () => {
                 <h3 className="feature-text-heading">Feel the </h3>
                 <h3 className="feature-text-heading">Unforgettable ! </h3>
                 <p className="slide-text">
-                  Wheather you are planning for tomorrow or budgeting for
-                  today. Evntiq connects you with working capital you need to run
-                  your business on your terms.
+                  Wheather you are planning for tomorrow or budgeting for today.
+                  Evntiq connects you with working capital you need to run your
+                  business on your terms.
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="slide-para" id="feature-text">
                 <h2>
-                  Our features don't just bring the world closer—they're the very threads binding the tapestry of joy, community and memories. Each click isn’t meaningless, it opens a door that invites you to create and share unforgettable moments.
+                  Our features don't just bring the world closer—they're the
+                  very threads binding the tapestry of joy, community and
+                  memories. Each click isn’t meaningless, it opens a door that
+                  invites you to create and share unforgettable moments.
                 </h2>
               </div>
             </SwiperSlide>
@@ -103,14 +106,18 @@ const ClassicsContent = () => {
                   </div>
                 </SwiperSlide>
               </div>
-
             ))}
             <SwiperSlide>
               <div className="slide-para" id="feature-text">
                 <h2>
-                  Ready for the extraordinary? Join the the waitlist today and be among the first to discover a new universe. Sign up to get exclusive early access and start your journey to unforgettable moments.
+                  Ready for the extraordinary? Join the the waitlist today and
+                  be among the first to discover a new universe. Sign up to get
+                  exclusive early access and start your journey to unforgettable
+                  moments.
                 </h2>
-                <button className="merged-button" id="Classics-Slide-Btn">SIGN UP!</button>
+                <button className="merged-button" id="Classics-Slide-Btn">
+                  SIGN UP!
+                </button>
               </div>
             </SwiperSlide>
           </Swiper>
@@ -118,10 +125,11 @@ const ClassicsContent = () => {
             <div
               className="slider-progress-bar-current"
               style={{
-                height: `calc(${(slideIndex /
-                  document.querySelectorAll(".swiper-slide").length) *
+                height: `calc(${
+                  (slideIndex /
+                    document.querySelectorAll(".swiper-slide").length) *
                   100
-                  }%)`,
+                }%)`,
               }}
             ></div>
           </div>

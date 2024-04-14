@@ -1,9 +1,10 @@
 .Classic-Business-Container{
-    height: 100vh;
+    position: relative;
+    height: auto;
     color: white;
 }
 .Classics-Content{
-    height: 70vh;
+    height: auto;
     display: flex;
 }
 .Bus-Img-Section{
@@ -16,19 +17,19 @@
 }
 .Bus-Text-Section{
     width: 50vw;
-    display: flex;
+    display: flex;  
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 2.3em;
-    padding: 3em;
+    font-size: 2em;
+    padding: 2em;
     text-align: center;
     gap: 1em;
     animation: fade-in linear;
-    animation-timeline: view(600px 15%);
+    animation-timeline: view(800px 0px);
 }
 #Bus-Img{
-    height:80%;
+    height:60%;
     width: 38vw;
     border-radius: 2em;
 }
