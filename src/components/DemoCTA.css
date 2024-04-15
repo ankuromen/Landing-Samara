@@ -1,49 +1,49 @@
 .demo-cta-container {
-    background-color: black;
-    color: white;
-    text-align: center;
-    height: 30vh;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2em 0em 2em 0em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .cta-message {
-    font-size: 2.5em;
+  font-size: 4em;
 }
 
 .merged-button {
-    width: 200px;
-    margin: 2em 20px 3em 20px;
-    padding: 10px 20px;
-    height: 55px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 1em;
-    text-align: center;
-    background-image: linear-gradient(to right, #F3B243, #28ABBA, #7584A7, #E33A75);
-    box-shadow: 
-        0 0 20px #F3B243, 
-        0 0 15px #28ABBA, 
-        0 0 20px #7584A7, 
-        0 0 25px #E33A75; /* Multi-color neon glow effect */
-    background-size: 300% 100%;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  margin: 2em 20px 3em 20px;
+  padding: 10px 20px;
+  height: 55px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 1em;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    #f3b243,
+    #28abba,
+    #7584a7,
+    #e33a75
+  );
+  box-shadow: 0 0 20px #f3b243, 0 0 15px #28abba, 0 0 20px #7584a7,
+    0 0 25px #e33a75; /* Multi-color neon glow effect */
+  background-size: 300% 100%;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .merged-button:hover {
-    transform: scale(1.25); /* Scale up on hover */
-    background-position: 100% 0; /* Shift the gradient on hover */
-    box-shadow: 
-        0 0 0px #F3B243, 
-        0 0 0px #28ABBA, 
-        0 0 10px #7584A7, 
-        0 0 40px #E33A75; /* Intensified multi-color neon glow effect */
+  transform: scale(1.25); /* Scale up on hover */
+  background-position: 100% 0; /* Shift the gradient on hover */
+  box-shadow: 0 0 0px #f3b243, 0 0 0px #28abba, 0 0 10px #7584a7,
+    0 0 40px #e33a75; /* Intensified multi-color neon glow effect */
 }

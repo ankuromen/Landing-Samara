@@ -1,0 +1,21 @@
+.Homebanner-container {
+  height: 100vh;
+  background-image: url(../Assets/HomeBanner.jpg);
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+}
+.Homebanner-text {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  justify-content: end;
+  color: white;
+  margin-left: 1.5em;
+  margin-bottom: 2em;
+  gap: 0.5em;
+  font-size: 2em;
+  h1{
+    font-weight: 500;
+  }
+  
+}

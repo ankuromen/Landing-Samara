@@ -8,13 +8,14 @@ import ClassicsBusiness from "../components/ClassicsBusiness";
 import ClassicsFans from "../components/ClassicsFans";
 import DemoCTA from "../components/DemoCTA";
 import ScrollingBanner from "../components/ScrollingBanner";
+import HomeBanner from "../components/HomeBanner";
 const Homepage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div className="Homepage-Conatiner">
-      <CTA />
+      <HomeBanner/>
       <MemoriesComponent />
       <CommunitiesComponent />
       <ClassicsBusiness />

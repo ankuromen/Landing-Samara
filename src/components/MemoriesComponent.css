@@ -2,7 +2,7 @@
   background-color: black;
   color: white;
   height: auto;
-  padding: 2em 0em 2em 0em;
+  padding: 5em 0em 5em 0em;
   box-sizing: border-box;
   background-image: url("../Assets/BackgroundLine.gif");
   background-repeat: no-repeat;
@@ -17,12 +17,16 @@
   width: 40vw;
   margin: auto;
   animation: fade-in linear;
-  animation-timeline: view(600px 0px);
+  h1 {
+    animation:move-to-side 3s ease-in-out;
+    animation-timeline: view(600px 0px);
+  }
 }
 
 .Memories-Content h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .Memories-Title {
@@ -132,4 +136,15 @@
   -webkit-transform: rotateX(-90deg);
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
+}
+
+@keyframes move-to-side {
+  0% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
