@@ -17,7 +17,7 @@ const Navbar = () => {
   }, [isMobile]);
   useEffect(() => {
     scrollFunction();
-  }, [pathname]);
+  });
   window.onscroll = function () {
     scrollFunction();
   };
