@@ -1,7 +1,7 @@
 .scrolling-banner-container {
     overflow: hidden;
     white-space: nowrap;
-    background-color: #000;
+    background-color: white;
     color: white;
     padding: 10px;
     position: relative;
@@ -11,7 +11,7 @@
     display: inline-block;
     animation: scrollText 200s linear infinite;
     font-size: 5rem;
-    color: white;
+    color: black;
 }
 
 /* Keyframes for the scrolling text */

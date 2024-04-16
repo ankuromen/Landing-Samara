@@ -1,8 +1,8 @@
 .Communities-Container {
     justify-content: center;
     align-items: center;
-    background-color: #000000; /* Match the background color */
-    color: #FFFFFF; /* Match the text color */
+    background-color: white; /* Match the background color */
+    color: black; /* Match the text color */
     padding: 120px 0; /* Adjust padding to increase vertical space */
     height: auto; /* Auto height to accommodate content */
     width: 100%; /* Full width */

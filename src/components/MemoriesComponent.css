@@ -11,45 +11,53 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.5em;
 }
 
 .Memories-Content {
-  width: 40vw;
+  width: 80vw;
   margin: auto;
   animation: fade-in linear;
   h1 {
-    animation:move-to-side 3s ease-in-out;
+    animation: move-to-side 3s ease-in-out;
     animation-timeline: view(600px 0px);
   }
 }
 
 .Memories-Content h1 {
-  font-size: 6rem;
+  width: 60vw;
+  margin-left: auto;
+  font-size: 5rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
 }
 
 .Memories-Title {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: lighter;
-  text-align: right;
 }
 .Memories-Second {
   display: flex;
-  margin: auto;
-  width: 50vw;
-  align-items: center;
-  animation: fade-in linear;
+  width: 100vw;
+  justify-content: end;
+  animation: fade-in linear 2s;
   animation-timeline: view(600px 0px);
 }
 .Memories-Text {
+  width: 45%;
+  justify-content: end;
   font-size: 1.2rem;
   line-height: 1.5;
-  padding-left: 3em;
+  margin-right: 5%;
 }
-
 .Memories-Image {
-  width: 15vw;
+  display: flex;
+  justify-content: start;
+  width: 100%;
+}
+.Memories-Image-img {
+  width: 35%;
+  margin-left: 14%;
   border-radius: 2em;
   object-fit: cover;
 }
