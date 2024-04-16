@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .navbar {
     background-color: transparent;
     display: flex;
@@ -28,7 +28,6 @@
     font-weight: 700;
   }
 }
-
 .navbar-menu {
   display: flex;
   border-radius: 10px;
@@ -37,9 +36,10 @@
   backdrop-filter: blur(15px) saturate(1.5);
   ul {
     display: flex;
-    gap: 1em;
+    gap: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     margin: 0;
-    padding-inline-start: 0;
   }
   .Nav-Links {
     list-style-type: none;
