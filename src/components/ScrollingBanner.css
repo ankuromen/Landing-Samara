@@ -6,7 +6,9 @@
     padding: 10px;
     position: relative;
 }
-
+.scrolling-banner-container:hover{
+    cursor: pointer;
+}
 .scrolling-banner-text {
     display: inline-block;
     animation: scrollText 200s linear infinite;

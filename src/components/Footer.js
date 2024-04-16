@@ -25,20 +25,20 @@ const Footer = () => {
         <table>
           <tbody>
             <tr>
-              <Link to="/team">
-                <td>About Us</td>
-              </Link>
-              <Link to="/blogs">
 
-                <td>News & Blogs</td>
-              </Link>
-              <Link to="/contact">
+              <td><Link to="/team">About Us </Link></td>
 
-                <td>Contact Us</td>
-              </Link>
-              <Link to="#">
-              <td onClick={() => setShowSignup(!showSignup)}>Sign Up</td>
-              </Link>
+
+
+              <td><Link to="/blogs">News & Blogs</Link></td>
+
+
+
+              <td><Link to="/contact">Contact Us</Link></td>
+
+
+              <td onClick={() => setShowSignup(!showSignup)}> Register </td>
+
             </tr>
           </tbody>
         </table>

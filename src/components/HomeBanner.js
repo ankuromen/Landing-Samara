@@ -8,7 +8,7 @@ const HomeBanner = () => {
         <div className="Homebanner-text">
           <h1>Unifying passions.</h1>
           <h1>Amplifying experiences. </h1>
-          <img className='homebanner-scroll' src={scrollanimation}/>
+          <img className='homebanner-scroll' src={scrollanimation} alt='banner'/>
         </div>
       </div>
     );

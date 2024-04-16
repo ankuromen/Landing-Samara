@@ -97,6 +97,13 @@
 .Footer-Mid {
   display: flex;
   flex-direction: column;
+  a:-webkit-any-link{
+    color: white;
+    text-decoration: none;
+  }
+  td{
+    cursor: pointer;
+  }
 }
 
 .Footer-Mid table {
