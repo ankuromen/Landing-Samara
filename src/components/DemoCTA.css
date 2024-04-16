@@ -2,7 +2,7 @@
   background-color: white;
   color: black;
   text-align: center;
-  padding: 2em 0em 2em 0em;
+  padding: 3em 0em 3em 0em;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -10,15 +10,15 @@
 }
 
 .cta-message {
-  font-size: 4em;
+  font-size: 5em;
 }
 
 .merged-button {
-  width: 200px;
+  width: 150px;
   margin: 2em 20px 3em 20px;
   padding: 10px 20px;
-  height: 55px;
-  font-size: 1.5rem;
+  height: 45px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: white;
   cursor: pointer;

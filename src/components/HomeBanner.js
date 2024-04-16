@@ -1,5 +1,6 @@
 import './HomeBanner.css'
 import React from 'react';
+import scrollanimation from '../Assets/scroll-animation.gif'
 
 const HomeBanner = () => {
     return (
@@ -7,6 +8,7 @@ const HomeBanner = () => {
         <div className="Homebanner-text">
           <h1>Unifying passions.</h1>
           <h1>Amplifying experiences. </h1>
+          <img className='homebanner-scroll' src={scrollanimation}/>
         </div>
       </div>
     );
