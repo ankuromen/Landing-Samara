@@ -15,21 +15,11 @@ const Navbar = () => {
       document.body.style.overflow = "";
     }
   }, [isMobile]);
+  
   useEffect(() => {
-    console.log(pathname);
-    if (pathname === "/") {
-      document.getElementById("brand").style.color = "black";
-      document.getElementById("home").style.color = "black";
-      document.getElementById("creators").style.color = "black";
-      document.getElementById("fans").style.color = "black";
-    }else{
-      document.getElementById("brand").style.color = "white";
-      document.getElementById("home").style.color = "white";
-      document.getElementById("creators").style.color = "white";
-      document.getElementById("fans").style.color = "white";
-    }
+    navbarColorChange();
     scrollFunction();
-  }, [pathname]);
+  });
 
   window.onscroll = function () {
     scrollFunction();
@@ -48,6 +38,19 @@ const Navbar = () => {
         navbarMenu.style.display = "none";
         navbarButton.style.display = "none";
       }
+    }
+  }
+  function navbarColorChange() {
+    if (pathname === "/") {
+      document.getElementById("brand").style.color = "black";
+      document.getElementById("home").style.color = "black";
+      document.getElementById("creators").style.color = "black";
+      document.getElementById("fans").style.color = "black";
+    } else {
+      document.getElementById("brand").style.color = "white";
+      document.getElementById("home").style.color = "white";
+      document.getElementById("creators").style.color = "white";
+      document.getElementById("fans").style.color = "white";
     }
   }
   return (
