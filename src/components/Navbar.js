@@ -16,8 +16,21 @@ const Navbar = () => {
     }
   }, [isMobile]);
   useEffect(() => {
+    console.log(pathname);
+    if (pathname === "/") {
+      document.getElementById("brand").style.color = "black";
+      document.getElementById("home").style.color = "black";
+      document.getElementById("creators").style.color = "black";
+      document.getElementById("fans").style.color = "black";
+    }else{
+      document.getElementById("brand").style.color = "white";
+      document.getElementById("home").style.color = "white";
+      document.getElementById("creators").style.color = "white";
+      document.getElementById("fans").style.color = "white";
+    }
     scrollFunction();
-  });
+  }, [pathname]);
+
   window.onscroll = function () {
     scrollFunction();
   };
@@ -53,16 +66,17 @@ const Navbar = () => {
       </button>
       <div className="brand">
         <a href="/">
-          <h1>Eventiq</h1>
+          <h1 id="brand">Eventiq</h1>
         </a>
       </div>
       <div
         className={isMobile ? "navbar-mobile-menu" : "navbar-menu"}
         id="navbar-menu"
       >
-        <ul>
+        <ul id="navbarlist">
           <NavLink
             to="/"
+            id="home"
             className="Nav-links"
             onClick={() => setIsMobile(false)}
           >
@@ -70,6 +84,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/professional"
+            id="creators"
             className="Nav-links"
             onClick={() => setIsMobile(false)}
           >
@@ -77,6 +92,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             to="/classic"
+            id="fans"
             className="Nav-links"
             onClick={() => setIsMobile(false)}
           >
