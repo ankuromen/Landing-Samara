@@ -43,7 +43,7 @@ html [type="button"] {
   display: flex;
   padding: 0.35em 1em;
   gap: 0.875em;
-  font-size: 1em;
+  font-size: 0.6em;
   align-items: center;
   border-radius: var(--buttonBorderRadius);
   font-weight: 160;

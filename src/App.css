@@ -7,7 +7,7 @@ body::-webkit-scrollbar{
 * {
     margin: 0;
     padding: 0;
-    font-family: regola-book, sans-serif;
+    font-family: 'avenir', sans-serif;
 }
 
 .Homepage-Conatiner {
@@ -19,4 +19,8 @@ body::-webkit-scrollbar{
     background-image: url('./Assets/BackgroundLine.gif');
     background-repeat: no-repeat;
     background-size: cover;
+}
+@font-face {
+    font-family: 'avenir';
+    src: url('./fonts/avenir_roman_12.otf');
 }

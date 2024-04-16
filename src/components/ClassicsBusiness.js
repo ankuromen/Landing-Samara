@@ -18,7 +18,7 @@ const ClassicsBusiness = () => {
         <section className="Bus-Img-Section">
           <img src={Test} id="Bus-Img" alt="Business" />
           <h1>For business</h1>
-        </section>  
+        </section>
         <section className="Bus-Text-Section">
           <h2>
             <Typewriter
@@ -32,7 +32,7 @@ const ClassicsBusiness = () => {
           <p>
             Give form to your immagination. Orchestrate events that captivate,
             communities that resonate, and experiences that elevate. From local
-            pilate classes to Coachella, we have got you covered! 🙂
+            pilate classes to Coachella, we have got you covered! :)
           </p>
           <Link to="/professional">
             <GlowButton buttonText="Explore" />
