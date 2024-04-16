@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./ProfessionalFeatures.css";
 import featurefirsticon from "../Assets/features-first.png";
 import image1 from "../Assets/Professionalfeature1.jpg";
@@ -15,7 +14,7 @@ import SignupFormModal from "./SignupFormModal";
 
 const ProfessionalFeatures = () => {
   const [showSignup,setShowSignup] = useState(false)
-  let navigate = useNavigate();
+ 
   const ProfessionalFeatures = [
     {
       title: "Make a Profile",

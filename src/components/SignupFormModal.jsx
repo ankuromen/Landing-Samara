@@ -1,6 +1,5 @@
 import React from "react";
 import "./SignupFormModal.css";
-import { Link } from "react-router-dom";
 import { IoCloseOutline } from "react-icons/io5";
 const SignupFormModal = ({onClose}) => {
   return (
@@ -8,7 +7,7 @@ const SignupFormModal = ({onClose}) => {
       <div className="Signup-form">
         <div className="Signup-form-close">
           <button onClick={onClose}>
-            <IoCloseOutline size={15} />
+            <IoCloseOutline size={25} />
           </button>
         </div>
 
@@ -16,26 +15,15 @@ const SignupFormModal = ({onClose}) => {
         <input type="text" placeholder="Full Name" />
         <label>Email</label>
         <input type="email" placeholder="Email" />
-        <label>Date of Birth</label>
-        <input type="date" />
         <label>Gender</label>
         <select name="Gender" placeholder="Gender">
           <option value="Male">Male</option>
           <option value="Female">Female</option>
-          <option value="Transgender">Transgender</option>
           <option value="Notspecified">Not Specifeid</option>
         </select>
         <label>Nationality</label>
         <input type="text" placeholder="Country" />
-        <label>Password</label>
-        <input type="password" placeholder="Password" />
-        <label>Confirm your Password</label>
-        <input type="password" placeholder="Password" />
-        <button className="Signup-form-btn">Sign Up</button>
-        <div className="Signup-form-signin">
-          <p>Already a user?</p>
-          <Link className="">sign In</Link>
-        </div>
+        <button className="Signup-form-btn">Register</button>
       </div>
     </div>
   );

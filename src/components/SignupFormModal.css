@@ -17,16 +17,22 @@
     width: fit-content;
     padding: 0.4em;
     border-radius: 0.6em;
-    background: rgb(255, 255, 255);
-    color: rgb(74, 74, 74);
+    background: transparent;
+    color: red;
     border: none;
+  }
+}
+.Signup-form-close:hover{
+  button{
+    cursor: pointer;
+    
   }
 }
 .Signup-form {
   max-height: 85vh;
-  width: 25%;
+  width: 15%;
   display: flex;
-  gap: 0.25em;
+  gap: 0.7em;
   justify-content: center;
   flex-direction: column;
   padding: 1.25em 1.5em 1.25em 1.5em;
@@ -44,12 +50,18 @@
   }
 }
 .Signup-form-btn {
-  margin-top: 1em;
+  margin-top: 4em;
   background: #0096f7;
   border: none;
   color: white;
   padding: 0.75em 1.5em;
   border-radius: 1em;
+
+}
+.Signup-form-btn:hover{
+  cursor: pointer;
+  background-color: #a3c4da;
+  color: black;
 }
 .Signup-form-signin {
   margin-top: 1em;

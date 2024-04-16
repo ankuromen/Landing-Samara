@@ -1,8 +1,10 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
+import SignupFormModal from "./SignupFormModal";
 import "../components/Footer.css";
 import { IoIosArrowForward } from "react-icons/io";
 const Footer = () => {
+  const [showSignup, setShowSignup] = useState(false);
   return (
     <div className="Footer-Section">
       <div className="Footer-top">
@@ -34,9 +36,8 @@ const Footer = () => {
 
                 <td>Contact Us</td>
               </Link>
-              <Link to="/signup">
-
-                <td>Sign Up</td>
+              <Link to="#">
+              <td onClick={() => setShowSignup(!showSignup)}>Sign Up</td>
               </Link>
             </tr>
           </tbody>
@@ -85,6 +86,7 @@ const Footer = () => {
           <button>Terms of service</button>
         </div>
       </div>
+      {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
     </div>
   );
 };

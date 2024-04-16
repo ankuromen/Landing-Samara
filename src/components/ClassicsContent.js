@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SignupFormModal from "./SignupFormModal";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Mousewheel, Scrollbar } from "swiper/modules";
@@ -11,6 +12,7 @@ import Image4 from "../Assets/image4.jpeg";
 import Image5 from "../Assets/image5.jpeg";
 import Image6 from "../Assets/image6.jpeg";
 const ClassicsContent = () => {
+  const [showSignup,setShowSignup] = useState(false)
   const classicFeatures = [
     {
       title: "Connect and Share",
@@ -115,7 +117,7 @@ const ClassicsContent = () => {
                   exclusive early access and start your journey to unforgettable
                   moments.
                 </h2>
-                <button className="merged-button" id="Classics-Slide-Btn">
+                <button className="merged-button" id="Classics-Slide-Btn" onClick={() => setShowSignup(!showSignup)}>
                   SIGN UP!
                 </button>
               </div>
@@ -135,6 +137,7 @@ const ClassicsContent = () => {
           </div>
         </div>
       </div>
+      {showSignup && <SignupFormModal onClose={()=>setShowSignup(false)}/>}
     </div>
   );
 };
