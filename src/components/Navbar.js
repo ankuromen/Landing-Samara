@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { IoCloseOutline } from "react-icons/io5";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import SignupFormModal from "./SignupFormModal";
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const { pathname } = useLocation();
+  const [showSignup,setShowSignup] = useState(false)
 
   useEffect(() => {
     if (isMobile) {
@@ -84,11 +86,12 @@ const Navbar = () => {
           </NavLink>
         </ul>
       </div>
-      <Link to="/signup">
-        <button className="navbar-button" id="navbar-button">
+      
+        <button className="navbar-button" id="navbar-button"  onClick={() => setShowSignup(!showSignup)}>
           Sign Up
         </button>
-      </Link>
+  
+      {showSignup && <SignupFormModal onClose={()=>setShowSignup(false)}/>}
     </div>
   );
 };
