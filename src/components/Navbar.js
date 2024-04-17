@@ -8,7 +8,7 @@ import SignupFormModal from "./SignupFormModal";
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
   const { pathname } = useLocation();
-  const [showSignup,setShowSignup] = useState(false)
+  const [showSignup, setShowSignup] = useState(false);
 
   useEffect(() => {
     if (isMobile) {
@@ -17,17 +17,18 @@ const Navbar = () => {
       document.body.style.overflow = "";
     }
   }, [isMobile]);
-  
+
   useEffect(() => {
     navbarColorChange();
     scrollFunction();
   });
-
+var Screen = window.matchMedia("(min-width: 768px)");
+console.log(x.matches);
   window.onscroll = function () {
     scrollFunction();
   };
   function scrollFunction() {
-    if (pathname === "/") {
+    if (pathname === "/" && Screen.matches===true) {
       var navbarMenu = document.getElementById("navbar-menu");
       var navbarButton = document.getElementById("navbar-button");
       if (
@@ -43,18 +44,13 @@ const Navbar = () => {
     }
   }
   function navbarColorChange() {
-    if (pathname === "/") {
-      document.getElementById("brand").style.color = "black";
-      document.getElementById("home").style.color = "black";
-      document.getElementById("creators").style.color = "black";
-      document.getElementById("fans").style.color = "black";
-    } else {
-      document.getElementById("brand").style.color = "white";
-      document.getElementById("home").style.color = "white";
-      document.getElementById("creators").style.color = "white";
-      document.getElementById("fans").style.color = "white";
-    }
+    const textColor = pathname === "/" ? "black" : "white";
+    document.getElementById("brand").style.color = textColor;
+    document.getElementById("home").style.color = textColor;
+    document.getElementById("creators").style.color = textColor;
+    document.getElementById("fans").style.color = textColor;
   }
+
   return (
     <div className={isMobile ? "navbarfull" : "navbar"}>
       <button
@@ -105,12 +101,16 @@ const Navbar = () => {
           </NavLink>
         </ul>
       </div>
-      
-        <button className="navbar-button" id="navbar-button"  onClick={() => setShowSignup(!showSignup)}>
-          Sign Up
-        </button>
-  
-      {showSignup && <SignupFormModal onClose={()=>setShowSignup(false)}/>}
+
+      <button
+        className="navbar-button"
+        id="navbar-button"
+        onClick={() => setShowSignup(!showSignup)}
+      >
+        Sign Up
+      </button>
+
+      {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
     </div>
   );
 };
