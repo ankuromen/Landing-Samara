@@ -8,7 +8,6 @@ import ClassicsFans from "../components/ClassicsFans";
 import DemoCTA from "../components/DemoCTA";
 import ScrollingBanner from "../components/ScrollingBanner";
 import HomeBanner from "../components/HomeBanner";
-import FooterNew from "../components/FooterNew";
 const Homepage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
