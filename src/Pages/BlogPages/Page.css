@@ -4,22 +4,27 @@
   justify-content: center;
   align-items: center;
   color: white;
+  margin-top: 8em;
 }
 .Blog-content-header {
+  position: relative;
   height: auto;
   background: #121212;
-  padding: 5em;
   color: white;
 }
+.Blog-content-header-text {
+  padding: 0em 1em;
+  position: absolute;
+  top: 0em;
+}
 .Blog-content-header h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   text-transform: uppercase;
   margin-bottom: 0.5em;
 }
 .Blog-content-img {
-  width: 90vw;
-  max-height: 80vh;
-  margin-bottom: 3em;
+  width: 100vw;
+  max-height: 60vh;
 }
 .Blog-content-text {
   padding-top: 1em;

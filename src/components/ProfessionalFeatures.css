@@ -22,6 +22,7 @@
     font-size: 2em;
     animation: fade-in linear;
     animation-timeline: view(300px 0px);
+    text-align: center;
   }
   .Professional-features-line {
     width: 0.05em;

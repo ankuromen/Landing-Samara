@@ -12,7 +12,7 @@ const Page1 = () => {
             alt=""
           />
           <h4>Blog</h4>
-          <h1> Pioneering the Future of Engagement.</h1>
+          <h1>Building Engaged Communities: Secrets to Success</h1>
           <h4>April 12,2024</h4>
         </div>
 
