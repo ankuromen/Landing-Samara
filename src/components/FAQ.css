@@ -1,0 +1,32 @@
+.FAQ-Container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 5em;
+    
+  }
+  .FAQ-Heading{
+    font-size: 4em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  .FAQ-Full {
+    background-color:black;
+    width: 90vw;
+    border-bottom: 1px solid white;
+    font-size: 2em;
+    padding: 1.3rem;
+  }
+  .faq-answer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 0.8em;
+    font-weight: lighter;
+    white-space: pre-line;
+    color: white;
+  }
+  #DropDown-Arrow {
+    float: right;
+  }
