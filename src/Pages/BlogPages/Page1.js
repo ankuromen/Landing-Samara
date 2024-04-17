@@ -12,7 +12,7 @@ const Page1 = () => {
             alt=""
           />
           <h4>Blog</h4>
-          <h1>Building Engaged Communities: Secrets to Success</h1>
+          <h1>Pioneering the Future of Engagement.</h1>
           <h4>April 12,2024</h4>
         </div>
 
@@ -50,7 +50,7 @@ const Page1 = () => {
             </ul>
           </div>
           <div className="Blog-content-text-points">
-            {/* <h2>Create a Welcoming Environment</h2> */}
+           
             <ul>
               <li>
                 That's why we created Evntiq. Our platform represents a fundamental shift in
@@ -69,7 +69,7 @@ const Page1 = () => {
             </ul>
           </div>
           <div className="Blog-content-text-points">
-            {/* <h2>Leverage Technology</h2> */}
+           
             <ul>
               <li>
                 At Evntiq, We believe that technology should simplify, not complicate. Our user centric design ensures that anyone, from event organizers to community leaders,

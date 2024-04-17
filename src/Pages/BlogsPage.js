@@ -6,8 +6,6 @@ import BlogImage1 from "../Assets/BlogImage1.jpeg";
 import BlogImage2 from "../Assets/BlogImage2.jpeg";
 import BlogImage3 from "../Assets/BlogImage3.jpeg";
 import BlogImage4 from "../Assets/BlogImage4.jpeg";
-import BlogImage5 from "../Assets/BlogImage5.jpeg";
-import BlogImage6 from "../Assets/BlogImage6.jpeg";
 
 const BlogsPage = () => {
   useEffect(() => {
@@ -15,7 +13,7 @@ const BlogsPage = () => {
   }, []);
   const Blogs = [
     {
-      title: "Building Engaged Communities: Secrets to Success",
+      title: "Pioneering the Future of Engagement.",
       image: BlogImage1,
       link: "/page1",
     },
@@ -25,24 +23,14 @@ const BlogsPage = () => {
       link: "/page2",
     },
     {
-      title: "The Ultimate Checklist for Event Organizers with Eventiq",
+      title: " Community Building is the New Marketing Frontier",
       image: BlogImage3,
       link: "/page3",
     },
     {
-      title: "Social Media and Event Promotion: A Perfect Match",
+      title: " Navigating the market in 2024.",
       image: BlogImage4,
       link: "/page4",
-    },
-    {
-      title: "The Rise of Hybrid Events: Combining the Best of Both Worlds",
-      image: BlogImage5,
-      link: "/page5",
-    },
-    {
-      title: "Exploring the Future: VR Events and Their Potential",
-      image: BlogImage6,
-      link: "/page6",
     },
   ];
   return (

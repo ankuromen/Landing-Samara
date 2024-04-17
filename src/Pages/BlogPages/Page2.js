@@ -26,7 +26,7 @@ const Page2 = () => {
             sector.
           </p>
           <div className="Blog-content-text-points">
-            <h2>Artificial Intelligence (AI)</h2>
+
             <p>
               AI’s role in event management transcends mere automation; it is about creating
               experiences that are profoundly engaging and impeccably organized. Utilizing
@@ -36,7 +36,7 @@ const Page2 = () => {
               provide real-time assistance to predictive analytics that tailor event content
               based on attendee preferences, technology is making events smarter.
             </p>
-            <h2>AI Search Engine</h2>
+
             <ul>
               <li>
                 The power of real-time data analytics allows event organizers to monitor
@@ -56,7 +56,7 @@ const Page2 = () => {
             </ul>
           </div>
           <div className="Blog-content-text-points">
-            <h2>AI for Insights and Analytics</h2>
+
             <ul>
               <li>
                 Beyond operational efficiency, AI’s predictive capabilities are game-changers.
@@ -73,14 +73,14 @@ const Page2 = () => {
             </ul>
 
           </div>
-          <h2>
+          <p>
             The future of events seems promising by powered by technology. AI doesn’t just
             streamline operations; it enhances them, offering a level of engagement and
             personalization that was previously unimaginable. As we move forward,
             embracing these technologies will be pivotal for any event organizer aiming to
             deliver extraordinary experiences. We are at the helm of this evolution,
             equipping users with the tools, insights, and automations needed to excel.
-          </h2>{" "}
+          </p>
           <h3>
             In conclusion, the technological advancements integrated into
             Eventiq, such as AI, VR, and blockchain, provide significant
@@ -91,6 +91,8 @@ const Page2 = () => {
             innovative, and impactful events, underscoring our commitment to
             leading the evolution of event management.
           </h3>
+          <h1>Let technology take your events to new heights of success and innovation. Sign
+            up for more such updates. <span>Discover more and join us today</span>.</h1>
         </div>
       </div>
     </div>
