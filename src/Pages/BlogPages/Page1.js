@@ -11,9 +11,11 @@ const Page1 = () => {
             src="https://images.pexels.com/photos/3280130/pexels-photo-3280130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
           />
-          <h4>Blog</h4>
-          <h1>Building Engaged Communities: Secrets to Success</h1>
-          <h4>April 12,2024</h4>
+          <div className="Blog-content-header-text">
+            <h4>Blog</h4>
+            <h1>Building Engaged Communities: Secrets to Success</h1>
+            <h4>April 12,2024</h4>
+          </div>
         </div>
 
         <div className="Blog-content-text">
