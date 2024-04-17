@@ -1,7 +1,53 @@
 import React from "react";
+import { useState } from "react";
 import "./SignupFormModal.css";
 import { IoCloseOutline } from "react-icons/io5";
 const SignupFormModal = ({onClose}) => {
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [gender, setGender] = useState("");
+  const [nationality, setNationality] = useState("");
+  const [registrationStatus, setRegistrationStatus] = useState(null);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:3000/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          fullName,
+          email,
+          gender,
+          nationality
+        })
+      });
+
+      const data = await response.json();
+      console.log(data);
+
+      // Set registration status to true upon successful registration
+      setRegistrationStatus(true);
+
+      // Reset input fields
+      setFullName("");
+      setEmail("");
+      setGender("");
+      setNationality("");
+    } catch (error) {
+      console.error("Error:", error);
+      // Set registration status to false in case of error
+      setRegistrationStatus(false);
+    }
+  };
+
+  const handlePopupClose = () => {
+    setRegistrationStatus(null); // Reset registration status
+    onClose(); // Close the modal
+  };
+
   return (
     <div className="Signup-form-container">
       <div className="Signup-form">
@@ -12,18 +58,31 @@ const SignupFormModal = ({onClose}) => {
         </div>
 
         <label>Full Name</label>
-        <input type="text" placeholder="Full Name" />
+        <input type="text" placeholder="Full Name"    onChange={(e) => setFullName(e.target.value)}/>
         <label>Email</label>
-        <input type="email" placeholder="Email" />
+        <input type="email" placeholder="Email"  onChange={(e) => setEmail(e.target.value)}/>
         <label>Gender</label>
-        <select name="Gender" placeholder="Gender">
+        <select name="Gender" placeholder="Gender"  onChange={(e) => setGender(e.target.value)}>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Notspecified">Not Specifeid</option>
         </select>
         <label>Nationality</label>
-        <input type="text" placeholder="Country" />
-        <button className="Signup-form-btn">Register</button>
+        <input type="text" placeholder="Country"   onChange={(e) => setNationality(e.target.value)}/>
+        <button className="Signup-form-btn" onClick={handleSubmit}>Register</button>
+        {/* Popup confirmation */}
+        {registrationStatus === true && (
+          <div className="confirmation-popup">
+            <p>Registration Successful!</p>
+            <button onClick={handlePopupClose}>Close</button>
+          </div>
+        )}
+        {registrationStatus === false && (
+          <div className="error-popup">
+            <p>Registration Failed. Please try again later.</p>
+            <button onClick={handlePopupClose}>Close</button>
+          </div>
+        )}
       </div>
     </div>
   );

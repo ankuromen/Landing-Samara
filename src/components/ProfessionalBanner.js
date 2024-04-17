@@ -6,11 +6,12 @@ const ProfessionalBanner = () => {
   return (
     <div className="Professional-banner">
       <div className="Professional-banner-left">
-        <h1>Helping businesses build something bigger</h1>
+        <h1> Cultivate Connections, Celebrate Community</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-          et
+          Effortlessly organize events and foster engaged communities with
+          our comprehensive tools. Streamline logistics and enhance interaction to create
+          memorable experiences. Utilize detailed analytics to grow your audience and
+          elevate every gathering.
         </p>
       </div>
       <div className="Professional-banner-right">
