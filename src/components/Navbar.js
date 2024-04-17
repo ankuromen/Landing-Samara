@@ -23,7 +23,6 @@ const Navbar = () => {
     scrollFunction();
   });
 var Screen = window.matchMedia("(min-width: 768px)");
-console.log(x.matches);
   window.onscroll = function () {
     scrollFunction();
   };
