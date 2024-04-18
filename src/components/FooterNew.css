@@ -11,7 +11,7 @@
 .Footer-email {
   width: fit-content;
   h1 {
-    font-size: 1.65em;
+    font-size: 1.8em;
     font-weight: 500;
   }
 }
@@ -43,13 +43,15 @@
   display: flex;
   flex-direction: column;
   gap: 0.4em;
+  
   h3 {
-    font-size: 0.9em;
+    font-size: 1.5em;
     margin-bottom: 1em;
   }
   a {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #ffffff;
+    text-decoration: none;
   }
 }
 .Footer-bottomsection {
@@ -67,12 +69,14 @@
   color: #434344;
   a {
     color: white;
+    text-decoration: none;
   }
 }
 .Footer-bottomsection-social {
   display: flex;
   justify-content: end;
   gap: 1em;
+  
 }
 .social-icons {
   width: 1.5em;
