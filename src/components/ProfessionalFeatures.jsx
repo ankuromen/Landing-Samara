@@ -90,9 +90,6 @@ const ProfessionalFeatures = () => {
               Register
             </button>
           )}
-          {ProfessionalFeatures.length !== index + 1 && (
-            <div className="Professional-features-last-line"></div>
-          )}
         </div>
       ))}
       {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
