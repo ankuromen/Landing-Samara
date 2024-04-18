@@ -78,8 +78,8 @@ const ClassicsContent = () => {
             <SwiperSlide>
               <div className="slide-para animate-popup" id="feature-text">
                 <h3 className="feature-text-heading">Feel the </h3>
-                <h3 className="feature-text-heading">Unforgettable ! </h3>
-                <p className="slide-text">
+                <h3 className="feature-text-heading">Unforgettable.</h3>
+                <p className="slide-text" id="slide-text-head">
                   Wheather you are planning for tomorrow or budgeting for today.
                   Evntiq connects you with working capital you need to run your
                   business on your terms.

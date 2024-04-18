@@ -9,6 +9,7 @@
 .Professional-banner-left {
   box-sizing: border-box;
   display: flex;
+  gap: 3em;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -22,7 +23,7 @@
     font-weight: 500;
   }
   p {
-    font-size: 1.25em;
+    font-size: 1.3em;
   }
 }
 .Professional-banner-right {

@@ -61,7 +61,6 @@ const ProfessionalFeatures = () => {
   return (
     <div className="Professional-features-container">
       <div className="Professional-features-header">
-        <h1>Features</h1>
         <p> Design exceptional experiences and cultivate your own thriving community,
           equipped with all the tools and insights needed for success.</p>
         <h1>How it works?</h1>

@@ -77,6 +77,9 @@
   position: fixed;
   animation: moveToTop 0.5s forwards;
 }
+#slide-text-head{
+  font-size: 1.3em;
+}
 #feature-text {
   width: 70%;
   margin: auto;
@@ -87,7 +90,7 @@
 .feature-text-heading {
   margin: auto;
   font-weight: 500;
-  font-size: 4em;
+  font-size: 5.2em;
   background: linear-gradient(to bottom, #a9a9a9 0%, #ffffff 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -126,11 +129,19 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  gap: 2em;
-  width: 30%;
+  gap: 3em;
+  width: 40%;
   padding-left: 5em;
   text-align: left;
+  h2{
+    font-size: 2.8em;
+  }
   p {
+    font-size: 1.5em;
+  }
+}
+#feature-text{
+  h2{
     font-size: 1em;
   }
 }
@@ -160,7 +171,7 @@
   background-color: aliceblue;
   transition: 0.5s;
 }
-#Classics-Slide-Btn{
+#Classics-Slide-Btn {
   margin: auto;
 }
 @keyframes popup {
