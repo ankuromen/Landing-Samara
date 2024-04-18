@@ -109,7 +109,7 @@ const Page2 = () => {
           <div className="Author-Details">
             <h3>Written By</h3>
             <h1>Name</h1>
-            <p><a href="#">Instagram</a><br/><a href="#">LinkedIN</a></p>
+            <p><a href="wwww.instagram.com">Instagram</a><br/><a href="www.linkedin.com">LinkedIN</a></p>
           </div>
         </div>
       </div>
