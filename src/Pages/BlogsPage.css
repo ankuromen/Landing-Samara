@@ -59,13 +59,16 @@
   color: white;
 }
 .Blogs-link {
-  display: flex;
+  display: none;
   position: absolute;
   font-size: 1.2em;
+  font-weight: 900;
   color: white;
   align-items: center;
   gap: 1em;
-  top: 50%;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .Blogs-card:hover {
   .Blogs-card-img img {

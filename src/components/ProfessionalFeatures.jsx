@@ -11,9 +11,8 @@ import image7 from "../Assets/Professionalfeature7.jpg";
 import image8 from "../Assets/Professionalfeature8.jpg";
 import SignupFormModal from "./SignupFormModal";
 
-
 const ProfessionalFeatures = () => {
-  const [showSignup, setShowSignup] = useState(false)
+  const [showSignup, setShowSignup] = useState(false);
 
   const ProfessionalFeatures = [
     {
@@ -22,8 +21,7 @@ const ProfessionalFeatures = () => {
       image: image1,
     },
     {
-      title:
-        " Selling tickets and payouts",
+      title: " Selling tickets and payouts",
       para: "Streamline your ticketing with our flexible solutions. From subscriptions to reserved seating, offer a variety of ticket types tailored to your unique needs. Keep track of sales with ease using colour-coded tickets. Adjust ticket offerings in real-time, even as your event unfolds. For private moments, send personalized invites with simple confirmation processes. Also sell add-ons like merch, parking tickets, food and drink for a more efficient fan experience. Put yourself in control and enhance ability to adapt swiftly to optimize your sales strategy at every turn.",
       image: image2,
     },
@@ -43,7 +41,7 @@ const ProfessionalFeatures = () => {
       image: image5,
     },
     {
-      title:"Financial Management",
+      title: "Financial Management",
       para: "Connect multiple accounts for simplified management and execute refunds with precision using our robust system. Gain valuable insights with detailed breakdowns of revenues by time, date, ticket type, and additional purchases. Efficiently track and manage affiliates, customize commission splits, and facilitate direct payments with ease. Utilize AI-driven dynamic pricing to optimize profit margins and establish pricing caps. Generate comprehensive financial reports that offer clarity and guide strategic decision-making. Get quick payouts and choose the accounts you want it to be sent in and divide the payouts.",
       image: image6,
     },
@@ -61,21 +59,26 @@ const ProfessionalFeatures = () => {
   return (
     <div className="Professional-features-container">
       <div className="Professional-features-header">
-        <p> Design exceptional experiences and cultivate your own thriving community,
-          equipped with all the tools and insights needed for success.</p>
+        <p>
+          {" "}
+          Design exceptional experiences and cultivate your own thriving
+          community, equipped with all the tools and insights needed for
+          success.
+        </p>
         <h1>How it works?</h1>
-        <div className="Professional-features-line"></div>
       </div>
+      <div className="Professional-features-line"></div>
       {ProfessionalFeatures.map((feature, index) => (
         <div key={index} className="Professional-features">
-          <div className="Professional-features-text">
-            <h1>{feature.title}</h1>
-            <p>{feature.para}</p>
-          </div>
           <div className="Professional-features-arrow">
             <div className="Professional-features-line"></div>
             <img src={featurefirsticon} alt="" />
           </div>
+          <div className="Professional-features-text">
+            <h1>{feature.title}</h1>
+            <p>{feature.para}</p>
+          </div>
+
           <div className="Professional-features-img">
             <img src={feature.image} alt="" />
           </div>

@@ -8,7 +8,7 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   gap: 2em;
   background: rgb(0, 0, 0);
@@ -25,13 +25,12 @@
     animation-timeline: view(300px 0px);
     text-align: center;
   }
-  .Professional-features-line {
-    width: 0.05em;
-    height: 10em;
-    background: white;
-    position: absolute;
-    bottom: 0em;
-  }
+}
+.Professional-features-line {
+  width: 0.05em;
+  height: 10em;
+  margin: auto;
+  background: white;
 }
 
 .Professional-features {
@@ -39,15 +38,15 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: rgb(0, 0, 0);
   color: white;
   .Professional-features-text {
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 30%;
-    margin-top: 8em;
+    margin-top: 2em;
     animation: fade-in linear;
     animation-timeline: view(380px 0px);
     h1 {
@@ -56,11 +55,6 @@
     }
     p {
       font-size: 1.1em;
-    }
-    img {
-      position: relative;
-      width: 2em;
-      height: 2em;
     }
   }
   .Professional-features-arrow {
@@ -87,8 +81,8 @@
     height: 12em;
     border-radius: 1em;
     overflow: hidden;
-    position: absolute;
-    bottom: 7em;
+    position: relative;
+    margin-top: 3em;
     animation: fade-in linear;
     animation-timeline: view(380px 0px);
     img {
@@ -97,46 +91,44 @@
     }
   }
   .Professional-features-last-line {
-    position: absolute;
-    bottom: 0%;
+    position: relative;
     width: 0.05em;
-    height: 7em;
+    height: 8em;
     background: white;
   }
 }
 .register-button {
-   position: absolute;
-    bottom: 0%;
-    width: 200px;
-    height: 55px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 1em;
-    text-align: center;
-    background-image: linear-gradient(to right, #F3B243, #28ABBA, #7584A7, #E33A75);
-    box-shadow: 
-        0 0 20px #F3B243, 
-        0 0 15px #28ABBA, 
-        0 0 20px #7584A7, 
-        0 0 25px #E33A75; /* Multi-color neon glow effect */
-    background-size: 300% 100%;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  height: 55px;
+  margin-top: 2em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 1em;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    #f3b243,
+    #28abba,
+    #7584a7,
+    #e33a75
+  );
+  box-shadow: 0 0 20px #f3b243, 0 0 15px #28abba, 0 0 20px #7584a7,
+    0 0 25px #e33a75; /* Multi-color neon glow effect */
+  background-size: 300% 100%;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .register-button:hover {
-    transform: scale(1.25); /* Scale up on hover */
-    background-position: 100% 0; /* Shift the gradient on hover */
-    box-shadow: 
-        0 0 0px #F3B243, 
-        0 0 0px #28ABBA, 
-        0 0 10px #7584A7, 
-        0 0 40px #E33A75; /* Intensified multi-color neon glow effect */
+  transform: scale(1.25); /* Scale up on hover */
+  background-position: 100% 0; /* Shift the gradient on hover */
+  box-shadow: 0 0 0px #f3b243, 0 0 0px #28abba, 0 0 10px #7584a7,
+    0 0 40px #e33a75; /* Intensified multi-color neon glow effect */
 }
 @keyframes fade-in {
   from {
