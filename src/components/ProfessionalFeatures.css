@@ -8,7 +8,7 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  min-height: 100vh;
+  min-height: 70vh;
   width: 100%;
   gap: 2em;
   background: rgb(0, 0, 0);
@@ -53,23 +53,22 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  min-height: 100vh;
   width: 100%;
   background: rgb(0, 0, 0);
   color: white;
   .Professional-features-text {
     position: relative;
     text-align: center;
-    width: 30%;
+    width: 40%;
     margin-top: 2em;
     animation: fade-in linear;
     animation-timeline: view(380px 0px);
     h1 {
-      font-size: 1.7em;
+      font-size: 2.5em;
       text-transform: uppercase;
     }
     p {
-      font-size: 1.1em;
+      font-size: 1.5em;
     }
   }
   .Professional-features-arrow {
