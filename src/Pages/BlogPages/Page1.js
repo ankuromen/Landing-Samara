@@ -97,6 +97,11 @@ const Page1 = () => {
             <span>Sign up for Evntiq today</span> and help us in creating
             impact.{" "}
           </h1>
+          <div className="Author-Details">
+            <h3>Written By</h3>
+            <h1>Name</h1>
+            <p><a href="#">Instagram</a><br/><a href="#">LinkedIN</a></p>
+          </div>
         </div>
       </div>
     </div>
