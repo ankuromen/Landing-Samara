@@ -42,7 +42,7 @@ const FAQ = () => {
     ];
 
     return (
-        <div className='FAQ-Container'>
+        <div className='FAQ-Container' id="faq-section">
             <h1 className='FAQ-Heading'>Questions? We're glad you asked.</h1>
             {faqsData.map((faq, index) => (
                 <div className='FAQ-Full' key={index}>

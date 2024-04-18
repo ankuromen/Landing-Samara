@@ -3,12 +3,21 @@ import "./FooterNew.css";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const FooterNew = () => {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit  = async (e) => {
     e.preventDefault();
+    try {
+      await axios.post("http://localhost:3000/subscribe", { email }); // Make POST request to backend
+      alert("Subscription successful!"); // Show success message to user
+      alert("Subscribed Successfully");
+      setEmail(""); // Clear email input
+    } catch (error) {
+      alert("Subscription failed. Please try again."); // Show error message to user
+    }
   };
 
   return (
@@ -41,7 +50,7 @@ const FooterNew = () => {
           <div className="Footer-links-sub">
             <h3>LEARN MORE</h3>
             <Link to="/blogs">Blog</Link>
-            <Link to="/blogs">FAQs</Link>
+            <Link to="/professional">FAQs</Link>
           </div>
         </div>
       </div>

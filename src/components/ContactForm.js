@@ -1,10 +1,23 @@
 import React, { useState } from "react";
 import "./ContactForm.css";
-
+import axios from "axios";
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [comments, setComments] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("http://localhost:3000/contact", { name, email, message });
+      alert("Message sent successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      alert("Message sending failed. Please try again.");
+      console.log(error);
+    }
+  };
   return (
     <div>
       <div className="Contact-form">
@@ -17,7 +30,7 @@ const ContactForm = () => {
           </p>
         </div>
         <div className="Contact-form-left">
-          <div className="Contact-form-container"><form>
+          <div className="Contact-form-container"><form onSubmit={handleSubmit}> 
             <label>Name</label>
             <br />
             <input
@@ -40,11 +53,11 @@ const ContactForm = () => {
             <label>Comments</label>
             <br />
             <textarea
-              className="comments"
+              className="message"
               type="textarea"
               name="Comments"
-              value={comments}
-              onChange={(e) => setComments(e.target.value)}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             />
             <br />
             <button type="submit">Send</button>
