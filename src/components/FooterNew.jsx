@@ -52,8 +52,12 @@ const FooterNew = () => {
           <p>© 2024 Eventiq LLC All rights reserved.</p>
         </div>
         <div className="Footer-bottomsection-social">
-          <FaXTwitter color="gray" size={20}/>
-          <FaLinkedin color="gray"size={20}/>
+          <a href="https://twitter.com">
+            <FaXTwitter className="social-icons" />
+          </a>
+          <a href="https://linkedin.com">
+            <FaLinkedin className="social-icons" />
+          </a>
         </div>
       </div>
     </div>

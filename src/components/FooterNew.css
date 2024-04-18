@@ -11,7 +11,7 @@
 .Footer-email {
   width: fit-content;
   h1 {
-    font-size: 1.75em;
+    font-size: 1.65em;
     font-weight: 500;
   }
 }
@@ -73,4 +73,55 @@
   display: flex;
   justify-content: end;
   gap: 1em;
+}
+.social-icons {
+  width: 1.5em;
+  height: 1.5em;
+  color: gray;
+}
+@media (max-width: 768px) {
+  .Footer-topsection {
+    display: block;
+    align-items: center;
+  }
+  .Footer-email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .Footer-email {
+    margin: auto;
+  }
+  .Footer-links {
+    margin-top: 2em;
+  }
+  .Footer-links-sub {
+    h3 {
+      font-size: 0.8em;
+      margin-bottom: 1em;
+    }
+    a {
+      font-size: 0.8em;
+      color: #ffffff;
+    }
+  }
+  .Footer-bottomsection {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    border-top: 1px solid rgb(65, 65, 65);
+    padding: 1em 0em;
+  }
+  .Footer-bottomsection-terms {
+    font-size: 0.6em;
+    color: #434344;
+    a {
+      color: white;
+    }
+  }
+  .social-icons {
+    width: 1.1em;
+    height: 1.1em;
+    color: gray;
+  }
 }
