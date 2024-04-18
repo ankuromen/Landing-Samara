@@ -53,7 +53,7 @@ const ContactForm = () => {
             <label>Comments</label>
             <br />
             <textarea
-              className="message"
+              className="comments"
               type="textarea"
               name="Comments"
               value={message}
