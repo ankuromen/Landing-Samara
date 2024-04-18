@@ -138,6 +138,7 @@
   box-shadow: 0 0 0px #f3b243, 0 0 0px #28abba, 0 0 10px #7584a7,
     0 0 40px #e33a75; /* Intensified multi-color neon glow effect */
 }
+
 @keyframes fade-in {
   from {
     scale: 0.8;

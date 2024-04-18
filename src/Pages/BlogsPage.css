@@ -92,3 +92,19 @@
     background-position: 100% 50%;
   }
 }
+@media only screen and (min-width:768px) and (max-width:1200px){
+  .Blogs {
+    display: block;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 2em;
+  }
+  .Blogs-card{
+    height: fit-content;
+    margin-bottom: 2.5em
+  }
+  .Blogs-card-text{
+    text-align: center;
+    font-size: 1.5em;
+  }
+}

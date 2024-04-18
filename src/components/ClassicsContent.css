@@ -49,6 +49,7 @@
   max-width: 15em;
   border-radius: 0.3125em;
 }
+
 .Body-Classic-Text {
   width: 40vw;
   margin: auto;
@@ -64,6 +65,7 @@
   position: sticky;
   top: 3em;
 }
+
 .swiper-with-progress {
   position: relative;
 }
@@ -73,13 +75,16 @@
   max-height: 100vh;
   animation: moveToTop 0.5s forwards;
 }
+
 .swiper-animate-top {
   position: fixed;
   animation: moveToTop 0.5s forwards;
 }
-#slide-text-head{
+
+#slide-text-head {
   font-size: 1.3em;
 }
+
 #feature-text {
   width: 70%;
   margin: auto;
@@ -87,6 +92,7 @@
   text-align: center;
   padding: 0em;
 }
+
 .feature-text-heading {
   margin: auto;
   font-weight: 500;
@@ -95,6 +101,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .swiper-slide {
   box-sizing: border-box;
   text-align: center;
@@ -117,6 +124,7 @@
   width: 50%;
   height: 90%;
   padding: 0em 1em;
+
   img {
     object-fit: cover;
     width: 100%;
@@ -124,6 +132,7 @@
     border-radius: 2em;
   }
 }
+
 .slide-para {
   box-sizing: border-box;
   display: flex;
@@ -133,18 +142,22 @@
   width: 40%;
   padding-left: 5em;
   text-align: left;
-  h2{
+
+  h2 {
     font-size: 2.8em;
   }
+
   p {
     font-size: 1.5em;
   }
 }
-#feature-text{
-  h2{
+
+#feature-text {
+  h2 {
     font-size: 1em;
   }
 }
+
 .demo-btn {
   padding: 0.75em 1em;
   border-radius: 0.75em;
@@ -152,11 +165,13 @@
   border: 2px solid gray;
   color: #fff;
 }
+
 .animate-popup {
   opacity: 0;
   transform: translateY(100%);
   animation: popup 1s ease-out forwards;
 }
+
 .slider-progress-bar {
   position: absolute;
   right: 5%;
@@ -166,19 +181,41 @@
   background: linear-gradient(0deg, #feed7a 0%, #ff8400 48.96%, #df91f7 100%);
   z-index: 1000;
 }
+
 .slider-progress-bar-current {
   width: 100%;
   background-color: aliceblue;
   transition: 0.5s;
 }
+
 #Classics-Slide-Btn {
   margin: auto;
 }
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+  .feature-text-heading {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  .slide-para {
+    h2 {
+      font-size: 1.8em;
+    }
+
+    p {
+      font-size: 0.8em;
+    }
+  }
+}
+
 @keyframes popup {
   0% {
     opacity: 0;
     transform: translateY(30%);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);

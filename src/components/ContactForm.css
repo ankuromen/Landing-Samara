@@ -78,3 +78,18 @@
   resize: none;
   margin-top: 0.5em;
 }
+@media only screen and (min-width:768px) and (max-width:900px)
+{
+  .Contact-form-right {
+    
+    h2 {
+     
+      font-size: 2em;
+      
+    }
+    p{
+      font-size: 1em;
+     
+    }
+  }
+}
