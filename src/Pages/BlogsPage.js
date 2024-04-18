@@ -47,7 +47,7 @@ const BlogsPage = () => {
               <div className="Blogs-card-img">
                 <img src={blog.image} alt="" />
                 <div className="Blogs-link">
-                  View Insight{" "}
+                  View Article  
                   <div className="Link-arrow">
                     <FaArrowRightLong size={30} />
                   </div>

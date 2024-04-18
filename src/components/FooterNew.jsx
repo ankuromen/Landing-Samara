@@ -18,6 +18,7 @@ const FooterNew = () => {
           <h1>Sign up for email updates</h1>
           <form onSubmit={handleSubmit} className="Footer-email-form">
             <input
+            classNa
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
