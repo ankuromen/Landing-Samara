@@ -66,14 +66,13 @@ const ProfessionalFeatures = () => {
           success.
         </p>
         <h1>How it works?</h1>
+        <div>
+          <div id="first-line"></div>
+          <img id="iconimg" src={featurefirsticon} alt="" />
+        </div>
       </div>
-      <div className="Professional-features-line"></div>
       {ProfessionalFeatures.map((feature, index) => (
         <div key={index} className="Professional-features">
-          <div className="Professional-features-arrow">
-            <div className="Professional-features-line"></div>
-            <img src={featurefirsticon} alt="" />
-          </div>
           <div className="Professional-features-text">
             <h1>{feature.title}</h1>
             <p>{feature.para}</p>
@@ -81,6 +80,10 @@ const ProfessionalFeatures = () => {
 
           <div className="Professional-features-img">
             <img src={feature.image} alt="" />
+          </div>
+          <div className="Professional-features-arrow">
+            <div className="Professional-features-line"></div>
+            <img src={featurefirsticon} alt="" />
           </div>
           {ProfessionalFeatures.length === index + 1 && (
             <button
