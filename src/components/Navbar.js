@@ -22,7 +22,7 @@ const Navbar = () => {
     navbarColorChange();
     scrollFunction();
   });
-var Screen = window.matchMedia("(min-width: 768px)");
+var Screen = window.matchMedia("(min-width: 769px)");
   window.onscroll = function () {
     scrollFunction();
   };

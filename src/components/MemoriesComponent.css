@@ -144,7 +144,9 @@
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
-
+@media (max-width: 768px) {
+  
+}
 @keyframes move-to-side {
   0% {
     opacity: 1;

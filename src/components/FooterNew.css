@@ -61,7 +61,8 @@
 }
 .Footer-bottomsection-terms {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 1em;
   font-size: 0.8em;
   color: #434344;
   a {
