@@ -47,3 +47,13 @@
   box-shadow: 0 0 0px #f3b243, 0 0 0px #28abba, 0 0 10px #7584a7,
     0 0 40px #e33a75; /* Intensified multi-color neon glow effect */
 }
+@media (max-width: 767px) {
+  .cta-message {
+    font-size: 4em;
+  }
+}
+@media (max-width: 480px) {
+  .cta-message {
+    font-size: 3em;
+  }
+}

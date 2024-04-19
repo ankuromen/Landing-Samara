@@ -23,7 +23,6 @@
   height: 100px;
   position: absolute;
   right: 0;
-  bottom: 0;
 }
 @media (max-width: 900px) {
   .Homebanner-text {
@@ -35,6 +34,18 @@
     font-size: 1.2em;
     margin-left: 0.5em;
     margin-bottom: 0.5em;
+    gap: 0.5em;
+  }
+  .homebanner-scroll {
+    width: 80px;
+    height: 90px;
+  }
+}
+@media (max-width: 480px) {
+  .Homebanner-text {
+    font-size: 1em;
+    margin-left: 0.25em;
+    margin-bottom: 0.25em;
     gap: 0.5em;
   }
   .homebanner-scroll {

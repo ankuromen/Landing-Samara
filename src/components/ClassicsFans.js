@@ -8,6 +8,10 @@ const ClassicsFans = () => {
     <div className="Classic-Business-Container">
       {/* Check if you want to rename this class */}
       <div className="Classics-Content">
+        <section className="fans-Img-Section">
+          <img src={Test} id="Bus-Img" alt="Business" />
+          <h1>For Fans</h1>
+        </section>
         <section className="Bus-Text-Section">
           <h2>Capture the Excitement.</h2>
           <p>
@@ -22,7 +26,7 @@ const ClassicsFans = () => {
           </Link>
           {/* Replacing the old button */}
         </section>
-        <section className="Bus-Img-Section">
+        <section className="Bus-Img-Section" id="Bus-Img-Section">
           <img src={Test} id="Bus-Img" alt="Business" />
           <h1>For Fans</h1>
         </section>
