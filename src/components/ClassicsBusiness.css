@@ -22,6 +22,21 @@
     color: white;
   }
 }
+.fans-Img-Section {
+  display: none;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: popup-from-side 1s cubic-bezier(0.15, 0.86, 0.42, 0.79);
+  animation-timeline: view(800px 0px);
+  h1 {
+    position: absolute;
+    font-size: 3.5em;
+    font-weight: 500;
+    color: white;
+  }
+}
 .Bus-Text-Section {
   box-sizing: border-box;
   width: 50vw;
@@ -58,12 +73,7 @@
   background-color: rgb(248, 230, 248);
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .Bus-Img-Section {
-    animation: fade-in linear;
-    animation-timeline: view(800px 0px);
-  }
-}
+
 @keyframes popup-from-side {
   0% {
     opacity: 0;
@@ -74,3 +84,53 @@
     transform: translateX(0);
   }
 }
+@media (max-width: 1024px) {
+  #Bus-Img {
+    height: 60%;
+    width: 45vw;
+  }
+  .Bus-Text-Section {
+    width: 55vw;
+    font-size: 1.5em;
+  }
+  .Bus-Img-Section {
+    h1 {
+      font-size: 3em;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .Classics-Content {
+    display: block;
+  }
+  .Bus-Img-Section {
+    width: auto;
+  }
+  .Bus-Text-Section {
+    width: auto;
+  }
+  #Bus-Img {
+    height: 60%;
+    width: 90vw;
+    border-radius: 2em;
+  }
+  #Bus-Img-Section {
+    display: none;
+  }
+  .fans-Img-Section {
+    display: flex;
+    width: auto;
+  }
+  .Bus-Text-Section {
+    p{
+      font-size: 0.65em;
+      width: 90%;
+    }
+  }
+}
+/* @media (max-width: 768px) {
+  .Bus-Img-Section {
+    animation: fade-in linear;
+    animation-timeline: view(800px 0px);
+  }
+} */
