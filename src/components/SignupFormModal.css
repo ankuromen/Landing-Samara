@@ -75,3 +75,9 @@
   color: white;
   gap: 0.5em;
 }
+.confirmation-popup {
+  color:green ;
+}
+.error-popup{
+  color:red
+}

@@ -75,7 +75,6 @@ const SignupFormModal = ({ onClose }) => {
         {registrationStatus === false && (
           <div className="error-popup">
             <p>Registration Failed. Please try again later.</p>
-            \
           </div>
         )}
       </div>
