@@ -4,7 +4,7 @@ import ContactBanner from "../components/ContactBanner";
 import ContactOptions from "../components/ContactOptions";
 
 
-const AboutPage = () => {
+const ContactPage = () => {
   useEffect(()=>{
     window.scrollTo(0, 0);
   },[])
@@ -18,4 +18,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ContactPage;
