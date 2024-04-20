@@ -14,6 +14,7 @@ import Page4 from "./Pages/BlogPages/Page4";
 // import Page6 from "./Pages/BlogPages/Page6";
 // import ClassicUsers from "./Pages/ClassicUsers";
 import TeamInfo from "./Pages/TeamInfo";
+import FaqPage from "./Pages/FaqPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/contact" element={<AboutPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/team" element={<TeamInfo />} />
+        <Route path="/faq" element={<FaqPage/>}/>
         {/* <Route path="/ClassicsUsers" element={<ClassicUsers />} /> */}
         <Route path="/page1" element={<Page1 />} />
         <Route path="/page2" element={<Page2 />} />

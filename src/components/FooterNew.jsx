@@ -50,7 +50,7 @@ const FooterNew = () => {
           <div className="Footer-links-sub">
             <h3>LEARN MORE</h3>
             <Link to="/blogs">Blog</Link>
-            <Link to="/professional">FAQs</Link>
+            <Link to="/faq">FAQs</Link>
           </div>
         </div>
       </div>
