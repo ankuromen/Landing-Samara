@@ -23,10 +23,7 @@ const MemoriesComponent = () => {
           </p>
           <Link to="/team">
             {" "}
-            <button className="Memories-btn">
-              <span>Click!</span>
-              <span>Learn More</span>
-            </button>
+            <button className="glow-on-hover" type="button">Learn More</button>
           </Link>
         </div>
       </div>{" "}

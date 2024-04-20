@@ -57,7 +57,7 @@ const FooterNew = () => {
 
       <div className="Footer-bottomsection">
         <div className="Footer-bottomsection-terms">
-          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/policy">Privacy Policy</a>
           <p>© 2024 Eventiq LLC All rights reserved.</p>
         </div>
         <div className="Footer-bottomsection-social">

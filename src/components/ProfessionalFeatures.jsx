@@ -17,42 +17,109 @@ const ProfessionalFeatures = () => {
   const ProfessionalFeatures = [
     {
       title: " Event & Community Creation",
-      para: "Be the architect of experiences and the curator of communities. Launch and oversee your private or public events and communities with absolute ease.Set the stage for physical, virtual, or VR gatherings by just a link, or forge connections by crafting your own community space.Start ticket sales and open doors to new members in moments.Whether hosting standalone events or community- centered activities, ensure attendees enjoy a frictionless and engaging experience from start to finish from your fans.",
+      para: (
+        <>
+          <ul>
+            <li>Architect and curate your events and communities with ease.</li>
+            <li>Host physical, virtual, or VR events and communities with just a link.</li>
+            <li>Start ticket sales and welcome new members quickly.</li>
+            <li>Ensure a seamless attendee experience from beginning to end.</li>
+          </ul>
+        </>
+      ),
       image: image1,
     },
     {
-      title: " Selling tickets and payouts",
-      para: "Streamline your ticketing with our flexible solutions. From subscriptions to reserved seating, offer a variety of ticket types tailored to your unique needs. Keep track of sales with ease using colour-coded tickets. Adjust ticket offerings in real-time, even as your event unfolds. For private moments, send personalized invites with simple confirmation processes. Also sell add-ons like merch, parking tickets, food and drink for a more efficient fan experience. Put yourself in control and enhance ability to adapt swiftly to optimize your sales strategy at every turn.",
+      title: " Selling Tickets and Managing Payouts",
+      para: (
+        <>
+          <ul>
+            <li>Flexible ticketing solutions from subscriptions to reserved seating.</li>
+            <li>Real-time ticket adjustments and color-coded tracking.</li>
+            <li>Sell add-ons like merchandise and refreshments alongside tickets.</li>
+            <li>Personalize invites and optimize sales strategies dynamically.</li>
+          </ul>
+        </>
+      ),
       image: image2,
     },
     {
       title: "Streamlined Management, Smart Logistics",
-      para: "Perfect your event's operational flow. Ensure instant digital delivery of tickets and keep your audience engaged with real-time updates or respond promptly to attendee queries. Efficiently track and process returns and refunds, maintain inventory transparency, and get data to monitor the resale market. Utilize customizable templates to save time and capture early interest with pre-sale and early bird offers. Our AI assistant is ready to swiftly enact changes or assist in locating information, making logistics seamless. Turn logistics into a smooth journey, so you can focus on what you do best—creating memories. ",
+      para: (
+        <>
+          <ul>
+            <li>Instant digital ticket delivery and real-time attendee updates.</li>
+            <li>Efficient handling of returns, refunds, and inventory.</li>
+            <li>Utilize AI for quick adjustments and information retrieval.</li>
+            <li>Make event logistics smooth and focus on creating memorable experiences.</li>
+          </ul>
+        </>
+      ),
       image: image3,
     },
     {
-      title: "Effortless Promotion, Enhanced Connection",
-      para: "Elevate your event's visibility with robust promotional tools. Post engaging video content in highlight reels and stories to captivate potential attendees. Do collaborated posts with venues, artists, and performers or targeted ads for your ideal audience. Even if you're selling tickets elsewhere, use our platform to amplify your reach—effortlessly link out to any ticketing service or social media. Communicate directly with attendees through real-time messaging, providing updates and exclusive promotions. Don’t just announce an event; build the excitement and forge lasting attendee connections.",
+      title: "Effortless Promotion and Enhanced Connections",
+      para: (
+        <>
+          <ul>
+            <li>Use powerful tools to boost event visibility through engaging content.</li>
+            <li>Collaborate with artists and venues for wider reach.</li>
+            <li>Link seamlessly to any ticketing service or social platform.</li>
+            <li>Engage directly with attendees via real-time messaging and exclusive updates.</li>
+          </ul>
+        </>
+      ),
       image: image4,
     },
     {
       title: "Advanced IT and Tailored Security",
-      para: "Elevate your IT and security measures. Equip yourself with a customizable QR scanner within the platform, adaptable to your unique event requirements, including timed entrances aligned with ticket color codes and more. Integrate seamlessly with our API, enabling white-labeled ticket sales directly on your website, while still leveraging our robust backend for all other processes. Create and track affiliate links effortlessly with our no-code solution, keeping a close eye on their performance. We combine advanced technology with user-friendly customization, ensuring your event is both cutting-edge and secure.",
+      para: (
+        <>
+          <ul>
+            <li>Customizable QR scanners and API integrations for seamless operations.</li>
+            <li>Advanced affiliate link tracking and performance monitoring.</li>
+            <li>Ensure high security and customization to meet unique event needs.</li>
+          </ul>
+        </>
+      ),
       image: image5,
     },
     {
       title: "Financial Management",
-      para: "Connect multiple accounts for simplified management and execute refunds with precision using our robust system. Gain valuable insights with detailed breakdowns of revenues by time, date, ticket type, and additional purchases. Efficiently track and manage affiliates, customize commission splits, and facilitate direct payments with ease. Utilize AI-driven dynamic pricing to optimize profit margins and establish pricing caps. Generate comprehensive financial reports that offer clarity and guide strategic decision-making. Get quick payouts and choose the accounts you want it to be sent in and divide the payouts.",
+      para: (
+        <>
+          <ul>
+            <li>Simplify financial oversight with connected accounts and precise refund capabilities.</li>
+            <li>Dynamic pricing for optimized profit margins and strategic financial reporting.</li>
+            <li>Quick and directed payouts to chosen accounts.</li>
+          </ul>
+        </>
+      ),
       image: image6,
     },
     {
-      title: "Make informed decisions",
-      para: "Utilize the power of data to maximize your success. Dive deep into analytics with custom reports that offer insights into various demographics such as age, gender, purchasing behaviours and more. Compare event types and timeframes to understand what attracts and engages your audience. Track sales trends, from weekend spikes to overall finances and prepare strategies for future. Our tools help you to measure engagement levels, financial metrics, and more, providing you with the knowledge to enhance every aspect of your event planning and execution.",
+      title: "Make Informed Decisions",
+      para: (
+        <>
+          <ul>
+            <li>Deep dive into analytics for strategic insights into demographics and purchasing behaviors.</li>
+            <li>Monitor sales trends and financial metrics to prepare for future events.</li>
+            <li>Utilize custom reports to enhance event planning and execution.</li>
+          </ul>
+        </>
+      ),
       image: image7,
     },
     {
-      title: "Other advanced capabilities",
-      para: "Explore the unique capabilities to enhance your event management. Implement virtual queues to streamline entry and enhance safety, reducing the potential for overcrowding. Facilitate tip collection directly through the platform, allowing for a smoother financial transaction for the good work of your team. Efficiently manage sponsors, sending tickets and obligations, ensuring that sponsor visibility and attendee engagement are maximized.",
+      title: "Other Advanced Capabilities",
+      para: (
+        <>
+          <ul>
+            <li>Implement virtual queues to enhance entry logistics and safety.</li>
+            <li>Manage smooth financial transactions and sponsor engagements effectively.</li>
+          </ul>
+        </>
+      ),
       image: image8,
     },
   ];

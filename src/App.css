@@ -14,7 +14,17 @@ body::-webkit-scrollbar{
     background-color: white;
 
 }
-
+.Privacy-Container{
+    color: white;
+    text-align: center;
+    margin: 2em;
+    width: 70%;
+    margin: auto;
+    margin-top: 6em;
+}
+.Privacy-Content{
+    text-align: left;
+}
 .background-gif {
     background-image: url('./Assets/BackgroundLine.gif');
     background-repeat: no-repeat;

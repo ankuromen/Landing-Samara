@@ -16,6 +16,7 @@
   width: 80vw;
   margin: auto;
   animation: fade-in linear;
+
   h1 {
     animation: move-to-side 3s ease-in-out;
     animation-timeline: view(600px 0px);
@@ -34,6 +35,7 @@
   font-size: 6em;
   font-weight: lighter;
 }
+
 .Memories-Second {
   display: flex;
   width: 100vw;
@@ -41,6 +43,7 @@
   animation: fade-in linear 2s;
   animation-timeline: view(600px 0px);
 }
+
 .Memories-Text {
   width: 45%;
   justify-content: end;
@@ -48,11 +51,13 @@
   line-height: 1.5;
   margin-right: 5%;
 }
+
 .Memories-Image {
   display: flex;
   justify-content: start;
   width: 100%;
 }
+
 .Memories-Image-img {
   margin-top: 1.5em;
   width: 35%;
@@ -60,6 +65,7 @@
   border-radius: 2em;
   object-fit: cover;
 }
+
 .Memories-btn {
   margin-top: 1.5em;
   width: 120px;
@@ -91,11 +97,9 @@
 
 .Memories-btn span {
   background: rgb(0, 172, 238);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 172, 238, 1) 0%,
-    rgba(2, 126, 251, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(0, 172, 238, 1) 0%,
+      rgba(2, 126, 251, 1) 100%);
   display: block;
   position: absolute;
   width: 90px;
@@ -111,6 +115,7 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .Memories-btn span:nth-child(1) {
   box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
     7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
@@ -121,6 +126,7 @@
   -moz-transform-origin: 50% 50% -20px;
   transform-origin: 50% 50% -20px;
 }
+
 .Memories-btn span:nth-child(2) {
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
@@ -129,6 +135,7 @@
   -moz-transform-origin: 50% 50% -20px;
   transform-origin: 50% 50% -20px;
 }
+
 .Memories-btn:hover span:nth-child(1) {
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
@@ -136,6 +143,7 @@
   -moz-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
+
 .Memories-btn:hover span:nth-child(2) {
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
@@ -144,20 +152,24 @@
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
+
 @keyframes move-to-side {
   0% {
     opacity: 1;
     transform: translateX(-100%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0%);
   }
 }
+
 @media (max-width: 1024px) {
   .Memories-Content {
     width: 90vw;
   }
+
   .Memories-Content h1 {
     width: 70vw;
     margin-left: auto;
@@ -169,47 +181,127 @@
   .Memories-Title {
     font-size: 5em;
   }
+
   .Memories-Text {
     font-size: 1.1em;
   }
 }
+
 @media (max-width: 768px) {
   .Memories-Content h1 {
     width: 80vw;
     font-size: 3.8em;
   }
+
   .Memories-Title {
     font-size: 3.8em;
   }
+
   .Memories-Image-img {
     width: 55%;
   }
 }
+
 @media (max-width: 480px) {
   .Memories-Content h1 {
     width: 90vw;
     font-size: 3.25em;
   }
+
   .Memories-Title {
     font-size: 3.25em;
   }
+
   .Memories-Text {
     width: 90%;
     font-size: 1em;
   }
+
   .Memories-Image-img {
     width: 90%;
     margin: auto;
   }
 }
+
+.glow-on-hover {
+  margin-top: 1em;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
 @media (max-width: 320px) {
   .Memories-Content h1 {
     width: 90vw;
     font-size: 3em;
   }
+
   .Memories-Title {
     font-size: 3em;
   }
+
   .Memories-Text {
     width: 90%;
     font-size: 1em;
