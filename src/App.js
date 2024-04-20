@@ -4,8 +4,8 @@ import Homepage from "./Pages/Homepage";
 import Classicpage from "./Pages/Classicpage";
 import Professional from "./Pages/Professional";
 import Layout from "./Pages/Layout";
-import AboutPage from "./Pages/AboutPage";
 import BlogsPage from "./Pages/BlogsPage";
+import ContactPage from "./Pages/ContactPage";
 import Page1 from "./Pages/BlogPages/Page1";
 import Page2 from "./Pages/BlogPages/Page2";
 import Page3 from "./Pages/BlogPages/Page3";
@@ -23,10 +23,10 @@ function App() {
         <Route index element={<Homepage />} />
         <Route path="/classic" element={<Classicpage />} />
         <Route path="/professional" element={<Professional />} />
-        <Route path="/contact" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/team" element={<TeamInfo />} />
-        <Route path="/faq" element={<FaqPage/>}/>
+        <Route path="/faq" element={<FaqPage />} />
         {/* <Route path="/ClassicsUsers" element={<ClassicUsers />} /> */}
         <Route path="/page1" element={<Page1 />} />
         <Route path="/page2" element={<Page2 />} />
