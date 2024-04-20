@@ -15,7 +15,7 @@ import Page4 from "./Pages/BlogPages/Page4";
 // import ClassicUsers from "./Pages/ClassicUsers";
 import TeamInfo from "./Pages/TeamInfo";
 import FaqPage from "./Pages/FaqPage";
-
+import PrivacyPolicy from "./Pages/PrivacyPolicy.js";
 function App() {
   return (
     <Routes>
@@ -27,6 +27,7 @@ function App() {
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/team" element={<TeamInfo />} />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/policy" element={<PrivacyPolicy/>} />
         {/* <Route path="/ClassicsUsers" element={<ClassicUsers />} /> */}
         <Route path="/page1" element={<Page1 />} />
         <Route path="/page2" element={<Page2 />} />
