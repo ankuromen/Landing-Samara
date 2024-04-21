@@ -6,7 +6,7 @@ const ProfessionalBanner = () => {
   return (
     <div className="Professional-banner">
       <div className="Professional-banner-left">
-        <h1> Cultivate Connections, Celebrate Community</h1>
+        <h1> Cultivate Connections,<br/> Celebrate Community</h1>
         <p>
           Effortlessly organize events and foster engaged communities with
           our comprehensive tools. Streamline logistics and enhance interaction to create

@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   height: 100%;
   padding-left: 3em;
   padding-right: 3em;
@@ -21,6 +21,7 @@
   h1 {
     font-size: 3.5em;
     font-weight: 500;
+    text-align: start;
   }
   p {
     font-size: 1.3em;
@@ -29,14 +30,14 @@
 .Professional-banner-right {
   box-sizing: border-box;
   width: 50%;
-  height: 100%;
+  height: 90%;
   display: flex;
-  align-items: center;
+  align-items: self-end;
   justify-content: space-around;
 }
 .Professional-banner-right-img {
   height: 80%;
-  width: 55%;
+  width: 50%;
   border-radius: 1.5em;
   overflow: hidden;
   align-items: center;
@@ -64,5 +65,58 @@
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@media (max-width: 1280px) {
+  .Professional-banner-left {
+    padding-left: 2em;
+    padding-right: 2em;
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.25em;
+    }
+  }
+}
+@media (max-width: 1025px) {
+  .Professional-banner-left {
+    width: 75%;
+    h1 {
+      font-size: 2.7em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+  .Professional-banner-right {
+    box-sizing: border-box;
+    width: 40%;
+  }
+  .Professional-banner-right-img {
+    height: 76%;
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .Professional-banner {
+    padding-top: 5em;
+    flex-direction: column;
+  }
+  .Professional-banner-left {
+    gap: 2em;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+  .Professional-banner-right {
+    width: 100%;
+    align-items: center;
   }
 }
