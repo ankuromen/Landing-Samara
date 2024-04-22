@@ -12,7 +12,6 @@ const Professional = () => {
     <div className='Professional-Container'>
       <ProfessionalBanner/>
       <ProfessionalFeatures/>
-      
     </div>
   )
 }
