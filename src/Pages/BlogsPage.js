@@ -42,7 +42,7 @@ const BlogsPage = () => {
       </div>
       <div className="Blogs">
         {Blogs.map((blog) => (
-          <Link to={blog.link}>
+          <Link to={blog.link} style={{ textDecoration: 'none' }}>
             <div className="Blogs-card">
               <div className="Blogs-card-img">
                 <img src={blog.image} alt="" />

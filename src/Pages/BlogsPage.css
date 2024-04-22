@@ -54,7 +54,8 @@
 }
 .Blogs-card-text {
   margin-top: 0.5em;
-  font-size: 1.3em;
+  text-align: center;
+  font-size: 1.8em;
   margin-bottom: 0.5em;
   color: white;
 }
