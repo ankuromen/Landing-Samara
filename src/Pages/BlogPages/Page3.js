@@ -1,4 +1,5 @@
 import React from "react";
+import BlogImage3 from "../../Assets/BlogImage3.jpg";
 const Page3 = () => {
   return (
     <div>
@@ -6,7 +7,7 @@ const Page3 = () => {
         <div className="Blog-content-header">
           <img
             className="Blog-content-img"
-            src="https://images.pexels.com/photos/3299/postit-scrabble-to-do.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src={BlogImage3}
             alt=""
           />
           <div className="Blog-content-header-text">

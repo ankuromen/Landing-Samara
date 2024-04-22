@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BlogImage4 from "../../Assets/BlogImage4.jpg"
 const Page4 = () => {
   return (
     <div>
@@ -7,7 +8,7 @@ const Page4 = () => {
         <div className="Blog-content-header">
           <img
             className="Blog-content-img"
-            src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src={BlogImage4}
             alt=""
           />
           <div className="Blog-content-header-text">

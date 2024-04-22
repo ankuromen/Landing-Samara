@@ -2,10 +2,10 @@ import { React, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./BlogsPage.css";
 import { FaArrowRightLong } from "react-icons/fa6";
-import BlogImage1 from "../Assets/BlogImage1.jpeg";
-import BlogImage2 from "../Assets/BlogImage2.jpeg";
-import BlogImage3 from "../Assets/BlogImage3.jpeg";
-import BlogImage4 from "../Assets/BlogImage4.jpeg";
+import BlogImage1 from "../Assets/BlogImage1.jpg";
+import BlogImage2 from "../Assets/BlogImage2.jpg";
+import BlogImage3 from "../Assets/BlogImage3.jpg";
+import BlogImage4 from "../Assets/BlogImage4.jpg";
 
 const BlogsPage = () => {
   useEffect(() => {

@@ -1,10 +1,12 @@
 import './HomeBanner.css'
-import React from 'react';
+import {React,useState} from 'react';
 import { Link } from 'react-router-dom';
 import BannerVid from "../Assets/heading-vid.mp4";
-import scrollanimation from '../Assets/scroll-animation.gif'
+import SignupFormModal from "./SignupFormModal";
+// import scrollanimation from '../Assets/scroll-animation.gif'
 
 const HomeBanner = () => {
+  const [showSignup, setShowSignup] = useState(false);
     return (
       <div className="Homebanner-container">
         <video className="homebanner-video" autoPlay muted loop>
@@ -14,12 +16,13 @@ const HomeBanner = () => {
         <div className="Homebanner-text">
           <h1>Unifying passions.</h1>
           <h1>Amplifying experiences. </h1>
-          <Link to="/team">
+          <Link to="#">
               {" "}
-              <button id='CTA-Home-Banner' className="glow-on-hover" type="button">Register</button>
+              <button id='CTA-Home-Banner' className="glow-on-hover" type="button"onClick={() => setShowSignup(!showSignup)}>Register</button>
             </Link>
           {/* <img className='homebanner-scroll' src={scrollanimation} alt='banner'/> */}
         </div>
+         {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
       </div>
     );
 }
