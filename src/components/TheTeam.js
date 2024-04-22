@@ -1,6 +1,9 @@
 import React from "react";
-import AvatarTesting from "../Assets/AvatarTesting.jpg";
+import Avatar1 from "../Assets/Avatar1.jpg";
+import Avatar2 from "../Assets/Avatar2.jpg";
+import Avatar3 from "../Assets/Avatar3.jpg";
 import "../components/TheTeam.css";
+
 const TheTeam = () => {
   return (
     <div className="TeamContainer">
@@ -10,8 +13,8 @@ const TheTeam = () => {
           <div className="leadership-member-image-card">
             <img
               className="leadership-member-image-card-img"
-              src={AvatarTesting}
-              alt="Ben Goodyear"
+              src={Avatar1}
+              alt="Can Say"
             />
           </div>
           <h3 className="leadership-member-name">Can Say</h3>
@@ -37,8 +40,8 @@ const TheTeam = () => {
           <div className="leadership-member-image-card">
             <img
               className="leadership-member-image-card-img"
-              src={AvatarTesting}
-              alt="Ben Goodyear"
+              src={Avatar2}
+              alt="Kanwar Sidhu"
             />
           </div>
           <h3 className="leadership-member-name">Kanwar Sidhu</h3>
@@ -57,7 +60,7 @@ const TheTeam = () => {
           </p>
           <a
             className="leadership-member-linkedin"
-            href="https://www.linkedin.com/in/kanwar-pal-singh-sidhu-4380b31b4/r"
+            href="https://linkedin.com/in/kanwar-pal-singh-sidhu-4380b31b4"
           >
             LinkedIn
           </a>
@@ -66,8 +69,8 @@ const TheTeam = () => {
           <div className="leadership-member-image-card">
             <img
               className="leadership-member-image-card-img"
-              src={AvatarTesting}
-              alt="Ben Goodyear"
+              src={Avatar3}
+              alt="Arman Doğru"
             />
           </div>
           <h3 className="leadership-member-name">Arman Doğru</h3>

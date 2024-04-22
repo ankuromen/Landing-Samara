@@ -23,9 +23,11 @@
 }
 .leadership-member-image-card {
   border: none;
-  height: 20em;
+  height: 25em;
+  width: 90%;
   border-radius: 1em;
-  border: 1px solid white;
+  overflow: hidden;
+  border: 1px solid rgb(54, 54, 54);
   align-items: top;
 }
 

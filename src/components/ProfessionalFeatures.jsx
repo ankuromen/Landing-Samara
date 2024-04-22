@@ -10,9 +10,11 @@ import image6 from "../Assets/Professionalfeature6.jpg";
 import image7 from "../Assets/Professionalfeature7.jpg";
 import image8 from "../Assets/Professionalfeature8.jpg";
 import SignupFormModal from "./SignupFormModal";
+import { useNavigate } from "react-router-dom";
 
 const ProfessionalFeatures = () => {
   const [showSignup, setShowSignup] = useState(false);
+  const Navigate = useNavigate()
 
   const ProfessionalFeatures = [
     {
@@ -21,9 +23,14 @@ const ProfessionalFeatures = () => {
         <>
           <ul>
             <li>Architect and curate your events and communities with ease.</li>
-            <li>Host physical, virtual, or VR events and communities with just a link.</li>
+            <li>
+              Host physical, virtual, or VR events and communities with just a
+              link.
+            </li>
             <li>Start ticket sales and welcome new members quickly.</li>
-            <li>Ensure a seamless attendee experience from beginning to end.</li>
+            <li>
+              Ensure a seamless attendee experience from beginning to end.
+            </li>
           </ul>
         </>
       ),
@@ -34,10 +41,17 @@ const ProfessionalFeatures = () => {
       para: (
         <>
           <ul>
-            <li>Flexible ticketing solutions from subscriptions to reserved seating.</li>
+            <li>
+              Flexible ticketing solutions from subscriptions to reserved
+              seating.
+            </li>
             <li>Real-time ticket adjustments and color-coded tracking.</li>
-            <li>Sell add-ons like merchandise and refreshments alongside tickets.</li>
-            <li>Personalize invites and optimize sales strategies dynamically.</li>
+            <li>
+              Sell add-ons like merchandise and refreshments alongside tickets.
+            </li>
+            <li>
+              Personalize invites and optimize sales strategies dynamically.
+            </li>
           </ul>
         </>
       ),
@@ -48,10 +62,15 @@ const ProfessionalFeatures = () => {
       para: (
         <>
           <ul>
-            <li>Instant digital ticket delivery and real-time attendee updates.</li>
+            <li>
+              Instant digital ticket delivery and real-time attendee updates.
+            </li>
             <li>Efficient handling of returns, refunds, and inventory.</li>
             <li>Utilize AI for quick adjustments and information retrieval.</li>
-            <li>Make event logistics smooth and focus on creating memorable experiences.</li>
+            <li>
+              Make event logistics smooth and focus on creating memorable
+              experiences.
+            </li>
           </ul>
         </>
       ),
@@ -62,10 +81,18 @@ const ProfessionalFeatures = () => {
       para: (
         <>
           <ul>
-            <li>Use powerful tools to boost event visibility through engaging content.</li>
+            <li>
+              Use powerful tools to boost event visibility through engaging
+              content.
+            </li>
             <li>Collaborate with artists and venues for wider reach.</li>
-            <li>Link seamlessly to any ticketing service or social platform.</li>
-            <li>Engage directly with attendees via real-time messaging and exclusive updates.</li>
+            <li>
+              Link seamlessly to any ticketing service or social platform.
+            </li>
+            <li>
+              Engage directly with attendees via real-time messaging and
+              exclusive updates.
+            </li>
           </ul>
         </>
       ),
@@ -76,9 +103,16 @@ const ProfessionalFeatures = () => {
       para: (
         <>
           <ul>
-            <li>Customizable QR scanners and API integrations for seamless operations.</li>
-            <li>Advanced affiliate link tracking and performance monitoring.</li>
-            <li>Ensure high security and customization to meet unique event needs.</li>
+            <li>
+              Customizable QR scanners and API integrations for seamless
+              operations.
+            </li>
+            <li>
+              Advanced affiliate link tracking and performance monitoring.
+            </li>
+            <li>
+              Ensure high security and customization to meet unique event needs.
+            </li>
           </ul>
         </>
       ),
@@ -89,8 +123,14 @@ const ProfessionalFeatures = () => {
       para: (
         <>
           <ul>
-            <li>Simplify financial oversight with connected accounts and precise refund capabilities.</li>
-            <li>Dynamic pricing for optimized profit margins and strategic financial reporting.</li>
+            <li>
+              Simplify financial oversight with connected accounts and precise
+              refund capabilities.
+            </li>
+            <li>
+              Dynamic pricing for optimized profit margins and strategic
+              financial reporting.
+            </li>
             <li>Quick and directed payouts to chosen accounts.</li>
           </ul>
         </>
@@ -102,9 +142,17 @@ const ProfessionalFeatures = () => {
       para: (
         <>
           <ul>
-            <li>Deep dive into analytics for strategic insights into demographics and purchasing behaviors.</li>
-            <li>Monitor sales trends and financial metrics to prepare for future events.</li>
-            <li>Utilize custom reports to enhance event planning and execution.</li>
+            <li>
+              Deep dive into analytics for strategic insights into demographics
+              and purchasing behaviors.
+            </li>
+            <li>
+              Monitor sales trends and financial metrics to prepare for future
+              events.
+            </li>
+            <li>
+              Utilize custom reports to enhance event planning and execution.
+            </li>
           </ul>
         </>
       ),
@@ -115,8 +163,13 @@ const ProfessionalFeatures = () => {
       para: (
         <>
           <ul>
-            <li>Implement virtual queues to enhance entry logistics and safety.</li>
-            <li>Manage smooth financial transactions and sponsor engagements effectively.</li>
+            <li>
+              Implement virtual queues to enhance entry logistics and safety.
+            </li>
+            <li>
+              Manage smooth financial transactions and sponsor engagements
+              effectively.
+            </li>
           </ul>
         </>
       ),
@@ -163,6 +216,12 @@ const ProfessionalFeatures = () => {
         </div>
       ))}
       {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
+      <div className="Professional-features-faq">
+        <h1 className="FAQ-Heading">Questions? We're glad you asked.</h1>
+        <button className="Faq-btn" onClick={()=>Navigate('/faq')}>
+          FAQ's
+        </button>
+      </div>
     </div>
   );
 };
