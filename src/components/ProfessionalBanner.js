@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProfessionalBanner.css";
-import ProfessionalBannerImg from '../Assets/ProfessionalBannnerImg.jpg'
+import ProfessionalBannerImg from '../Assets/CreatorsImg.jpg'
+import SignupFormModal from "./SignupFormModal";
+
 
 const ProfessionalBanner = () => {
+  
+  const [showSignup, setShowSignup] = useState(false);
   return (
     <div className="Professional-banner">
       <div className="Professional-banner-left">
@@ -14,12 +18,16 @@ const ProfessionalBanner = () => {
           create memorable experiences. Utilize detailed analytics to grow your
           audience and elevate every gathering.
         </p>
+        <button class="Register-btn" onClick={() => setShowSignup(!showSignup)}>
+          Register
+        </button>
       </div>
       <div className="Professional-banner-right">
         <div className="Professional-banner-right-img">
           <img src={ProfessionalBannerImg} alt="" />
         </div>
       </div>
+      {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
     </div>
   );
 };

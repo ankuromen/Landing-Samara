@@ -3,13 +3,15 @@
   height: 100vh;
   width: 100%;
   color: white;
-  background-color: #1149ff;
-  background-image: url("../Assets/ProfessionalBannerImg.png");
+  background-image: url("../Assets/CreatorsBannerBackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .Professional-banner-left {
   box-sizing: border-box;
   display: flex;
-  gap: 3em;
+  gap: 1em;
   flex-direction: column;
   justify-content: center;
   width: 60%;
@@ -18,12 +20,12 @@
   padding-right: 3em;
   animation: text-popup 1s ease-out forwards;
   h1 {
-    font-size: 3.5em;
+    font-size: 4em;
     font-weight: 500;
     text-align: start;
   }
   p {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 }
 .Professional-banner-right {
@@ -32,18 +34,33 @@
   height: 90%;
   display: flex;
   align-items: self-end;
+
   justify-content: space-around;
 }
 .Professional-banner-right-img {
   height: 80%;
   width: 50%;
   border-radius: 1.5em;
+  border: 2px solid gray;
   overflow: hidden;
   align-items: center;
   animation: img-popup 1s ease-out forwards;
   img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+  }
+}
+.Register-btn {
+  padding: 1em 2em;
+  width: fit-content;
+  border: none;
+  border-radius: 2em;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid gray;
+    transform: scale(1.1);
   }
 }
 @keyframes img-popup {
@@ -101,6 +118,7 @@
   .Professional-banner {
     padding-top: 5em;
     flex-direction: column;
+    height: auto;
   }
   .Professional-banner-left {
     gap: 2em;
@@ -116,6 +134,7 @@
   }
   .Professional-banner-right {
     width: 100%;
-    align-items: center;
+    align-items: center;height: 30em;
   }
 }
+  
