@@ -16,7 +16,7 @@ const HomeBanner = () => {
           <h1>Amplifying experiences. </h1>
           <Link to="/team">
               {" "}
-              <button className="glow-on-hover" type="button">REGISTER</button>
+              <button id='CTA-Home-Banner' className="glow-on-hover" type="button">Register</button>
             </Link>
           {/* <img className='homebanner-scroll' src={scrollanimation} alt='banner'/> */}
         </div>
