@@ -121,20 +121,25 @@
     height: auto;
   }
   .Professional-banner-left {
-    gap: 2em;
+    gap: 1em;
     width: 100%;
     padding-left: 1em;
     padding-right: 1em;
+    align-items:center;
     h1 {
-      font-size: 2em;
+      font-size: 2.25em;
+      text-align: center;
     }
     p {
-      font-size: 1em;
+      width: 70%;
+      font-size: 1.25em;
+      text-align: center;
+
     }
   }
   .Professional-banner-right {
     width: 100%;
-    align-items: center;height: 30em;
+    align-items: center;
+    height: 40em;
   }
 }
-  
