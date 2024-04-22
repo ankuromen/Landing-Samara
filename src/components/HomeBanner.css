@@ -1,9 +1,9 @@
 .Homebanner-container {
   position: relative;
   height: 120vh;
-  display: flex; /* Add display flex */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .homebanner-video {
@@ -24,7 +24,7 @@
   gap: 1em;
   font-size: 2.5em;
   h1 {
-    font-weight: 700;
+    font-weight: 500;
     z-index: 1;
   }
 }
