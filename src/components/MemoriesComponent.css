@@ -43,7 +43,7 @@
   animation: fade-in linear 2s;
   animation-timeline: view(600px 0px);
 }
-.Impromtu-Text{
+.Impromtu-Text {
   display: flex;
   width: 80%;
   margin: auto;
@@ -102,9 +102,11 @@
 
 .Memories-btn span {
   background: rgb(0, 172, 238);
-  background: linear-gradient(0deg,
-      rgba(0, 172, 238, 1) 0%,
-      rgba(2, 126, 251, 1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 172, 238, 1) 0%,
+    rgba(2, 126, 251, 1) 100%
+  );
   display: block;
   position: absolute;
   width: 90px;
@@ -197,16 +199,30 @@
     width: 80vw;
     font-size: 3.8em;
   }
-
+  .Impromtu-Text {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+  }
   .Memories-Title {
     font-size: 3.8em;
   }
-
-  .Memories-Image-img {
-    width: 55%;
+  .Memories-Image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .Memories-Text {
+    width: 90%;
+    font-size: 1em;
+    margin: auto;
+    p {
+      margin-bottom: 1em;
+    }
   }
 }
-
 @media (max-width: 480px) {
   .Memories-Content h1 {
     width: 90vw;
@@ -216,9 +232,14 @@
   .Memories-Title {
     font-size: 3.25em;
   }
+  .Impromtu-Text {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
 
   .Memories-Text {
-    width: 90%;
+    width: 95%;
     font-size: 1em;
   }
 
@@ -243,8 +264,19 @@
 }
 
 .glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
   left: -2px;
@@ -255,12 +287,12 @@
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
 .glow-on-hover:active {
-  color: #000
+  color: #000;
 }
 
 .glow-on-hover:active:after {
@@ -273,7 +305,7 @@
 
 .glow-on-hover:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
