@@ -3,10 +3,10 @@
   height: 100vh;
   width: 100%;
   color: white;
-  /* background-color: #1149ff; */
   background-image: url("../Assets/CreatorsBannerBackground.jpg");
-  background-position: 100%;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .Professional-banner-left {
   box-sizing: border-box;
@@ -118,6 +118,7 @@
   .Professional-banner {
     padding-top: 5em;
     flex-direction: column;
+    height: auto;
   }
   .Professional-banner-left {
     gap: 2em;
@@ -133,6 +134,7 @@
   }
   .Professional-banner-right {
     width: 100%;
-    align-items: center;
+    align-items: center;height: 30em;
   }
 }
+  
