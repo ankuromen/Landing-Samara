@@ -17,7 +17,7 @@ const HomeBanner = () => {
         <div className="Homebanner-text">
           <h1>Unifying passions.</h1>
           <h1>Amplifying experiences. </h1>
-          <Link to="#">
+          <Link to="#" style={{ textDecoration: 'none' }}>
               {" "}
               <GlowButton buttonText="Register" onClick={() => setShowSignup(!showSignup)}/>
             </Link>

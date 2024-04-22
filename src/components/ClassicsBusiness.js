@@ -34,7 +34,7 @@ const ClassicsBusiness = () => {
             communities that resonate, and experiences that elevate. From local
             pilate classes to Coachella, we have got you covered! :)
           </p>
-          <Link to="/professional">
+          <Link to="/professional" style={{ textDecoration: 'none' }}>
             <GlowButton buttonText="Explore" />
           </Link>
           {/* Use the GlowButton component here */}

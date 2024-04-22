@@ -21,7 +21,7 @@ const ClassicsFans = () => {
             physical world and feel the excitement and amazement even if you are
             visiting the virtual world.
           </p>
-          <Link to="/classic">
+          <Link to="/classic" style={{ textDecoration: 'none' }}>
             <GlowButton buttonText="Explore" />
           </Link>
           {/* Replacing the old button */}
