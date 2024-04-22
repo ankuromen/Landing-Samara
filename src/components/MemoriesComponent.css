@@ -43,25 +43,30 @@
   animation: fade-in linear 2s;
   animation-timeline: view(600px 0px);
 }
-
+.Impromtu-Text{
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
 .Memories-Text {
   width: 45%;
-  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 1.25em;
   line-height: 1.5;
-  margin-right: 5%;
+  align-items: center;
 }
 
 .Memories-Image {
   display: flex;
   justify-content: start;
-  width: 100%;
+  width: 50%;
 }
 
 .Memories-Image-img {
   margin-top: 1.5em;
-  width: 35%;
-  margin-left: 14%;
+  width: 80%;
   border-radius: 2em;
   object-fit: cover;
 }
