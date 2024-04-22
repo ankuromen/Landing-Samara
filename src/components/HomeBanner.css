@@ -1,6 +1,9 @@
 .Homebanner-container {
   position: relative;
   height: 100vh;
+  display: flex; /* Add display flex */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .homebanner-video {
@@ -12,10 +15,9 @@
   object-fit: cover;
 }
 .Homebanner-text {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  height: 95%;
-  justify-content: end;
   color: white;
   margin-left: 1em;
   margin-bottom: 1em;

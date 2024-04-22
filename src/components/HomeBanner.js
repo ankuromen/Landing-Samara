@@ -18,7 +18,7 @@ const HomeBanner = () => {
               {" "}
               <button className="glow-on-hover" type="button">REGISTER</button>
             </Link>
-          <img className='homebanner-scroll' src={scrollanimation} alt='banner'/>
+          {/* <img className='homebanner-scroll' src={scrollanimation} alt='banner'/> */}
         </div>
       </div>
     );
