@@ -19,9 +19,9 @@
 }
 .Blogs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 3em;
-  padding-right: 3em;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 7em;
+  padding-right: 7em;
   box-sizing: border-box;
   padding-top: 2em;
 }
@@ -54,9 +54,10 @@
 }
 .Blogs-card-text {
   margin-top: 0.5em;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-bottom: 0.5em;
   color: white;
+  text-align: center;
 }
 .Blogs-link {
   display: none;
@@ -66,13 +67,14 @@
   color: white;
   align-items: center;
   gap: 1em;
-   top: 50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .Blogs-card:hover {
   .Blogs-card-img img {
     transform: scale(1.1);
+    filter: brightness(0.3);
   }
   .Blogs-link {
     display: flex;
@@ -92,18 +94,18 @@
     background-position: 100% 50%;
   }
 }
-@media only screen and (min-width:768px) and (max-width:1200px){
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   .Blogs {
     display: block;
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 2em;
   }
-  .Blogs-card{
+  .Blogs-card {
     height: fit-content;
-    margin-bottom: 2.5em
+    margin-bottom: 2.5em;
   }
-  .Blogs-card-text{
+  .Blogs-card-text {
     text-align: center;
     font-size: 1.5em;
   }
