@@ -3,6 +3,7 @@ import {React,useState} from 'react';
 import { Link } from 'react-router-dom';
 import BannerVid from "../Assets/heading-vid.mp4";
 import SignupFormModal from "./SignupFormModal";
+import GlowButton from './GlowButton';
 // import scrollanimation from '../Assets/scroll-animation.gif'
 
 const HomeBanner = () => {
@@ -18,7 +19,7 @@ const HomeBanner = () => {
           <h1>Amplifying experiences. </h1>
           <Link to="#">
               {" "}
-              <button id='CTA-Home-Banner' className="glow-on-hover" type="button"onClick={() => setShowSignup(!showSignup)}>Register</button>
+              <GlowButton buttonText="Register" onClick={() => setShowSignup(!showSignup)}/>
             </Link>
           {/* <img className='homebanner-scroll' src={scrollanimation} alt='banner'/> */}
         </div>
