@@ -19,7 +19,7 @@ const Navbar = () => {
   }, [isMobile]);
 
   useEffect(() => {
-    navbarColorChange();
+    // navbarColorChange();
     scrollFunction();
   });
 var Screen = window.matchMedia("(min-width: 769px)");
@@ -42,13 +42,13 @@ var Screen = window.matchMedia("(min-width: 769px)");
       }
     }
   }
-  function navbarColorChange() {
-    const textColor = pathname === "/" ? "black" : "white";
-    document.getElementById("brand").style.color = textColor;
-    document.getElementById("home").style.color = textColor;
-    document.getElementById("creators").style.color = textColor;
-    document.getElementById("fans").style.color = textColor;
-  }
+  // function navbarColorChange() {
+  //   const textColor = pathname === "/" ? "black" : "white";
+  //   document.getElementById("brand").style.color = textColor;
+  //   document.getElementById("home").style.color = textColor;
+  //   document.getElementById("creators").style.color = textColor;
+  //   document.getElementById("fans").style.color = textColor;
+  // }
 
   return (
     <div className={isMobile ? "navbarfull" : "navbar"}>

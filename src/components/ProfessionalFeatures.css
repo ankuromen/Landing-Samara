@@ -11,8 +11,8 @@
   min-height: 70vh;
   width: 100%;
   gap: 2em;
-  background: rgb(0, 0, 0);
-  color: white;
+  /* background: rgb(0, 0, 0);
+  color: white; */
   h1 {
     font-size: 5em;
     text-transform: uppercase;
@@ -32,7 +32,7 @@
   margin: auto;
   margin-top: 0;
   margin-bottom: 0;
-  background: white;
+  background: black;
 }
 #iconimg {
   width: 1.75em;
@@ -44,7 +44,7 @@
   width: 0.05em;
   height: 10em;
   margin: auto;
-  background: white;
+  background: black;
 }
 
 .Professional-features {
@@ -53,8 +53,8 @@
   align-items: center;
   position: relative;
   width: 100%;
-  background: rgb(0, 0, 0);
-  color: white;
+  /* background: rgb(0, 0, 0);
+  color: white; */
   .Professional-features-text {
     position: relative;
     text-align: center;
@@ -87,7 +87,7 @@
     top: 0em;
     width: 0.05em;
     height: 10em;
-    background: white;
+    background: black;
   }
   .Professional-features-img {
     width: 25em;
@@ -148,7 +148,7 @@
   font-size: 4em;
   margin-bottom: 1em;
   text-align: center;
-  color: white;
+  /* color: white; */
 }
 .Faq-btn {
   padding: 1em 2em;

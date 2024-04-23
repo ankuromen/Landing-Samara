@@ -4,8 +4,8 @@
   padding-top: 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  background-color: black;
-  color: white;
+  /* background-color: black;
+  color: white; */
   text-align: center;
 }
 .Story-Info {
