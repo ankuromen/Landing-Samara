@@ -23,6 +23,7 @@
 .Story-Info-SubPara {
   margin-top: 1em;
   font-size: 1.6em;
+  text-decoration: underline;
 }
 .Story-Info-SubDesc {
   font-size: 1.5em;

@@ -13,21 +13,21 @@ const StoryInfo = () => {
       <div className="Story-Info">
         <h3 className="Story-Info-Sub">MICROHUBS</h3>
         <h3 className="Story-Info-SubPara">
-          Ottawa, Toronto, ON Montreal, QC San Francisco, CA
+          Ottawa, Toronto, ON <br />
+          Montreal, QC <br />
+          San Francisco, CA
         </h3>
       </div>
       <div className="Story-Info">
-        <h3 className="Story-Info-Subnote">Eventiq is build for</h3>
+        <h3 className="Story-Info-Subnote">Eventiq is crafted for</h3>
         <h3 className="Story-Info-SubDesc">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum
+          The next generation of event-goers and creators. Our platform empowers
+          community builders and event professionals to connect with audiences
+          through immersive video-based experiences. We blend the excitement of
+          live interactions with the reach of digital technology, creating a
+          space where every encounter becomes memorable. Our mission: To
+          seamlessly merge the tangible with the digital, fostering a vibrant
+          community that thrives on connection and shared experiences.
         </h3>
       </div>
     </div>
