@@ -27,12 +27,13 @@ const ContactOptions = () => {
           <CiPhone />
           Phone
         </h2>
-        <p className="ContactOpt-para">+1000000000000</p>
+        <p className="ContactOpt-para">+1 (613) 413-0777</p>
+        <p className="ContactOpt-para">+1 (647) 835-9139</p>
         <h2 className="ContactOpt-header">
           <MdOutlineMailOutline />
           Email Address
         </h2>
-        <p className="ContactOpt-para">example@gmail.com</p>
+        <p className="ContactOpt-para">info@proptimize.co</p>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ const StoryInfo = () => {
       <div className="Story-Info">
         <h3 className="Story-Info-Sub">MICROHUBS</h3>
         <h3 className="Story-Info-SubPara">
-          50 Laurier Ave E 50 Laurier Ave E, Ottawa, ON K1N 1H7, Canada
+          Ottawa, Toronto, ON Montreal, QC San Francisco, CA
         </h3>
       </div>
       <div className="Story-Info">

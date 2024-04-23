@@ -20,14 +20,15 @@ const TheTeam = () => {
           <h3 className="leadership-member-name">Can Say</h3>
           <p className="leadership-member-title">Co-Founder & COO</p>
           <p className="leadership-member-experience">
-            As a global citizen and a DJ, I bring a colorful personality and
-            multilingual skills to Eventiq, shaped by my experiences living in
-            four different countries and speaking five languages. My academic
-            background in Business Technology Management sparked a deep
-            fascination with how communities form and evolve. At Eventiq, I am
-            committed to developing robust ERP solutions for event organizers
-            and fostering unique communities that cater to our users' diverse
-            interests.
+            Hey there! I'm Can, studying business technology management at
+            University of Ottawa.As a global citizen and a DJ, I bring a
+            colorful personality and multilingual skills to Eventiq, shaped by
+            my experiences living in four different countries and speaking five
+            languages. My academic background in Business Technology Management
+            sparked a deep fascination with how communities form and evolve. At
+            Eventiq, I am committed to developing robust ERP solutions for event
+            organizers and fostering unique communities that cater to our users'
+            diverse interests.
           </p>
           <a
             className="leadership-member-linkedin"
@@ -76,13 +77,15 @@ const TheTeam = () => {
           <h3 className="leadership-member-name">Arman Doğru</h3>
           <p className="leadership-member-title">Co-Founder & CTO</p>
           <p className="leadership-member-experience">
-            As an international student and an Actor, I value precision and
-            consistency. Growing up in a multicultural environment, having
-            studied in multiple countries throughout my life, expanded my
-            horizons. I believe in the power of making informed decisions and
-            utilizing modern tools. At Eventiq, I will be focusing on the
-            development of the server-side algorithms and AI models for allowing
-            our users to have a personalized and seamless experience.
+            Hello world! I'm Arman, currently an AI development graduate at
+            University of Ottawa.As an international student and an Actor, I
+            value precision and consistency. Growing up in a multicultural
+            environment, having studied in multiple countries throughout my
+            life, expanded my horizons. I believe in the power of making
+            informed decisions and utilizing modern tools. At Eventiq, I will be
+            focusing on the development of the server-side algorithms and AI
+            models for allowing our users to have a personalized and seamless
+            experience.
           </p>
           <a
             className="leadership-member-linkedin"

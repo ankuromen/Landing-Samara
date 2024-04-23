@@ -217,8 +217,10 @@ const ProfessionalFeatures = () => {
       ))}
       {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
       <div className="Professional-features-faq">
-        <h1 className="FAQ-Heading">Questions? We're glad you asked.</h1>
-        <button className="Faq-btn" onClick={()=>Navigate('/faq')}>
+        <h1 className="Professional-FAQ-Heading">
+          Questions? We're glad you asked.
+        </h1>
+        <button className="Faq-btn" onClick={() => Navigate("/faq")}>
           FAQ's
         </button>
       </div>

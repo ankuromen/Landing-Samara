@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import "./FooterNew.css";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaTiktok } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
 const FooterNew = () => {
   const [email, setEmail] = useState("");
 
-  const handleSubmit  = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await axios.post("http://localhost:3000/subscribe", { email }); // Make POST request to backend
@@ -61,11 +60,17 @@ const FooterNew = () => {
           <p>© 2024 Eventiq LLC All rights reserved.</p>
         </div>
         <div className="Footer-bottomsection-social">
-          <a href="https://twitter.com">
+          {/* <a href="https://twitter.com">
             <FaXTwitter className="social-icons" />
-          </a>
-          <a href="https://linkedin.com">
+          </a> */}
+          <a href="https://www.linkedin.com/company/evntiq-inc/">
             <FaLinkedin className="social-icons" />
+          </a>
+          <a href="https://www.tiktok.com/@evntiq?_t=8lkG2O0jsfd&_r=1">
+            <FaTiktok className="social-icons" />
+          </a>
+          <a href=" https://www.instagram.com/envtiq/">
+            <FaInstagram className="social-icons" />
           </a>
         </div>
       </div>
