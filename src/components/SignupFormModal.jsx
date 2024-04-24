@@ -55,22 +55,23 @@ const SignupFormModal = ({ onClose }) => {
 
         <label>Full Name</label>
         <input type="text" placeholder="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} />
-        
+
         <label>Email</label>
         <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        
+
         <label>Gender</label>
         <select name="Gender" value={gender} onChange={(e) => setGender(e.target.value)}>
+          <option value="Not specified">Not Specified</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
-          <option value="Not specified">Not Specified</option>
+
         </select>
-        
+
         <label>Nationality</label>
         <input type="text" placeholder="Nationality" value={nationality} onChange={(e) => setNationality(e.target.value)} />
-        
+
         <button className="Signup-form-btn" onClick={handleSubmit}>Register</button>
-        
+
         {/* Popup confirmation */}
         {registrationStatus === true && (
           <div className="confirmation-popup">

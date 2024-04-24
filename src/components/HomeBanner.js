@@ -8,7 +8,7 @@ import GlowButton from './GlowButton';
 const HomeBanner = () => {
   const [showSignup, setShowSignup] = useState(false);
   return (
-    <div className="Homebanner-container" onClick={() => {setShowSignup(!showSignup)}}>
+    <div className="Homebanner-container" >
       <video className="homebanner-video" autoPlay muted loop>
         <source src={BannerVid} type="video/mp4" />
         Your browser does not support the video tag.
@@ -16,8 +16,10 @@ const HomeBanner = () => {
       <div className="Homebanner-text">
         <h1>Unifying passions.</h1>
         <h1>Amplifying experiences. </h1>
+        <div onClick={() => { setShowSignup(!showSignup) }}>
+          <GlowButton buttonText="Register" />
+        </div>
 
-        <GlowButton buttonText="Register"/>
         {/* <img className='homebanner-scroll' src={scrollanimation} alt='banner'/> */}
       </div>
       {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}

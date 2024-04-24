@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -6,12 +5,12 @@ const User = require("./models/User.js");
 const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 app.use(bodyParser.json());
 app.use(cors());
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI, {
+mongoose.connect("mongodb+srv://proptimize:proptplatforms07@proptimize.oqdspbb.mongodb.net/?retryWrites=true&w=majority&appName=Proptimize", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
