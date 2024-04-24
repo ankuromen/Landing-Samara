@@ -25,6 +25,13 @@
 .Location {
   border-radius: 1em;
   border: none;
+  width: 100%;
+  height: 50vh;
+}
+@media (max-width: 1025px) {
+  .Contact-options {
+    margin-left: 1em;
+  }
 }
 @media (max-width: 768px) {
   .Contact-options {

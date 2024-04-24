@@ -17,7 +17,7 @@
     font-size: 3em;
     text-align: center;
   }
-  p{
+  p {
     font-size: 1.5em;
     text-align: center;
   }
@@ -74,18 +74,28 @@
   resize: none;
   margin-top: 0.5em;
 }
-@media only screen and (min-width:768px) and (max-width:900px)
-{
+@media (max-width: 900px) {
   .Contact-form-right {
-    
     h2 {
-     
       font-size: 2em;
-      
     }
-    p{
-      font-size: 1em;
-     
+    p {
+      font-size: 1.25em;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+  .Contact-form-right {
+    h2 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.1em;
     }
   }
 }
