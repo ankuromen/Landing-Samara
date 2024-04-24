@@ -1,13 +1,14 @@
-import React from "react";
-import { useState } from "react";
-import "./SignupFormModal.css";
+import React, { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
+import "./SignupFormModal.css";
+
 const SignupFormModal = ({ onClose }) => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [gender, setGender] = useState("");
   const [nationality, setNationality] = useState("");
   const [registrationStatus, setRegistrationStatus] = useState(null);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -53,23 +54,27 @@ const SignupFormModal = ({ onClose }) => {
         </div>
 
         <label>Full Name</label>
-        <input type="text" placeholder="Full Name" onChange={(e) => setFullName(e.target.value)} />
+        <input type="text" placeholder="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} />
+        
         <label>Email</label>
-        <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
+        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        
         <label>Gender</label>
-        <select name="Gender" placeholder="Gender" onChange={(e) => setGender(e.target.value)}>
+        <select name="Gender" value={gender} onChange={(e) => setGender(e.target.value)}>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
-          <option value="Notspecified">Not Specifeid</option>
+          <option value="Not specified">Not Specified</option>
         </select>
+        
         <label>Nationality</label>
-        <input type="text" placeholder="Country" onChange={(e) => setNationality(e.target.value)} />
+        <input type="text" placeholder="Nationality" value={nationality} onChange={(e) => setNationality(e.target.value)} />
+        
         <button className="Signup-form-btn" onClick={handleSubmit}>Register</button>
+        
         {/* Popup confirmation */}
         {registrationStatus === true && (
           <div className="confirmation-popup">
             <p>Registration Successful!</p>
-
           </div>
         )}
         {registrationStatus === false && (

@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -10,9 +11,18 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(cors());
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost:27017/eventiq_backend", {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
+});
+
+// Handle connection events
+mongoose.connection.on('connected', () => {
+  console.log('Connected to MongoDB');
+});
+
+mongoose.connection.on('error', (err) => {
+  console.error('Error connecting to MongoDB:', err);
 });
 const emailSchema = new mongoose.Schema({
   email: {
@@ -69,24 +79,24 @@ app.post("/subscribe", async (req, res) => {
   }
 });
 app.post("/register", async (req, res) => {
-    try {
-      const { fullName, email, gender, nationality } = req.body;
-  
-      // Check if the email already exists in the database
-      const existingUser = await User.findOne({ email });
-      if (existingUser) {
-        return res.status(400).json({ message: "Email is already registered" });
-      }
-  
-      // If email doesn't exist, create and save the new user
-      const user = new User({ fullName, email, gender, nationality });
-      await user.save();
-      res.status(201).json({ message: "User registered successfully" });
-    } catch (error) {
-      res.status(400).json({ error: error.message });
-      console.log(error);
+  try {
+    const { fullName, email, gender, nationality } = req.body;
+
+    // Check if the email already exists in the database
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      return res.status(400).json({ message: "Email is already registered" });
     }
-  });
+
+    // If email doesn't exist, create and save the new user
+    const user = new User({ fullName, email, gender, nationality });
+    await user.save();
+    res.status(201).json({ message: "User registered successfully" });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+    console.log(error);
+  }
+});
 
 // Start the server
 app.listen(PORT, () => {
