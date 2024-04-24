@@ -15,7 +15,7 @@ const ClassicsContent = () => {
   const [showSignup,setShowSignup] = useState(false)
   const classicFeatures = [
     {
-      title: "Connect & Share",
+      title: "Connect & Share.",
       para: "Start by connecting with friends & family. Share events, communities, & content effortlessly. Whether it’s a captivating video, an exciting post, or just the anticipation of a shared event, bring everyone closer.",
       image: Image1,
     },
