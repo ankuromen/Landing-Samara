@@ -105,6 +105,10 @@
   }
   .Bus-Img-Section {
     width: auto;
+    animation: none;
+  }
+  .fans-Img-Section {
+    animation: none;
   }
   .Bus-Text-Section {
     width: auto;
@@ -122,7 +126,7 @@
     width: auto;
   }
   .Bus-Text-Section {
-    p{
+    p {
       font-size: 0.65em;
       width: 90%;
     }

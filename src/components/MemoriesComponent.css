@@ -227,8 +227,8 @@
   .Memories-Content h1 {
     width: 90vw;
     font-size: 3.25em;
+    animation: none;
   }
-
   .Memories-Title {
     font-size: 3.25em;
   }
