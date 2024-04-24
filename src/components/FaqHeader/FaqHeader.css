@@ -4,6 +4,7 @@
   margin-top: 8em;
   height: 55vh;
   background-image: url("../../Assets/Faqheader.jpg");
+  box-sizing: border-box;
   background-repeat: no-repeat;
   background-position-y: 50%;
   background-size: 100%;
@@ -11,5 +12,21 @@
   h1 {
     font-size: 4em;
     margin-left: 1em;
+  }
+}
+@media (max-width: 768px) {
+  .Faq-header-container {
+    height: 40vh;
+    h1 {
+      font-size: 3em;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .Faq-header-container {
+    height: 20vh;
+    h1 {
+      font-size: 2.5em;
+    }
   }
 }
