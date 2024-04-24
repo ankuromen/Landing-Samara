@@ -36,7 +36,7 @@ const FAQ = () => {
         },
         {
             question: "What do we currently offer?",
-            answer: "We offer free promotion for your events or communities across our social media channels, a comprehensive guide to hosting successful events, and insights into creating and growing vibrant communities. Why do we do this? To help you succeed! Additionally, we provide ongoing resources and market updates—all for free. Want to be featured or simply get started with a free guide? Contact us at (email address) or sign up today!"
+            answer: "We offer free promotion for your events or communities across our social media channels, a comprehensive guide to hosting successful events, and insights into creating and growing vibrant communities. Why do we do this? To help you succeed! Additionally, we provide ongoing resources and market updates—all for free. Want to be featured or simply get started with a free guide? Contact us at (info@proptimize.co) or sign up today!"
         }
         // Add more FAQs as needed
     ];

@@ -15,33 +15,33 @@ const ClassicsContent = () => {
   const [showSignup,setShowSignup] = useState(false)
   const classicFeatures = [
     {
-      title: "Connect and Share",
-      para: "Start by connecting with friends and family. Share events, communities, and content effortlessly. Whether it’s a captivating video, an exciting post, or just the anticipation of a shared event, bring everyone closer.",
+      title: "Connect & Share",
+      para: "Start by connecting with friends & family. Share events, communities, & content effortlessly. Whether it’s a captivating video, an exciting post, or just the anticipation of a shared event, bring everyone closer.",
       image: Image1,
     },
     {
-      title: "Explore and Follow",
-      para: "Dive into a world of events, creators and communities. Follow your favourite venues, artists, and event pages, and never miss out. Check out past highlights, read reviews, and see what’s trending to find your perfect fit—from finding local art or yoga classes to Coachella!",
+      title: "Explore & Follow.",
+      para: "Dive into a world of events, creators & communities. Follow your favourite venues, artists, & event pages, & never miss out. Check out past highlights, read reviews, & see what’s trending to find your perfect fit—from finding local art or yoga classes to Coachella.",
       image: Image2,
     },
     {
-      title: "Build and Participate",
-      para: "Discover a wide range of events, join vibrant communities tailored to your interests, and access engaging content all in one place.",
+      title: "Build & Participate.",
+      para: "Discover a wide range of events, join vibrant communities tailored to your interests, & access engaging content all in one place.",
       image: Image3,
     },
     {
-      title: "Purchase Experience",
-      para: "Purchase tickets effortlessly for the events you love, and share them with friends and family to invite them along or promote your favorite gatherings.",
+      title: "Purchase Experience.",
+      para: "Purchase tickets effortlessly for the events you love, & share them with friends & family to invite them along or promote your favorite gatherings.",
       image: Image4,
     },
     {
-      title: "Rewarding Loyalty",
-      para: "Build and customize your community hub where you can host events, share content, and foster discussions, enhancing engagement and connectivity.",
+      title: "Rewarding Loyalty.",
+      para: "Build & customize your community hub where you can host events, share content, & foster discussions, enhancing engagement & connectivity.",
       image: Image5,
     },
     {
-      title: "Engage and Participate",
-      para: "Venture into a world of endless possibilities, expand your social circle, and enjoy a plethora of activities and events designed to entertain and inspire.",
+      title: "Engage & Participate.",
+      para: "Venture into a world of endless possibilities, expand your social circle, & enjoy a plethora of activities & events designed to entertain & inspire.",
       image: Image6,
     },
   ];
@@ -90,9 +90,9 @@ const ClassicsContent = () => {
               <div className="slide-para" id="feature-text">
                 <h2>
                   Our features don't just bring the world closer—they're the
-                  very threads binding the tapestry of joy, community and
+                  very threads binding the tapestry of joy, community &
                   memories. Each click isn’t meaningless, it opens a door that
-                  invites you to create and share unforgettable moments.
+                  invites you to create & share unforgettable moments.
                 </h2>
               </div>
             </SwiperSlide>
@@ -112,9 +112,9 @@ const ClassicsContent = () => {
             <SwiperSlide>
               <div className="slide-para" id="feature-text">
                 <h2>
-                  Ready for the extraordinary? Join the the waitlist today and
+                  Ready for the extraordinary? Join the the waitlist today &
                   be among the first to discover a new universe. Sign up to get
-                  exclusive early access and start your journey to unforgettable
+                  exclusive early access & start your journey to unforgettable
                   moments.
                 </h2>
                 <button className="merged-button" id="Classics-Slide-Btn" onClick={() => setShowSignup(!showSignup)}>

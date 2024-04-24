@@ -1,7 +1,6 @@
 .Faq-header-container {
   display: flex;
   color: white;
-  margin-top: 8em;
   height: 55vh;
   background-image: url("../../Assets/Faqheader.jpg");
   box-sizing: border-box;

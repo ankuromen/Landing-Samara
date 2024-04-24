@@ -2,16 +2,8 @@ import React from "react";
 import GlowButton from "./GlowButton"; // Adjust the path to where your GlowButton component is located
 import "./ClassicsBusiness.css";
 import Test from "../Assets/test123.jpg"; // Adjust the path to your image if necessary
-import Typewriter from "typewriter-effect";
 import { Link } from "react-router-dom";
 const ClassicsBusiness = () => {
-  const eventiqFor = [
-    "Design Experiences.",
-    "Shape Moments.",
-    "Craft the Unforgettable.",
-    "Stay Connected.",
-    // Add more items as needed
-  ];
   return (
     <div className="Classic-Business-Container">
       <div className="Classics-Content">
@@ -20,15 +12,7 @@ const ClassicsBusiness = () => {
           <h1>For business</h1>
         </section>
         <section className="Bus-Text-Section">
-          <h2>
-            <Typewriter
-              options={{
-                strings: eventiqFor,
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h2>
+          <h2>Shape Moments.</h2>
           <p>
             Give form to your immagination. Orchestrate events that captivate,
             communities that resonate, and experiences that elevate. From local

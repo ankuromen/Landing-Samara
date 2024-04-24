@@ -12,7 +12,6 @@ const Page2 = () => {
             alt=""
           />
           <div className="Blog-content-header-text">
-            <h4>Blog</h4>
             <h1>
               How Technology is Transforming Event Management with Eventiq?
             </h1>
@@ -109,8 +108,13 @@ const Page2 = () => {
           </h1>
           <div className="Author-Details">
             <h3>Written By</h3>
-            <h1>Name</h1>
-            <p><a href="wwww.instagram.com">Instagram</a><br/><a href="www.linkedin.com">LinkedIN</a></p>
+            <h1>Arman Doğru</h1>
+            <a href="https://www.linkedin.com/in/arman-dogru/">
+              <img
+                alt="Linkedin"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAACXBIWXMAAAsTAAALEwEAmpwYAAABW0lEQVR4nGNgGAXUAswdl1wZ2y+uZOy4sJs8fHEFc/slF/yWtJ13Y2q/8I+p4+J/inD7hX94LQO5hmJLOiAYZBY+i/bDFHJ0X/qfsePJf5/V98m1aD9RFmXtfPIfBP7++/9fcdp12lnks/o+2JLX337/F+q/QjuLmDou/leafp0sS5hIsSh+y6P/e+5/BmPNWTfAwQfjp+94/N95+d3/Cy69+7/kyrv/2TufgOOULIsaj7z4DwPmC2//151zE86/+Oo7OFiRwZY7H6lvEQjsvPfp/9obH/7/+Yew0WLhbepaBAo+mLraQ8/h4qnbH1PXor5Tr+AG2i65AxdvOPyCuhZ1n0BYBJKDAZCeUYv+0y3oXFfc/d95/BUYy0299l9y8lU433v1PbiBIDmYOEgPsRZRr5pov7gcp0WgyopqFV/nRWecFsEsA7mG7Kq8/eJy5vYLTngtGQUMJAAAJ50YlDWKhfkAAAAASUVORK5CYII="
+              />
+            </a>
           </div>
         </div>
       </div>

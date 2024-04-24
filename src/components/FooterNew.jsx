@@ -23,7 +23,7 @@ const FooterNew = () => {
     <div className="Footer-container">
       <div className="Footer-topsection">
         <div className="Footer-email">
-          <h1>Sign up for email updates</h1>
+          <h1>Sign up for updates.</h1>
           <form onSubmit={handleSubmit} className="Footer-email-form">
             <input
               type="email"

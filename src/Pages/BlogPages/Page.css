@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8em;
 }
 .Blog-content-header {
   position: relative;
@@ -14,7 +13,7 @@
 .Blog-content-header-text {
   width: 100%;
   position: absolute;
-  top: 0em;
+  top: 35%;
   text-align: center;
 }
 .Blog-content-header h1 {
@@ -24,7 +23,7 @@
 }
 .Blog-content-img {
   width: 100vw;
-  max-height: 60vh;
+  max-height: 75vh;
 }
 .Blog-content-text {
   padding-top: 1em;
