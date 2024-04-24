@@ -16,7 +16,7 @@ const ProfessionalFeatures = () => {
   const [showSignup, setShowSignup] = useState(false);
   const Navigate = useNavigate()
 
-  const ProfessionalFeatures = [
+  const ProoFArray = [
     {
       title: " Event & Community Creation",
       para: (
@@ -191,7 +191,7 @@ const ProfessionalFeatures = () => {
           <img id="iconimg" src={featurefirsticon} alt="" />
         </div>
       </div>
-      {ProfessionalFeatures.map((feature, index) => (
+      {ProoFArray.map((feature, index) => (
         <div key={index} className="Professional-features">
           <div className="Professional-features-text">
             <h1>{feature.title}</h1>
@@ -205,7 +205,7 @@ const ProfessionalFeatures = () => {
             <div className="Professional-features-line"></div>
             <img src={featurefirsticon} alt="" />
           </div>
-          {ProfessionalFeatures.length === index + 1 && (
+          {ProoFArray.length === index + 1 && (
             <button
               className="register-button"
               onClick={() => setShowSignup(!showSignup)}

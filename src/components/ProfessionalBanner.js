@@ -18,7 +18,7 @@ const ProfessionalBanner = () => {
           create memorable experiences. Utilize detailed analytics to grow your
           audience and elevate every gathering.
         </p>
-        <button class="Register-btn" onClick={() => setShowSignup(!showSignup)}>
+        <button className="Register-btn" onClick={() => setShowSignup(!showSignup)}>
           Register
         </button>
       </div>
