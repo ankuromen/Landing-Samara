@@ -1,40 +1,65 @@
-.Manifesto-Conatiner{
-    height: 100vh;
-    width: 100%;
-    /* color: white;
+.Manifesto-Conatiner {
+  height: 100vh;
+  width: 100%;
+  /* color: white;
     background-color: black; */
 }
-.Manifesto-Head{
-    text-align: center;
-    font-size: 5em;
-    margin-bottom:  1em ;
+.Manifesto-Head {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 1em;
 }
-.Manifesto-Content{
-    background-color: palevioletred;
-    height: 70vh;
-    width: 80vw;
-    margin: auto;
-    border-radius: 5em;
-    display: flex;
+.Manifesto-Content {
+  background-color: palevioletred;
+  height: 70vh;
+  width: 80vw;
+  margin: auto;
+  border-radius: 5em;
+  display: flex;
 }
-.Mani-Sec1{
-    width: 50vw;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    font-size: 3.5em;
-    text-align: center;
+.Mani-Sec1 {
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 3.5em;
+  text-align: center;
 }
-.Mani-Sec2{
-    height: 70vh;
-    width: 30vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.Mani-Sec2 {
+  height: 70vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-#Manifesto-Text{
-    width: 30vw;
-    font-size: 0.35em;
+.Mani-sec-img {
+  width: 130%;
+  height: 70%;
+}
+#Manifesto-Text {
+  width: 30vw;
+  font-size: 0.35em;
+  margin-left: 1em;
+}
+@media (max-width: 1200px) {
+  #Manifesto-Text {
+    width: 35vw;
+  }
+}
+@media (max-width: 1025px) {
+  #Manifesto-Text {
+    width: 40vw;
+  }
+}
+@media (max-width: 900px) {
+  .Manifesto-Content {
+    width: 90vw;
+  }
+  .Mani-Sec2 {
+    margin-left: auto;
+  }
+  #Manifesto-Text {
+    width: 45vw;
+  }
 }

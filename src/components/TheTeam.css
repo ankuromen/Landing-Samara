@@ -19,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   margin: 2em;
-   width: 90%;
+  width: 90%;
 }
 .leadership-member-image-card {
   border: none;
@@ -61,29 +61,29 @@
   color: #ffffff;
   align-self: start;
 }
-/*
-.Team-Content{
-    width: 80vw;
+@media (max-width: 1025px) {
+  .Team-Head {
+    font-size: 3.5em;
+  }
+  .leadership-member-image-card {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .leadership-team-container {
+    display: block;
+    flex-direction: column;
+  }
+  .Team-Head {
+    font-size: 2.5em;
+  }
+  .leadership-member {
+    width: 80%;
     margin: auto;
-    height: 100vh;
-
 }
-.Member-Details{
-    display: flex;
-    width: 40vw;
-    height: 30vh;
-    
 }
-.Member-Avatar{
-    height:25vh;
-    background-color: white;
-    width: 20vw;
+@media (max-width: 480px) {
+  .Team-Head {
+    font-size: 2em;
+  }
 }
-.Member-Links{
-    height: 25vh;
-    width: 20vw;
-}
-#avatar-settings{
-    height: 25vh;
-    width: 20vw;
-} */
