@@ -303,6 +303,10 @@
     width: 170px;
     height: 45px;
   }
+  .Faq-btn{
+    font-size: 2em;
+    padding: 0em 1em;
+  }
   .Faq-btn,
   .Faq-btn:after {
     width: 200px;
