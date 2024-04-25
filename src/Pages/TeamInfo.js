@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import OurStory from '../components/OurStory'
 import StoryInfo from '../components/StoryInfo'
 import TheTeam from '../components/TheTeam'
+import Manifesto from '../components/Manifesto';
 
 const TeamInfo = () => {
   useEffect(() => {
@@ -12,6 +13,7 @@ const TeamInfo = () => {
     
     <div>
       <OurStory/>
+      <Manifesto/>
       <StoryInfo/>
       <TheTeam/>
     </div>

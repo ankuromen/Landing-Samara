@@ -82,3 +82,8 @@
 .error-popup{
   color:red
 }
+@media (max-width: 768px){
+  .Signup-form {
+    width: 50%;
+  }
+}

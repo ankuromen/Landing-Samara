@@ -7,10 +7,11 @@ const Manifesto = () => {
       <h1 className='Manifesto-Head'>OUR MANIFESTO</h1>
       <div className='Manifesto-Content'>
         <section className='Mani-Sec1'>
-          <h1  id="Manifesto-Text">We are on a mission to do what?</h1>
+          <p id="Manifesto-Text">
+            Evntiq. It is a dynamic video content-based platform we are developing that unlocks a new chapter in event and community discovery. We provide a space for event creators and community creators to attract fans to events and members to communities. Leveraging a robust suite of AI-powered tools, we empower creators to craft unforgettable experiences and power vibrant communities.We're dedicated to enhancing every interaction, helping them find meaning in their experiences whether within communities or at events. Our ultimate goal is to bridge the gap between the physical and virtual worlds, cultivating unforgettable encounters and transforming the way users experience events and communities.</p>
         </section>
         <section className='Mani-Sec2'>
-          <img src={testImg} alt='test'/>
+          <img src={testImg} alt='test' />
         </section>
       </div>
 
