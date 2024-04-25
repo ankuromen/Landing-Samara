@@ -12,8 +12,8 @@ const ClassicsBusiness = () => {
           <h1 className="Bus-Img-Section-header">For business</h1>
         </section>
         <section className="Bus-Text-Section">
-          <h2>Shape Moments.</h2>
-          <p>
+          <h2 className="Bus-Text-Section-header">Shape Moments.</h2>
+          <p className="Bus-Text-Section-para">
             Give form to your immagination. Orchestrate events that captivate,
             communities that resonate, and experiences that elevate. From local
             pilate classes to Coachella, we have got you covered! :)

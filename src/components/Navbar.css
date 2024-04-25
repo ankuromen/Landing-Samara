@@ -11,22 +11,18 @@
     width: 100vw;
     z-index: 10;
     font-family: regola-book, sans-serif;
-    a {
-      font-size: 1em;
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-    }
-    h1 {
-      font-weight: 300;
-    }
-  }
-  .brand {
-    letter-spacing: 0.1em;
-    font-family: regola-book, sans-serif;
   }
   a.active {
     font-weight: 700;
   }
+}
+.brand h1{
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  font-weight: lighter;
+}
+.brand a {
+  color: black;
 }
 .navbar-menu {
   display: flex;
@@ -34,21 +30,27 @@
   padding: 0.75em 0.5em;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(15px) saturate(1.5);
-  ul {
-    display: flex;
-    gap: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin: 0;
-  }
-  .Nav-Links {
-    list-style-type: none;
-    font-weight: 400;
-  }
   a:hover {
     cursor: pointer;
     font-weight: 600;
   }
+}
+#navbarlist {
+  display: flex;
+  gap: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0;
+}
+.navbar-menu a {
+  color: black;
+}
+.Nav-Links {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 .navbar-button {
   background-color: #0096f7;
@@ -81,9 +83,9 @@
     width: 100%;
     z-index: 10;
     font-family: regola-book, sans-serif;
-    .navbar-mobile-menu {
-      display: none;
-    }
+  }
+  .navbar-mobile-menu {
+    display: none;
   }
   .brand {
     display: none;
@@ -111,9 +113,9 @@
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px) saturate(1.5);
     transition: 0.3s;
-    .navbar-button {
-      display: none;
-    }
+  }
+  .navbar-button {
+    display: none;
   }
   .navbar-mobile-menu {
     text-align: start;
@@ -123,20 +125,19 @@
     margin-left: 1em;
     z-index: 9;
     background: rgba(255, 255, 255, 0.2);
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-      margin: 0;
-      padding-inline-start: 0;
-    }
-
-    a {
-      font-weight: 400;
-      font-size: 3.5em;
-      padding: 0.5em 0em;
-      color: black;
-      border-bottom: 1px solid #aeaaaa;
-    }
+  }
+  .Nav-Links {
+    font-weight: 400;
+    font-size: 3.5em;
+    padding: 0.5em 0em;
+    color: black;
+    border-bottom: 1px solid #aeaaaa;
+  }
+  .navbar-mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0;
+    padding-inline-start: 0;
   }
 }

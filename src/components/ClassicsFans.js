@@ -13,8 +13,8 @@ const ClassicsFans = () => {
           <h1 className="Bus-Img-Section-header">For Fans</h1>
         </section>
         <section className="Bus-Text-Section">
-          <h2>Capture the Excitement.</h2>
-          <p>
+          <h2 className="Bus-Text-Section-header">Capture the Excitement.</h2>
+          <p className="Bus-Text-Section-para">
             Evntiq is where every moment feels like a backstage pass. Connect
             with your passions, dive into experiences, and savor every moment
             with the community you choose. Embrace unforgettable moments from
