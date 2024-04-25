@@ -16,7 +16,7 @@
     font-weight: 700;
   }
 }
-.brand h1{
+.brand h1 {
   letter-spacing: 0.1em;
   font-weight: lighter;
 }
@@ -45,12 +45,12 @@
 .navbar-menu a {
   color: black;
   text-decoration: none;
+  padding: 0 1em 0 1em;
 }
 .Nav-Links {
   list-style-type: none;
   font-weight: 400;
   font-size: 1em;
-  padding: 0 1em 0 1em;
 }
 .navbar-button {
   background-color: #0096f7;
