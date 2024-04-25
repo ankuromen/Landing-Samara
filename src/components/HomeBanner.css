@@ -24,11 +24,12 @@
   gap: 1em;
   font-size: 2.5em;
   z-index: 1;
-  h1 {
+  
+}
+.Homebanner-text-head{
     font-weight: lighter;
     z-index: 1;
   }
-}
 #CTA-Home-Banner{
   font-size: 0.6em;
 }

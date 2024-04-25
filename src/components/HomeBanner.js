@@ -8,15 +8,19 @@ import GlowButton from './GlowButton';
 const HomeBanner = () => {
   const [showSignup, setShowSignup] = useState(false);
   return (
-    <div className="Homebanner-container" >
+    <div className="Homebanner-container">
       <video className="homebanner-video" autoPlay muted loop>
         <source src={BannerVid} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="Homebanner-text">
-        <h1>Unifying passions.</h1>
-        <h1>Amplifying experiences. </h1>
-        <div onClick={() => { setShowSignup(!showSignup) }}>
+        <h1 className="Homebanner-text-head">Unifying passions.</h1>
+        <h1 className="Homebanner-text-head">Amplifying experiences. </h1>
+        <div
+          onClick={() => {
+            setShowSignup(!showSignup);
+          }}
+        >
           <GlowButton buttonText="Register" />
         </div>
 
