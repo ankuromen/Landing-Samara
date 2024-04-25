@@ -15,12 +15,12 @@
   position: relative;
   animation: popup-from-side 1s cubic-bezier(0.15, 0.86, 0.42, 0.79);
   animation-timeline: view(800px 0px);
-  h1 {
-    position: absolute;
-    font-size: 3.5em;
-    font-weight: 500;
-    color: white;
-  }
+}
+.Bus-Img-Section-header {
+  position: absolute;
+  font-size: 3.5em;
+  font-weight: 500;
+  color: white;
 }
 .fans-Img-Section {
   display: none;

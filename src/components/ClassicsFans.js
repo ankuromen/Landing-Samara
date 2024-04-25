@@ -10,7 +10,7 @@ const ClassicsFans = () => {
       <div className="Classics-Content">
         <section className="fans-Img-Section">
           <img src={Test} id="Bus-Img" alt="Business" />
-          <h1>For Fans</h1>
+          <h1 className="Bus-Img-Section-header">For Fans</h1>
         </section>
         <section className="Bus-Text-Section">
           <h2>Capture the Excitement.</h2>
@@ -21,14 +21,14 @@ const ClassicsFans = () => {
             physical world and feel the excitement and amazement even if you are
             visiting the virtual world.
           </p>
-          <Link to="/classic" style={{ textDecoration: 'none' }}>
+          <Link to="/classic" style={{ textDecoration: "none" }}>
             <GlowButton buttonText="Explore" />
           </Link>
           {/* Replacing the old button */}
         </section>
         <section className="Bus-Img-Section" id="Bus-Img-Section">
           <img src={Test} id="Bus-Img" alt="Business" />
-          <h1>For Fans</h1>
+          <h1 className="Bus-Img-Section-header">For Fans</h1>
         </section>
       </div>
     </div>

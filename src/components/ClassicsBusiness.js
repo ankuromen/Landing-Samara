@@ -9,7 +9,7 @@ const ClassicsBusiness = () => {
       <div className="Classics-Content">
         <section className="Bus-Img-Section">
           <img src={Test} id="Bus-Img" alt="Business" />
-          <h1>For business</h1>
+          <h1 className="Bus-Img-Section-header">For business</h1>
         </section>
         <section className="Bus-Text-Section">
           <h2>Shape Moments.</h2>
@@ -18,7 +18,7 @@ const ClassicsBusiness = () => {
             communities that resonate, and experiences that elevate. From local
             pilate classes to Coachella, we have got you covered! :)
           </p>
-          <Link to="/professional" style={{ textDecoration: 'none' }}>
+          <Link to="/professional" style={{ textDecoration: "none" }}>
             <GlowButton buttonText="Explore" />
           </Link>
           {/* Use the GlowButton component here */}
