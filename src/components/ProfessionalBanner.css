@@ -19,22 +19,21 @@
   padding-left: 3em;
   padding-right: 3em;
   animation: text-popup 1s ease-out forwards;
-  h1 {
-    font-size: 4em;
-    font-weight: 500;
-    text-align: start;
-  }
-  p {
-    font-size: 1.5em;
-  }
+}
+.Professional-banner-left h1 {
+  font-size: 4em;
+  font-weight: 500;
+  text-align: start;
+}
+.Professional-banner-left p {
+  font-size: 1.5em;
 }
 .Professional-banner-right {
   box-sizing: border-box;
   width: 50%;
-  height: 90%;
+  height: 100%;
   display: flex;
-  align-items: self-end;
-
+  align-items: center;
   justify-content: space-around;
 }
 .Professional-banner-right-img {
@@ -45,11 +44,11 @@
   overflow: hidden;
   align-items: center;
   animation: img-popup 1s ease-out forwards;
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+}
+.Professional-banner-right-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .Register-btn {
   padding: 1em 2em;
@@ -87,23 +86,23 @@
   .Professional-banner-left {
     padding-left: 2em;
     padding-right: 2em;
-    h1 {
-      font-size: 3em;
-    }
-    p {
-      font-size: 1.25em;
-    }
+  }
+  .Professional-banner-left h1 {
+    font-size: 3em;
+  }
+  .Professional-banner-left p {
+    font-size: 1.25em;
   }
 }
 @media (max-width: 1025px) {
   .Professional-banner-left {
     width: 75%;
-    h1 {
-      font-size: 2.7em;
-    }
-    p {
-      font-size: 1.2em;
-    }
+  }
+  .Professional-banner-left h1 {
+    font-size: 2.7em;
+  }
+  .Professional-banner-left p {
+    font-size: 1.2em;
   }
   .Professional-banner-right {
     box-sizing: border-box;
@@ -125,17 +124,16 @@
     width: 100%;
     padding-left: 1em;
     padding-right: 1em;
-    align-items:center;
-    h1 {
-      font-size: 2.25em;
-      text-align: center;
-    }
-    p {
-      width: 70%;
-      font-size: 1.25em;
-      text-align: center;
-
-    }
+    align-items: center;
+  }
+  .Professional-banner-left h1 {
+    font-size: 2.25em;
+    text-align: center;
+  }
+  .Professional-banner-left p {
+    width: 70%;
+    font-size: 1.25em;
+    text-align: center;
   }
   .Professional-banner-right {
     width: 100%;
