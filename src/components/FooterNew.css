@@ -33,6 +33,7 @@
   padding: 0.5em 1em;
   border-radius: 2em;
   border: none;
+  cursor: pointer;
 }
 .Footer-links {
   display: flex;
@@ -56,20 +57,20 @@
 .Footer-bottomsection {
   display: grid;
   grid-template-columns: 4fr 3fr;
-
   border-top: 1px solid rgb(65, 65, 65);
   padding: 1em 0em;
 }
 .Footer-bottomsection-terms {
-  display: flex;
+  display:grid;
+  grid-auto-flow: column;
   justify-content: start;
   gap: 1em;
   font-size: 0.8em;
   color: #434344;
-  a {
-    color: white;
+}
+.Footer-bottomsection-terms a{
+  color: white;
     text-decoration: none;
-  }
 }
 .Footer-bottomsection-social {
   display: grid;
