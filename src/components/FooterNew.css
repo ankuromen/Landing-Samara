@@ -10,29 +10,29 @@
 }
 .Footer-email {
   width: fit-content;
-  h1 {
-    font-size: 1.8em;
-    font-weight: 500;
-  }
+}
+.Footer-email h1 {
+  font-size: 1.8em;
+  font-weight: 500;
 }
 .Footer-email-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* flex-direction: column; */
   gap: 1em;
   margin-top: 1em;
-  input {
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
-    border-radius: 0.75em;
-    color: white;
-    padding: 1em;
-  }
-  button {
-    width: fit-content;
-    padding: 0.5em 1em;
-    border-radius: 2em;
-    border: none;
-  }
+}
+.Footer-email-form input {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 0.75em;
+  color: white;
+  padding: 1em;
+}
+.Footer-email-form button {
+  width: fit-content;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  border: none;
 }
 .Footer-links {
   display: flex;
@@ -40,19 +40,18 @@
   color: #3e3f42;
 }
 .Footer-links-sub {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* flex-direction: column; */
   gap: 0.4em;
-  
-  h3 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-  }
-  a {
-    font-size: 1em;
-    color: #ffffff;
-    text-decoration: none;
-  }
+}
+.Footer-links-sub h3{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.Footer-links-sub a {
+  font-size: 1em;
+  color: #ffffff;
+  text-decoration: none;
 }
 .Footer-bottomsection {
   display: grid;
@@ -73,10 +72,10 @@
   }
 }
 .Footer-bottomsection-social {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: end;
   gap: 1em;
-  
 }
 .social-icons {
   width: 1.5em;

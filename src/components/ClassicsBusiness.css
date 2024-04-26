@@ -47,11 +47,13 @@
   font-size: 2.25em;
   padding: 4em 2em 3em 2em;
   text-align: center;
-  gap: 1em;
+  /* gap: 1em; */
   animation: fade-in linear;
   animation-timeline: view(800px 0px);
 }
 .Bus-Text-Section-header {
+  margin-bottom: 0.5em;
+  font-weight: 500;
 }
 .Bus-Text-Section-para {
   text-align: start;
