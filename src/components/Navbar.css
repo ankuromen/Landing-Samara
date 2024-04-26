@@ -36,10 +36,9 @@
   }
 }
 #navbarlist {
-  display: flex;
-  /* gap: 2em; */
-  padding-left: 1em;
-  padding-right: 1em;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
   margin: 0;
 }
 .navbar-menu a {
@@ -85,7 +84,8 @@
     font-family: regola-book, sans-serif;
   }
   .navbar-mobile-menu {
-    display: none;
+    display: grid;
+    grid-auto-flow: row;
   }
   .brand {
     display: none;
@@ -93,7 +93,21 @@
   .navbar-menu {
     display: none;
   }
-
+  .navbar-mobile-menu a {
+    color: black;
+    text-decoration: none;
+    padding: 0 1em 0 1em;
+    font-weight: 400;
+    font-size: 3.5em;
+    padding: 0.5em 0em;
+    color: black;
+    border-bottom: 1px solid #aeaaaa;
+  }
+  #navbarlist {
+    grid-auto-flow: row;
+    height: fit-content;
+    width: 95%;
+  }
   .mobile-menu-icon {
     display: flex;
     border: none;
@@ -118,6 +132,8 @@
     display: none;
   }
   .navbar-mobile-menu {
+    display: grid;
+    grid-auto-flow: row;
     text-align: start;
     top: 3.5em;
     height: 100vh;

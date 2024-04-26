@@ -20,14 +20,16 @@ const Navbar = () => {
 
   useEffect(() => {
     // navbarColorChange();
+
     scrollFunction();
   });
-// var Screen = window.matchMedia("(min-width: 769px)");
+var Screen = window.matchMedia("(min-width: 769px)");
   window.onscroll = function () {
     scrollFunction();
   };
   function scrollFunction() {
-    if (pathname === "/") {
+    
+    if (pathname === "/" && Screen.matches === true) {
       var navbarMenu = document.getElementById("navbar-menu");
       var navbarButton = document.getElementById("navbar-button");
       if (
