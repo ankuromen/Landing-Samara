@@ -37,17 +37,17 @@ const FooterNew = () => {
 
         <div className="Footer-links">
           <div className="Footer-links-sub">
-            <h3>Products</h3>
+            <h3>PRODUCTS</h3>
             <Link to="/professional">For Creators</Link>
             <Link to="/classic">For Fans</Link>
           </div>
           <div className="Footer-links-sub">
-            <h3>Company</h3>
+            <h3>COMPANY</h3>
             <Link to="/team">About Us</Link>
             <Link to="/contact">Contact Us</Link>
           </div>
           <div className="Footer-links-sub">
-            <h3>More</h3>
+            <h3>LEARN MORE</h3>
             <Link to="/blogs">Blog</Link>
             <Link to="/faq">FAQs</Link>
           </div>
