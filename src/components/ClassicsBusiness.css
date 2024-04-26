@@ -130,6 +130,9 @@
     display: flex;
     width: auto;
   }
+  .Bus-Text-Section-header {
+    font-size: 2em;
+  }
   .Bus-Text-Section-para {
     font-size: 0.65em;
     width: 90%;
