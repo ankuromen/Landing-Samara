@@ -22,7 +22,7 @@
   font-weight: 500;
 }
 .Professional-features-header p {
-  margin-top:2em;
+  margin-top: 2em;
   font-size: 2.5em;
   animation: fade-in linear;
   animation-timeline: view(300px 0px);
@@ -232,47 +232,39 @@
   }
 }
 @media (max-width: 1280px) {
-  .Professional-features-header {
-    h1 {
-      font-size: 4em;
-    }
-    p {
-      font-size: 2.5em;
-    }
+  .Professional-features-header h1 {
+    font-size: 4em;
   }
-  .Professional-features {
-    .Professional-features-text {
-      width: 50%;
-      h1 {
-        font-size: 2em;
-      }
-      p {
-        font-size: 1.3em;
-      }
-    }
+  .Professional-features-header p {
+    font-size: 2.5em;
+  }
+  .Professional-features-text {
+    width: 50%;
+  }
+  .Professional-features-text h1 {
+    font-size: 2em;
+  }
+  .Professional-features-text p {
+    font-size: 1.3em;
   }
 }
 @media (max-width: 1024px) {
-  .Professional-features-header {
-    h1 {
-      font-size: 3.25em;
-    }
-    p {
-      font-size: 2.2em;
-    }
+  .Professional-features-header h1 {
+    font-size: 3.25em;
   }
-  .Professional-features {
-    .Professional-features-text {
-      width: 60%;
-      h1 {
-        font-size: 1.75em;
-        text-transform: uppercase;
-      }
-      p {
-        font-size: 1.25em;
-        text-align: left;
-      }
-    }
+  .Professional-features-header p {
+    font-size: 2.2em;
+  }
+  .Professional-features-text {
+    width: 60%;
+  }
+  .Professional-features-text h1 {
+    font-size: 1.75em;
+    text-transform: uppercase;
+  }
+  .Professional-features-text p {
+    font-size: 1.25em;
+    text-align: left;
   }
   .register-button {
     width: 180px;
@@ -280,69 +272,74 @@
   }
 }
 @media (max-width: 768px) {
-  .Professional-features-header {
-    h1 {
-      font-size: 3em;
-    }
-    p {
-      font-size: 2em;
-      text-align: center;
-    }
+  .Professional-features-header h1 {
+    font-size: 3em;
   }
-  .Professional-features {
-    .Professional-features-text {
-      width: 70%;
-      h1 {
-        font-size: 1.65em;
-      }
-      p {
-        font-size: 1.2em;
-        text-align: left;
-      }
-    }
+  .Professional-features-header p {
+    font-size: 2em;
+    text-align: center;
+  }
+  .Professional-features-text {
+    width: 70%;
+  }
+  .Professional-features-text h1 {
+    font-size: 1.65em;
+  }
+  .Professional-features-text p {
+    font-size: 1.2em;
+    text-align: left;
   }
   .register-button {
     width: 170px;
     height: 45px;
   }
   .Faq-btn {
-    font-size: 2em;
+    font-size: 1em;
     padding: 0em 1em;
   }
   .Faq-btn,
   .Faq-btn:after {
-    width: 200px;
-    height: 86px;
-    line-height: 88px;
+    width: 145px;
+    height: 50px;
+    line-height: 55px;
+  }
+  .Professional-features-faq {
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 7em;
+  }
+  .Professional-FAQ-Heading {
+    font-size: 3em;
   }
 }
 @media (max-width: 480px) {
-  .Professional-features-header {
-    h1 {
-      font-size: 2em;
-    }
-    p {
-      font-size: 1.5em;
-      text-align: center;
-    }
+  .Professional-features-header h1 {
+    font-size: 2em;
   }
-  .Professional-features {
-    .Professional-features-text {
-      width: 80%;
-      h1 {
-        font-size: 1.5em;
-      }
-      p {
-        font-size: 1em;
-        text-align: left;
-      }
-    }
-    .Professional-features-img {
-      width: 20em;
-    }
+  .Professional-features-header p {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .Professional-features-text {
+    width: 80%;
+  }
+  .Professional-features-text h1 {
+    font-size: 1.5em;
+  }
+  .Professional-features-text p {
+    font-size: 1em;
+    text-align: left;
+  }
+  .Professional-features-img {
+    width: 20em;
   }
   .register-button {
     width: 155px;
     height: 45px;
+  }
+  .Professional-FAQ-Heading {
+    font-size: 2em;
   }
 }

@@ -117,6 +117,7 @@
   }
   .Bus-Text-Section {
     width: auto;
+    padding: 4em 1em 3em 1em;
   }
   #Bus-Img {
     height: 60%;

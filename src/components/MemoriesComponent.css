@@ -224,12 +224,12 @@
 }
 @media (max-width: 480px) {
   .Memories-Content h1 {
-    width: 90vw;
-    font-size: 3.25em;
+    width: 100vw;
+    font-size: 3em;
     animation: none;
   }
   .Memories-Title {
-    font-size: 3.25em;
+    font-size: 3em;
   }
   .Impromtu-Text {
     display: flex;
