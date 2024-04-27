@@ -135,11 +135,12 @@
     display: none;
   }
   .navbar-mobile-menu {
-    display: grid;
-    grid-auto-flow: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: start;
     top: 3.5em;
-    height: 100vh;
+    height: 94vh;
     width: 100%;
     z-index: 9;
     background: rgba(255, 255, 255, 0.2);
@@ -150,6 +151,10 @@
     padding: 0.4em 0em;
     color: black;
     border-bottom: 1px solid #aeaaaa;
+  }
+  .Brand-mobile{
+    letter-spacing: 0.15em;
+    text-align: center;
   }
   .navbar-mobile-menu ul {
     display: flex;

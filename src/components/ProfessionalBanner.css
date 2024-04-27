@@ -11,7 +11,6 @@
 .Professional-banner-left {
   box-sizing: border-box;
   display: flex;
-  gap: 1em;
   flex-direction: column;
   justify-content: center;
   width: 60%;
@@ -24,9 +23,12 @@
   font-size: 4em;
   font-weight: 500;
   text-align: start;
+  margin-block-start: 0em;
+  margin-block-end: 0.1em;
 }
 .Professional-banner-left p {
   font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
 .Professional-banner-right {
   box-sizing: border-box;
@@ -57,6 +59,7 @@
   border-radius: 2em;
   font-weight: 500;
   cursor: pointer;
+  background: whitesmoke;
   &:hover {
     border: 1px solid gray;
     transform: scale(1.1);

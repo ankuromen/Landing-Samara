@@ -104,7 +104,17 @@ const Navbar = () => {
           >
             Fans
           </NavLink>
-        </ul>
+          {isMobile && (
+            <NavLink
+              to="/contact Us"
+              className="Nav-links"
+              onClick={() => setIsMobile(false)}
+            >
+              Contact Us
+            </NavLink>
+          )}
+        </ul>{" "}
+        {isMobile && <p className="Brand-mobile">Eventiq</p>}
       </div>
 
       <button
