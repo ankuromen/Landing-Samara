@@ -17,8 +17,9 @@ const Navbar = () => {
       document.querySelector(".mobile-menu-icon").style.borderRadius = "0";
     } else {
       document.body.style.overflow = "";
-      document.querySelector(".mobile-menu-icon").style.width = "fit-content";
+      document.querySelector(".mobile-menu-icon").style.width = "auto";
       document.querySelector(".mobile-menu-icon").style.borderRadius = "15px";
+      document.querySelector(".mobile-menu-icon").style.overflow = "hidden";
     }
   }, [isMobile]);
 
