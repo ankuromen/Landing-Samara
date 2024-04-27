@@ -106,7 +106,7 @@ const Navbar = () => {
           </NavLink>
           {isMobile && (
             <NavLink
-              to="/contact Us"
+              to="/contact"
               className="Nav-links"
               onClick={() => setIsMobile(false)}
             >
