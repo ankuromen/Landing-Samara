@@ -13,8 +13,12 @@ const Navbar = () => {
   useEffect(() => {
     if (isMobile) {
       document.body.style.overflow = "hidden";
+      document.querySelector(".mobile-menu-icon").style.width = "100%";
+      document.querySelector(".mobile-menu-icon").style.borderRadius = "0";
     } else {
       document.body.style.overflow = "";
+      document.querySelector(".mobile-menu-icon").style.width = "fit-content";
+      document.querySelector(".mobile-menu-icon").style.borderRadius = "15px";
     }
   }, [isMobile]);
 
@@ -23,12 +27,11 @@ const Navbar = () => {
 
     scrollFunction();
   });
-var Screen = window.matchMedia("(min-width: 769px)");
+  var Screen = window.matchMedia("(min-width: 769px)");
   window.onscroll = function () {
     scrollFunction();
   };
   function scrollFunction() {
-    
     if (pathname === "/" && Screen.matches === true) {
       var navbarMenu = document.getElementById("navbar-menu");
       var navbarButton = document.getElementById("navbar-button");

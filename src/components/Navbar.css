@@ -94,27 +94,23 @@
     display: none;
   }
   .navbar-mobile-menu a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 0 1em 0 1em;
     font-weight: 400;
-    font-size: 3.5em;
+    font-size: 2em;
     padding: 0.5em 0em;
     color: black;
     border-bottom: 1px solid #aeaaaa;
   }
-  #navbarlist {
-    grid-auto-flow: row;
-    height: fit-content;
-    width: 95%;
-  }
+
   .mobile-menu-icon {
     display: flex;
     border: none;
     padding: 0.75em 1em;
     border-radius: 15px;
     color: black;
-    background: rgba(255, 255, 255, 0.2);
+    background: transparent;
     backdrop-filter: blur(15px) saturate(1.5);
     transition: 0.4s;
   }
@@ -129,6 +125,12 @@
     backdrop-filter: blur(15px) saturate(1.5);
     transition: 0.3s;
   }
+  #navbarlist {
+    grid-auto-flow: row;
+    height: fit-content;
+    width: 90%;
+    padding-left: 1em;
+  }
   .navbar-button {
     display: none;
   }
@@ -139,14 +141,13 @@
     top: 3.5em;
     height: 100vh;
     width: 100%;
-    margin-left: 1em;
     z-index: 9;
     background: rgba(255, 255, 255, 0.2);
   }
   .Nav-Links {
     font-weight: 400;
     font-size: 3.5em;
-    padding: 0.5em 0em;
+    padding: 0.4em 0em;
     color: black;
     border-bottom: 1px solid #aeaaaa;
   }
