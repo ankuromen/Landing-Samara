@@ -71,17 +71,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.Blogs-card-img img:hover {
+.Blogs-card:hover .Blogs-card-img img {
   transform: scale(1.1);
   filter: brightness(0.3);
 }
-.Blogs-link:hover {
+
+.Blogs-card:hover .Blogs-link {
   display: flex;
 }
-.Link-arrow:hover {
+
+.Blogs-link:hover .Link-arrow {
   transform: translateX(15px);
 }
+
 @keyframes textShine {
   0% {
     background-position: 0% 50%;
