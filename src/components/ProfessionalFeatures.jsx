@@ -18,7 +18,7 @@ const ProfessionalFeatures = () => {
 
   const ProoFArray = [
     {
-      title: " Event & Community Creation",
+      title: " Event & Community Creation.",
       para: (
         <>
           <ul>
@@ -37,7 +37,7 @@ const ProfessionalFeatures = () => {
       image: image1,
     },
     {
-      title: " Selling Tickets and Managing Payouts",
+      title: "Selling tickets & Managing Payouts.",
       para: (
         <>
           <ul>
@@ -58,7 +58,7 @@ const ProfessionalFeatures = () => {
       image: image2,
     },
     {
-      title: "Streamlined Management, Smart Logistics",
+      title: "Streamlined Management & Smart Logistics.",
       para: (
         <>
           <ul>
@@ -77,7 +77,7 @@ const ProfessionalFeatures = () => {
       image: image3,
     },
     {
-      title: "Effortless Promotion and Enhanced Connections",
+      title: "Effortless Promotions.",
       para: (
         <>
           <ul>
@@ -99,7 +99,7 @@ const ProfessionalFeatures = () => {
       image: image4,
     },
     {
-      title: "Advanced IT and Tailored Security",
+      title: "Advanced IT.",
       para: (
         <>
           <ul>
@@ -119,7 +119,7 @@ const ProfessionalFeatures = () => {
       image: image5,
     },
     {
-      title: "Financial Management",
+      title: "Financials.",
       para: (
         <>
           <ul>
@@ -138,7 +138,7 @@ const ProfessionalFeatures = () => {
       image: image6,
     },
     {
-      title: "Make Informed Decisions",
+      title: "Make informed Decisions.",
       para: (
         <>
           <ul>

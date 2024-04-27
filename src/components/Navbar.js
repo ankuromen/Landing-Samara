@@ -72,7 +72,7 @@ const Navbar = () => {
       </button>
       <div className="brand">
         <a href="/">
-          <h1 id="brand">Eventiq</h1>
+          <h1 id="brand">Evntiq</h1>
         </a>
       </div>
       <div
@@ -106,15 +106,19 @@ const Navbar = () => {
           </NavLink>
           {isMobile && (
             <NavLink
-              to="/contact"
               className="Nav-links"
-              onClick={() => setIsMobile(false)}
+              onClick={() => {
+                setIsMobile(false)
+                document
+                  .querySelector(".Footer-container")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Contact Us
             </NavLink>
           )}
         </ul>{" "}
-        {isMobile && <p className="Brand-mobile">Eventiq</p>}
+        {isMobile && <p className="Brand-mobile">Evntiq</p>}
       </div>
 
       <button

@@ -140,7 +140,7 @@
     justify-content: space-between;
     text-align: start;
     top: 3.5em;
-    height: 93vh;
+    height: 100vh;
     width: 100%;
     z-index: 9;
     background: rgba(255, 255, 255, 0.2);
@@ -152,9 +152,10 @@
     color: black;
     border-bottom: 1px solid #aeaaaa;
   }
-  .Brand-mobile{
+  .Brand-mobile {
     letter-spacing: 0.15em;
     text-align: center;
+    height: 5em;
   }
   .navbar-mobile-menu ul {
     display: flex;

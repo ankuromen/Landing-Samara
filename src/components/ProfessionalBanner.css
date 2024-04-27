@@ -60,9 +60,11 @@
   font-weight: 500;
   cursor: pointer;
   background: whitesmoke;
+  transition: all 0.3s ease-in-out;
   &:hover {
     border: 1px solid gray;
     transform: scale(1.1);
+    behavior: smooth;
   }
 }
 @keyframes img-popup {
