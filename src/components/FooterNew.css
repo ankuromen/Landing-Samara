@@ -34,6 +34,7 @@
   border-radius: 2em;
   border: none;
   cursor: pointer;
+  background-color: whitesmoke;
 }
 .Footer-links {
   display: flex;
@@ -48,6 +49,7 @@
 .Footer-links-sub h3{
   font-size: 1.5em;
   margin-bottom: 1em;
+  font-weight: 500;
 }
 .Footer-links-sub a {
   font-size: 1em;
