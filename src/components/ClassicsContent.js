@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SignupFormModal from "./SignupFormModal";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Mousewheel, Scrollbar } from "swiper/modules";
+import { Pagination, Mousewheel, Scrollbar  } from "swiper/modules";
 import "../components/ClassicsContent.css";
 import Image1 from "../Assets/image1.jpeg";
 import Image2 from "../Assets/image2.jpeg";
@@ -58,6 +58,7 @@ const ClassicsContent = () => {
           <Swiper
             direction={"vertical"}
             speed={900}
+            touchReleaseOnEdges={true}
             mousewheel={{
               sensitivity: 2,
               releaseOnEdges: true,

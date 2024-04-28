@@ -197,7 +197,8 @@
 }
 @media (max-width: 480px) {
   #feature-text {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: 2em;
     width: 75%;
   }
   .slide-para h2 {
