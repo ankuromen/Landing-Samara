@@ -9,7 +9,7 @@ const ClassicsBusiness = () => {
     <div className="Classic-Business-Container">
       <div className="Classics-Content">
         <section className="Bus-Img-Section">
-          <video id="Bus-Img" src={video1} autoPlay loop muted></video>
+          <video id="Bus-Img" src={video1} autoPlay loop mute></video>
           <h1 className="Bus-Img-Section-header">For business</h1>
         </section>
         <section className="Bus-Text-Section">
