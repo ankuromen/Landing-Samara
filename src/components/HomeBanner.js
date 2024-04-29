@@ -1,6 +1,6 @@
 import './HomeBanner.css'
 import { React, useState } from 'react';
-import BannerVid from "../Assets/HomeP-Vid2.mp4";
+import BannerVid from "../Assets/HomeBanner.mp4";
 import SignupFormModal from "./SignupFormModal.jsx";
 import GlowButton from './GlowButton';
 // import scrollanimation from '../Assets/scroll-animation.gif'

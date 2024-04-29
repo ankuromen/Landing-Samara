@@ -25,7 +25,6 @@ const Navbar = () => {
 
   useEffect(() => {
     // navbarColorChange();
-
     scrollFunction();
   });
   var Screen = window.matchMedia("(min-width: 769px)");
