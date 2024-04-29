@@ -206,15 +206,13 @@ const ProfessionalFeatures = () => {
   return (
     <div className="Professional-features-container">
       <div className="Professional-features-header">
-        <p
-          data-aos="fade-up"
-        >
+        <p data-aos="fade-up">
           {" "}
           Design exceptional experiences and cultivate your own thriving
           community, equipped with all the tools and insights needed for
           success.
         </p>
-        <h1>How it works?</h1>
+        <h1 data-aos="fade-up">How it works?</h1>
         <div>
           <div id="first-line"></div>
           <img id="iconimg" src={featurefirsticon} alt="" />
@@ -222,18 +220,12 @@ const ProfessionalFeatures = () => {
       </div>
       {ProoFArray.map((feature, index) => (
         <div key={index} className="Professional-features">
-          <div
-            className="Professional-features-text"
-            data-aos="fade-up"
-          >
+          <div className="Professional-features-text" data-aos="fade-up">
             <h1>{feature.title}</h1>
             <p>{feature.para}</p>
           </div>
 
-          <div
-            className="Professional-features-img"
-            data-aos="flip-up"
-          >
+          <div className="Professional-features-img" data-aos="flip-up">
             <img src={feature.image} alt="" />
           </div>
           <div className="Professional-features-arrow">

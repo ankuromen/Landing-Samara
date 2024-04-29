@@ -1,14 +1,15 @@
 import React from "react";
 import GlowButton from "./GlowButton"; // Adjust the path to where your GlowButton component is located
 import "./ClassicsBusiness.css";
-import Test from "../Assets/test123.jpg"; // Adjust the path to your image if necessary
+// import Test from "../Assets/test123.jpg";
 import { Link } from "react-router-dom";
+import video1 from "../Assets/HomeVideo.mp4";
 const ClassicsBusiness = () => {
   return (
     <div className="Classic-Business-Container">
       <div className="Classics-Content">
         <section className="Bus-Img-Section">
-          <img src={Test} id="Bus-Img" alt="Business" />
+          <video id="Bus-Img" src={video1} autoPlay loop muted></video>
           <h1 className="Bus-Img-Section-header">For business</h1>
         </section>
         <section className="Bus-Text-Section">

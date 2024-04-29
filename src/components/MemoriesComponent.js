@@ -2,6 +2,9 @@ import React from "react";
 import "./MemoriesComponent.css";
 import eventImage from "../Assets/about-image.jpg"; // Replace with the actual path to your image
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const MemoriesComponent = () => {
   return (

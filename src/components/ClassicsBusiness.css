@@ -14,7 +14,7 @@
   align-items: center;
   position: relative;
   animation: popup-from-side 1s cubic-bezier(0.15, 0.86, 0.42, 0.79);
-  animation-timeline: view(800px 0px);
+  animation-timeline: view(1000px 0px);
 }
 .Bus-Img-Section-header {
   position: absolute;
@@ -28,14 +28,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
   animation: popup-from-side 1s cubic-bezier(0.15, 0.86, 0.42, 0.79);
   animation-timeline: view(800px 0px);
-  h1 {
-    position: absolute;
-    font-size: 3.5em;
-    font-weight: 500;
-    color: white;
-  }
+}
+.fans-Img-Section h1 {
+  position: absolute;
+  font-size: 3.5em;
+  font-weight: 500;
+  color: white;
 }
 .Bus-Text-Section {
   box-sizing: border-box;
@@ -61,8 +62,7 @@
   font-size: 0.5em;
 }
 #Bus-Img {
-  height: 60%;
-  width: 38vw;
+  height: 30em;
   border-radius: 2em;
 }
 #Bus-Btn {
@@ -90,8 +90,7 @@
 }
 @media (max-width: 1024px) {
   #Bus-Img {
-    height: 60%;
-    width: 45vw;
+    height:25em
   }
   .Bus-Text-Section {
     width: 55vw;
@@ -119,11 +118,11 @@
     width: auto;
     padding: 4em 1em 3em 1em;
   }
-  #Bus-Img {
+  /* #Bus-Img {
     height: 60%;
     width: 90vw;
     border-radius: 2em;
-  }
+  } */
   #Bus-Img-Section {
     display: none;
   }
@@ -139,7 +138,7 @@
     width: 90%;
   }
 }
-@media (max-width:480px){
+@media (max-width: 480px) {
   .Bus-Text-Section-header {
     font-size: 1.25em;
   }
