@@ -62,8 +62,7 @@
   text-align: center;
   width: 40%;
   margin-top: 2em;
-  animation: fade-in linear;
-  animation-timeline: view(380px 0px);
+  /* animation-timeline: view(380px 0px); */
 }
 .Professional-features-text h1 {
   font-size: 2.5em;
@@ -98,8 +97,6 @@
   overflow: hidden;
   position: relative;
   margin-top: 3em;
-  animation: fade-in linear;
-  animation-timeline: view(380px 0px);
 }
 .Professional-features-img img {
   height: 100%;
@@ -221,6 +218,23 @@
   top: 0;
   border-radius: 10px;
 }
+.Fadeout{
+  animation: fade-out 1s linear;
+}
+.Fadein {
+  animation: fade-in 1s linear;
+}
+/* @keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
 @keyframes fade-in {
   from {
     scale: 0.8;
@@ -229,6 +243,16 @@
   to {
     scale: 1;
     opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    scale: 1;
+    opacity: 1;
+  }
+  to {
+    scale: 0.8;
+    opacity: 0;
   }
 }
 @media (max-width: 1280px) {

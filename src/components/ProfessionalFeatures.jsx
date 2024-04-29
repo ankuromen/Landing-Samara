@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 
 const ProfessionalFeatures = () => {
   const [showSignup, setShowSignup] = useState(false);
-  const Navigate = useNavigate()
+  const Navigate = useNavigate();
 
   const ProoFArray = [
     {
@@ -176,6 +176,30 @@ const ProfessionalFeatures = () => {
       image: image8,
     },
   ];
+
+  window.addEventListener("scroll", checkText);
+
+  function checkText() {
+    const text = document.querySelectorAll(".Professional-features-text");
+    const img = document.querySelectorAll(".Professional-features-img");
+    const TriggerBottom = window.innerHeight+50;
+    text.forEach((text) => {
+      const textTop = text.getBoundingClientRect().top;
+      if (textTop < TriggerBottom) {
+        text.classList.add("Fadein");
+      } else {
+        text.classList.remove("Fadein");
+      }
+    });
+    img.forEach((img) => {
+      const imgTop = img.getBoundingClientRect().top;
+      if (imgTop < TriggerBottom) {
+        img.classList.add("Fadein");
+      } else {
+        img.classList.remove("Fadein");
+      }
+    });
+  }
   return (
     <div className="Professional-features-container">
       <div className="Professional-features-header">
