@@ -21,7 +21,7 @@ const ProfessionalFeatures = () => {
 
   const ProoFArray = [
     {
-      title: " Event & Community Creation.",
+      title: "Event & Community Creation.",
       para: (
         <>
           <ul>
@@ -141,7 +141,7 @@ const ProfessionalFeatures = () => {
       image: image6,
     },
     {
-      title: "Make informed Decisions.",
+      title: "Stay Informed.",
       para: (
         <>
           <ul>
@@ -162,7 +162,7 @@ const ProfessionalFeatures = () => {
       image: image7,
     },
     {
-      title: "Other Advanced Capabilities",
+      title: "Other Capabilities.",
       para: (
         <>
           <ul>
