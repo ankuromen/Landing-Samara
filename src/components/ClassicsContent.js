@@ -16,7 +16,7 @@ const ClassicsContent = () => {
   const [showSignup,setShowSignup] = useState(false)
   const classicFeatures = [
     {
-      title: "Connect & Share.",
+      title: "Connect & Build.",
       para: "Start by connecting with friends & family. Share events, communities, & content effortlessly. Whether it’s a captivating video, an exciting post, or just the anticipation of a shared event, bring everyone closer.",
       image: video1,
     },
@@ -26,23 +26,13 @@ const ClassicsContent = () => {
       image: video1,
     },
     {
-      title: "Build & Participate.",
-      para: "Discover a wide range of events, join vibrant communities tailored to your interests, & access engaging content all in one place.",
-      image: video1,
-    },
-    {
       title: "Purchase Experience.",
       para: "Purchase tickets effortlessly for the events you love, & share them with friends & family to invite them along or promote your favorite gatherings.",
       image: video1,
     },
     {
-      title: "Rewarding Loyalty.",
+      title: "Rewards.",
       para: "Build & customize your community hub where you can host events, share content, & foster discussions, enhancing engagement & connectivity.",
-      image: video1,
-    },
-    {
-      title: "Engage & Participate.",
-      para: "Venture into a world of endless possibilities, expand your social circle, & enjoy a plethora of activities & events designed to entertain & inspire.",
       image: video1,
     },
   ];
@@ -82,9 +72,7 @@ const ClassicsContent = () => {
                 <h3 className="feature-text-heading">Feel the </h3>
                 <h3 className="feature-text-heading">Unforgettable.</h3>
                 <p className="slide-text" id="slide-text-head">
-                  Wheather you are planning for tomorrow or budgeting for today.
-                  Evntiq connects you with working capital you need to run your
-                  business on your terms.
+                 
                 </p>
               </div>
             </SwiperSlide>
@@ -93,8 +81,7 @@ const ClassicsContent = () => {
                 <h2>
                   Our features don't just bring the world closer—they're the
                   very threads binding the tapestry of joy, community &
-                  memories. Each click isn’t meaningless, it opens a door that
-                  invites you to create & share unforgettable moments.
+                  memories.
                 </h2>
               </div>
             </SwiperSlide>
@@ -116,16 +103,14 @@ const ClassicsContent = () => {
               <div className="slide-para" id="feature-text">
                 <h2>
                   Ready for the extraordinary? Join the the waitlist today & be
-                  among the first to discover a new universe. Sign up to get
-                  exclusive early access & start your journey to unforgettable
-                  moments.
+                  among the first to discover a new universe.
                 </h2>
                 <button
                   className="merged-button"
                   id="Classics-Slide-Btn"
                   onClick={() => setShowSignup(!showSignup)}
                 >
-                  SIGN UP!
+                  Sign up
                 </button>
               </div>
             </SwiperSlide>
