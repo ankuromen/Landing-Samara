@@ -20,7 +20,7 @@
   animation: text-popup 1s ease-out forwards;
 }
 .Professional-banner-left h1 {
-  font-size: 3.7em;
+  font-size: 3.5em;
   font-weight: 500;
   text-align: start;
   margin-block-start: 0em;
@@ -57,7 +57,7 @@
   width: fit-content;
   border: none;
   border-radius: 2em;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.1em;
   cursor: pointer;
   background: whitesmoke;
