@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import "./ProfessionalBanner.css";
 import ProfessionalBannerImg from '../Assets/CreatorsImg.jpg'
 import SignupFormModal from "./SignupFormModal";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const ProfessionalBanner = () => {
   
   const [showSignup, setShowSignup] = useState(false);
   return (
-    <div className="Professional-banner">
+    <div className="Professional-banner" >
       <div className="Professional-banner-left">
         <h1> Cultivate Connections.</h1>
         <h1> Celebrate Community.</h1>

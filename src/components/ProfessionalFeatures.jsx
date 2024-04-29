@@ -11,6 +11,9 @@ import image7 from "../Assets/Professionalfeature7.jpg";
 import image8 from "../Assets/Professionalfeature8.jpg";
 import SignupFormModal from "./SignupFormModal";
 import { useNavigate } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const ProfessionalFeatures = () => {
   const [showSignup, setShowSignup] = useState(false);
@@ -177,33 +180,35 @@ const ProfessionalFeatures = () => {
     },
   ];
 
-  window.addEventListener("scroll", checkText);
+  // window.addEventListener("scroll", checkText);
 
-  function checkText() {
-    const text = document.querySelectorAll(".Professional-features-text");
-    const img = document.querySelectorAll(".Professional-features-img");
-    const TriggerBottom = window.innerHeight+50;
-    text.forEach((text) => {
-      const textTop = text.getBoundingClientRect().top;
-      if (textTop < TriggerBottom) {
-        text.classList.add("Fadein");
-      } else {
-        text.classList.remove("Fadein");
-      }
-    });
-    img.forEach((img) => {
-      const imgTop = img.getBoundingClientRect().top;
-      if (imgTop < TriggerBottom) {
-        img.classList.add("Fadein");
-      } else {
-        img.classList.remove("Fadein");
-      }
-    });
-  }
+  // function checkText() {
+  //   const text = document.querySelectorAll(".Professional-features-text");
+  //   const img = document.querySelectorAll(".Professional-features-img");
+  //   const TriggerBottom = window.innerHeight+50;
+  //   text.forEach((text) => {
+  //     const textTop = text.getBoundingClientRect().top;
+  //     if (textTop < TriggerBottom) {
+  //       text.classList.add("Fadein");
+  //     } else {
+  //       text.classList.remove("Fadein");
+  //     }
+  //   });
+  //   img.forEach((img) => {
+  //     const imgTop = img.getBoundingClientRect().top;
+  //     if (imgTop < TriggerBottom) {
+  //       img.classList.add("Fadein");
+  //     } else {
+  //       img.classList.remove("Fadein");
+  //     }
+  //   });
+  // }
   return (
     <div className="Professional-features-container">
       <div className="Professional-features-header">
-        <p>
+        <p
+          data-aos="fade-up"
+        >
           {" "}
           Design exceptional experiences and cultivate your own thriving
           community, equipped with all the tools and insights needed for
@@ -217,12 +222,18 @@ const ProfessionalFeatures = () => {
       </div>
       {ProoFArray.map((feature, index) => (
         <div key={index} className="Professional-features">
-          <div className="Professional-features-text">
+          <div
+            className="Professional-features-text"
+            data-aos="fade-up"
+          >
             <h1>{feature.title}</h1>
             <p>{feature.para}</p>
           </div>
 
-          <div className="Professional-features-img">
+          <div
+            className="Professional-features-img"
+            data-aos="flip-up"
+          >
             <img src={feature.image} alt="" />
           </div>
           <div className="Professional-features-arrow">
