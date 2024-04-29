@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import { IoCloseOutline } from "react-icons/io5";
+import { IoBatteryHalfOutline, IoCloseOutline } from "react-icons/io5";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { NavLink, useLocation } from "react-router-dom";
 import SignupFormModal from "./SignupFormModal";
@@ -30,20 +30,37 @@ const Navbar = () => {
   var Screen = window.matchMedia("(min-width: 769px)");
   window.onscroll = function () {
     scrollFunction();
+    scrollColorChange()
   };
   function scrollFunction() {
     if (pathname === "/" && Screen.matches === true) {
       var navbarMenu = document.getElementById("navbar-menu");
       var navbarButton = document.getElementById("navbar-button");
+      var brand = document.getElementById("brand");
       if (
         document.body.scrollTop > 50 ||
         document.documentElement.scrollTop > 50
       ) {
         navbarMenu.style.display = "flex";
         navbarButton.style.display = "flex";
+        brand.style.color = "black";
       } else {
         navbarMenu.style.display = "none";
         navbarButton.style.display = "none";
+        brand.style.color = "white";
+      }
+    }
+  }
+  function scrollColorChange(){
+    if (pathname === "/" && Screen.matches === true) {
+      var brand = document.getElementById("brand");
+      if (
+        document.body.scrollTop > 400 ||
+        document.documentElement.scrollTop > 400
+      ) {
+        brand.style.color = "black";
+      } else {                        
+        brand.style.color = "white";
       }
     }
   }
@@ -107,7 +124,7 @@ const Navbar = () => {
             <NavLink
               className="Nav-links"
               onClick={() => {
-                setIsMobile(false)
+                setIsMobile(false);
                 document
                   .querySelector(".Footer-container")
                   .scrollIntoView({ behavior: "smooth" });
