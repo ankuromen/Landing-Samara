@@ -16,11 +16,10 @@
   width: 80vw;
   margin: auto;
   animation: fade-in linear;
-
-  h1 {
-    animation: move-to-side 3s ease-in-out;
-    animation-timeline: view(600px 0px);
-  }
+}
+.Memories-Content h1 {
+  animation: move-to-side 3s ease-in-out;
+  animation-timeline: view(600px 0px);
 }
 
 .Memories-Content h1 {
