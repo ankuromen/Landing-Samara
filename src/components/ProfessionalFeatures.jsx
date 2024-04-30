@@ -21,163 +21,104 @@ const ProfessionalFeatures = () => {
 
   const ProoFArray = [
     {
-      title: "Event & Community Creation.",
+      title: "Creation.",
       para: (
         <>
-          <ul>
-            <li>Architect and curate your events and communities with ease.</li>
-            <li>
-              Host physical, virtual, or VR events and communities with just a
-              link.
-            </li>
-            <li>Start ticket sales and welcome new members quickly.</li>
-            <li>
-              Ensure a seamless attendee experience from beginning to end.
-            </li>
-          </ul>
+          <p>
+            Design memorable experiences by organizing private or public events
+            and building your own community. Whether you're establishing your
+            brand, fanbase, or event, make sure attendees have a frictionless
+            and personalized experience by joining your community.
+          </p>
         </>
       ),
       image: image1,
     },
     {
-      title: "Selling tickets & Managing Payouts.",
+      title: "Connection.",
       para: (
         <>
-          <ul>
-            <li>
-              Flexible ticketing solutions from subscriptions to reserved
-              seating.
-            </li>
-            <li>Real-time ticket adjustments and color-coded tracking.</li>
-            <li>
-              Sell add-ons like merchandise and refreshments alongside tickets.
-            </li>
-            <li>
-              Personalize invites and optimize sales strategies dynamically.
-            </li>
-          </ul>
+          <p>
+            Boost your visibility with powerful tools. Post captivating reels
+            and stories, collaborate on posts with venues and artists, or use
+            targeted ads to reach your ideal audience. Engage directly with
+            attendees via real-time messaging to share updates and exclusive
+            promotions, building excitement and lasting connections.
+          </p>
         </>
       ),
       image: image2,
     },
+
     {
-      title: "Streamlined Management & Smart Logistics.",
+      title: "Tickets & Payouts.",
       para: (
         <>
-          <ul>
-            <li>
-              Instant digital ticket delivery and real-time attendee updates.
-            </li>
-            <li>Efficient handling of returns, refunds, and inventory.</li>
-            <li>Utilize AI for quick adjustments and information retrieval.</li>
-            <li>
-              Make event logistics smooth and focus on creating memorable
-              experiences.
-            </li>
-          </ul>
+          <p>
+            Put yourself in control with our flexible ticketing solutions. From
+            subscriptions to reserved seating, offer a variety of ticket types
+            tailored to your unique needs. Adjust ticket offerings in real-time,
+            send personalized invites, sell add-ons like food and merch or track
+            sales with color-coded tickets.
+          </p>
         </>
       ),
       image: image3,
     },
+
     {
-      title: "Effortless Promotions.",
+      title: "Smart Management & Logistics.",
       para: (
         <>
-          <ul>
-            <li>
-              Use powerful tools to boost event visibility through engaging
-              content.
-            </li>
-            <li>Collaborate with artists and venues for wider reach.</li>
-            <li>
-              Link seamlessly to any ticketing service or social platform.
-            </li>
-            <li>
-              Engage directly with attendees via real-time messaging and
-              exclusive updates.
-            </li>
-          </ul>
+          <p>
+            Perfect your event's operational flow. Ensure instant digital
+            delivery of tickets, efficiently track and process returns and
+            refunds, maintain inventory transparency, use customizable templates
+            to save time and capture early interest with pre-sale and early bird
+            offers. Our AI assistant is ready to swiftly enact changes or assist
+            in locating information, making logistics seamless.
+          </p>
         </>
       ),
       image: image4,
     },
     {
-      title: "Advanced IT.",
+      title: "Financial Metrics.",
       para: (
         <>
-          <ul>
-            <li>
-              Customizable QR scanners and API integrations for seamless
-              operations.
-            </li>
-            <li>
-              Advanced affiliate link tracking and performance monitoring.
-            </li>
-            <li>
-              Ensure high security and customization to meet unique event needs.
-            </li>
-          </ul>
+          <p>
+            Connect multiple accounts for better management or custom and quick
+            payouts. Gain valuable insights with detailed breakdowns of
+            revenues. Efficiently track and manage affiliates, customize
+            commission splits, and facilitate direct payments. Utilize AI-driven
+            dynamic pricing to optimize sales based on demand.
+          </p>
         </>
       ),
       image: image5,
     },
     {
-      title: "Financials.",
+      title: "Make informed decisions.",
       para: (
         <>
-          <ul>
-            <li>
-              Simplify financial oversight with connected accounts and precise
-              refund capabilities.
-            </li>
-            <li>
-              Dynamic pricing for optimized profit margins and strategic
-              financial reporting.
-            </li>
-            <li>Quick and directed payouts to chosen accounts.</li>
-          </ul>
+          <p>
+            Discover other unique features such as enabling tip transactions or
+            implementing virtual queues to streamline entries and increase
+            safety. Efficiently handle sponsor relationships to ensure they
+            reach maximum visibility. Elevate your IT and security measures with
+            a customizable scanner, adaptable to specific requirements.
+            Effortlessly create a link for checkout page to promote on other
+            platforms.
+          </p>
+          <p>
+            Our platform combines advanced technology with user-friendly
+            customization, ensuring your event is both cutting-edge and secure.
+          </p>
         </>
       ),
       image: image6,
     },
-    {
-      title: "Stay Informed.",
-      para: (
-        <>
-          <ul>
-            <li>
-              Deep dive into analytics for strategic insights into demographics
-              and purchasing behaviors.
-            </li>
-            <li>
-              Monitor sales trends and financial metrics to prepare for future
-              events.
-            </li>
-            <li>
-              Utilize custom reports to enhance event planning and execution.
-            </li>
-          </ul>
-        </>
-      ),
-      image: image7,
-    },
-    {
-      title: "Other Capabilities.",
-      para: (
-        <>
-          <ul>
-            <li>
-              Implement virtual queues to enhance entry logistics and safety.
-            </li>
-            <li>
-              Manage smooth financial transactions and sponsor engagements
-              effectively.
-            </li>
-          </ul>
-        </>
-      ),
-      image: image8,
-    },
+    
   ];
 
   // window.addEventListener("scroll", checkText);
