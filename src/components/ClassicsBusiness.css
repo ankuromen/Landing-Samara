@@ -90,7 +90,7 @@
 }
 @media (max-width: 1024px) {
   #Bus-Img {
-    height:25em
+    height: 25em;
   }
   .Bus-Text-Section {
     width: 55vw;
@@ -118,6 +118,7 @@
     width: auto;
     padding: 4em 1em 3em 1em;
   }
+ 
   /* #Bus-Img {
     height: 60%;
     width: 90vw;
@@ -145,6 +146,9 @@
   .Bus-Text-Section-para {
     font-size: 0.65em;
     width: 90%;
+  }
+   #Bus-Img {
+    height: 20em;
   }
 }
 /* @media (max-width: 768px) {
