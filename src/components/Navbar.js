@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import { IoBatteryHalfOutline, IoCloseOutline } from "react-icons/io5";
+import { IoCloseOutline } from "react-icons/io5";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { NavLink, useLocation } from "react-router-dom";
 import SignupFormModal from "./SignupFormModal";
@@ -24,43 +24,43 @@ const Navbar = () => {
   }, [isMobile]);
 
   useEffect(() => {
-    // navbarColorChange();
     scrollFunction();
   });
   var Screen = window.matchMedia("(min-width: 769px)");
   window.onscroll = function () {
     scrollFunction();
-    scrollColorChange()
+    scrollColorChange();
   };
   function scrollFunction() {
     if (pathname === "/" && Screen.matches === true) {
       var navbarMenu = document.getElementById("navbar-menu");
       var navbarButton = document.getElementById("navbar-button");
-      var brand = document.getElementById("brand");
       if (
         document.body.scrollTop > 50 ||
         document.documentElement.scrollTop > 50
       ) {
         navbarMenu.style.display = "flex";
         navbarButton.style.display = "flex";
-        brand.style.color = "black";
       } else {
         navbarMenu.style.display = "none";
         navbarButton.style.display = "none";
-        brand.style.color = "white";
       }
     }
   }
-  function scrollColorChange(){
-    if (pathname === "/" && Screen.matches === true) {
+  function scrollColorChange() {
+    if (pathname === "/") {
       var brand = document.getElementById("brand");
+      var mobileIcon = document.getElementById("mobile-icon");
+      console.log(mobileIcon);
       if (
-        document.body.scrollTop > 400 ||
-        document.documentElement.scrollTop > 400
+        document.body.scrollTop > 500 ||
+        document.documentElement.scrollTop > 500
       ) {
         brand.style.color = "black";
-      } else {                        
+        mobileIcon.style.color = 'black'
+      } else {
         brand.style.color = "white";
+        mobileIcon.style.color = "white";
       }
     }
   }
@@ -76,6 +76,7 @@ const Navbar = () => {
     <div className={isMobile ? "navbarfull" : "navbar"}>
       <button
         className="mobile-menu-icon"
+        id="mobile-icon"
         onClick={() => {
           setIsMobile(!isMobile);
         }}
