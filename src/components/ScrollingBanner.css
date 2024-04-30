@@ -1,5 +1,5 @@
 .scrolling-banner-container {
-  overflow: none;
+  overflow: hidden;
   white-space: nowrap;
   background-color: white;
   color: white;
