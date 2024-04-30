@@ -33,6 +33,7 @@ const ProfessionalFeatures = () => {
         </>
       ),
       image: image1,
+      icon: require("../Assets/icons/CreatorsIcon1.png"),
     },
     {
       title: "Connection.",
@@ -48,6 +49,7 @@ const ProfessionalFeatures = () => {
         </>
       ),
       image: image2,
+      icon: require("../Assets/icons/CreatorsIcon2.png"),
     },
 
     {
@@ -64,6 +66,7 @@ const ProfessionalFeatures = () => {
         </>
       ),
       image: image3,
+      icon: require("../Assets/icons/CreatorsIcon3.png"),
     },
 
     {
@@ -81,6 +84,7 @@ const ProfessionalFeatures = () => {
         </>
       ),
       image: image4,
+      icon: require("../Assets/icons/CreatorsIcon4.png"),
     },
     {
       title: "Financial Metrics.",
@@ -96,6 +100,7 @@ const ProfessionalFeatures = () => {
         </>
       ),
       image: image5,
+      icon: require("../Assets/icons/CreatorsIcon5.png"),
     },
     {
       title: "Make informed decisions.",
@@ -117,8 +122,8 @@ const ProfessionalFeatures = () => {
         </>
       ),
       image: image6,
+      icon: require("../Assets/icons/CreatorsIcon6.png"),
     },
-    
   ];
 
   // window.addEventListener("scroll", checkText);
@@ -154,35 +159,34 @@ const ProfessionalFeatures = () => {
           success.
         </p>
         <h1 data-aos="fade-up">How it works?</h1>
-        <div>
+        {/* <div>
           <div id="first-line"></div>
           <img id="iconimg" src={featurefirsticon} alt="" />
-        </div>
+        </div> */}
       </div>
       {ProoFArray.map((feature, index) => (
         <div key={index} className="Professional-features">
+          <div className="Professional-features-arrow">
+            <img src={feature.icon} alt="" />
+            {ProoFArray.length !== index + 1 && (
+              <div className="Professional-features-line"></div>
+            )}
+          </div>
           <div className="Professional-features-text" data-aos="fade-up">
             <h1>{feature.title}</h1>
             <p>{feature.para}</p>
           </div>
-
-          <div className="Professional-features-img" data-aos="flip-up">
+          <div className="Professional-features-img" data-aos="fade-up">
             <img src={feature.image} alt="" />
           </div>
-          <div className="Professional-features-arrow">
-            <div className="Professional-features-line"></div>
-            <img src={featurefirsticon} alt="" />
-          </div>
-          {ProoFArray.length === index + 1 && (
-            <button
-              className="register-button"
-              onClick={() => setShowSignup(!showSignup)}
-            >
-              Register
-            </button>
-          )}
         </div>
       ))}
+      <button
+        className="register-button"
+        onClick={() => setShowSignup(!showSignup)}
+      >
+        Register
+      </button>
       {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
       <div className="Professional-features-faq">
         <h1 className="Professional-FAQ-Heading">

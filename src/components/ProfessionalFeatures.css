@@ -42,17 +42,10 @@
   border-radius: 50%;
 }
 
-.Professional-features-line {
-  width: 0.05em;
-  height: 10em;
-  margin: auto;
-  background: black;
-}
-
 .Professional-features {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: start;
   position: relative;
   width: 100%;
   /* background: rgb(0, 0, 0);
@@ -60,53 +53,58 @@
 }
 .Professional-features-text {
   position: relative;
-  text-align: center;
-  width: 70%;
-  margin-top: 2em;
+  text-align: start;
+  width: 65%;
+  margin-left: 1em;
   /* animation-timeline: view(380px 0px); */
 }
 .Professional-features-text h1 {
-  font-size: 3em;
+  margin-block-start: 0;
+  font-size: 2.7em;
   font-weight: 500;
   margin-bottom: 0.5em;
 }
 .Professional-features-text p {
-  font-size: 1.3em;
+  font-size: 1.25em;
 }
 .Professional-features-arrow {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 1em;
 }
 .Professional-features-arrow img {
   position: relative;
-  width: 1.75em;
-  height: 1.75em;
+  width: 2.5em;
+  height: 2.5em;
   border-radius: 50%;
 }
 .Professional-features-line {
   position: relative;
   top: 0em;
-  width: 1px;
-  height: 10em;
+  width: 3px;
+  height: 25em;
   background: black;
 }
 .Professional-features-img {
-  width: 25em;
-  height: 12em;
+  width: 18em;
+  height: 20em;
+  margin-left: auto;
+  margin-right: 2em;
   border-radius: 1em;
   overflow: hidden;
   position: relative;
-  margin-top: 3em;
+  align-self: center;
 }
 .Professional-features-img img {
   height: 100%;
   width: 100%;
 }
 .register-button {
+  align-self: center;
   width: 200px;
   height: 55px;
-  margin-top: 2em;
+  margin-top: 5em;
   font-size: 1.5rem;
   font-weight: 600;
   color: white;
