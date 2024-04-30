@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SignupFormModal from "./SignupFormModal";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination, Mousewheel, Scrollbar  } from "swiper/modules";
+import { Pagination, Mousewheel, Scrollbar } from "swiper/modules";
 import "../components/ClassicsContent.css";
 // import Image1 from "../Assets/image1.jpeg";
 // import Image2 from "../Assets/image2.jpeg";
@@ -11,28 +11,28 @@ import "../components/ClassicsContent.css";
 // import Image4 from "../Assets/image4.jpeg";
 // import Image5 from "../Assets/image5.jpeg";
 // import Image6 from "../Assets/image6.jpeg";
-import video1 from '../Assets/FansVideo.mp4'
+import video1 from "../Assets/FansVideo.mp4";
 const ClassicsContent = () => {
-  const [showSignup,setShowSignup] = useState(false)
+  const [showSignup, setShowSignup] = useState(false);
   const classicFeatures = [
     {
-      title: "Connect & Build.",
-      para: "Start by connecting with friends & family. Share events, communities, & content effortlessly. Whether it’s a captivating video, an exciting post, or just the anticipation of a shared event, bring everyone closer.",
-      image: video1,
-    },
-    {
       title: "Explore & Follow.",
-      para: "Dive into a world of events, creators & communities. Follow your favourite venues, artists, & event pages, & never miss out. Check out past highlights, read reviews, & see what’s trending to find your perfect fit—from finding local art or yoga classes to Coachella.",
+      para: "Explore and follow your favourite brands, communities, venues, creators, artists or events. Check out highlights and see what’s trending to find your perfect fit—from finding local art or yoga classes to Coachella! ",
       image: video1,
     },
     {
-      title: "Purchase Experience.",
-      para: "Purchase tickets effortlessly for the events you love, & share them with friends & family to invite them along or promote your favorite gatherings.",
+      title: "Connect & Share.",
+      para: "Connect with friends and family. Share events, communities, and content effortlessly. Whether it’s a captivating video, an exciting post, or just the anticipation of a shared event, bring everyone closer",
       image: video1,
     },
     {
-      title: "Rewards.",
-      para: "Build & customize your community hub where you can host events, share content, & foster discussions, enhancing engagement & connectivity.",
+      title: "Dynamic Content.",
+      para: "Interact with captivating videos, posts, and stories. ",
+      image: video1,
+    },
+    {
+      title: "Experience and Rewards.",
+      para: "Enjoy a seamless experience whether you're buying tickets for a VR-hosted sports game or signing up for a Pilates class. Earn points through participation and purchases, and use them to get discounts. ",
       image: video1,
     },
   ];
@@ -71,17 +71,14 @@ const ClassicsContent = () => {
               <div className="slide-para animate-popup" id="feature-text">
                 <h3 className="feature-text-heading">Feel the </h3>
                 <h3 className="feature-text-heading">Unforgettable.</h3>
-                <p className="slide-text" id="slide-text-head">
-                 
-                </p>
+                <p className="slide-text" id="slide-text-head"></p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="slide-para" id="feature-text">
                 <h2>
-                  Our features don't just bring the world closer—they're the
-                  very threads binding the tapestry of joy, community &
-                  memories.
+                  Our features don't just bring the world closer— they help in
+                  binding the threads of joy, community and memories.
                 </h2>
               </div>
             </SwiperSlide>
@@ -89,7 +86,7 @@ const ClassicsContent = () => {
               <div>
                 <SwiperSlide key={key}>
                   <div className="slide-img">
-                    <video src={feature.image} autoPlay loop mute></video>
+                    <video src={feature.image} autoPlay loop muted></video>
                     {/* <img src={feature.image} alt="" /> */}
                   </div>
                   <div className="slide-para animate-popup">
