@@ -75,14 +75,14 @@
 }
 .Professional-features-arrow img {
   position: relative;
-  width: 2.5em;
-  height: 2.5em;
+  width: 3em;
+  height: 3em;
   border-radius: 50%;
 }
 .Professional-features-line {
   position: relative;
   top: 0em;
-  width: 5px;
+  width: 3px;
   height: 25em;
   background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
 }
