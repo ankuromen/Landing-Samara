@@ -169,7 +169,12 @@ const ProfessionalFeatures = () => {
           <div className="Professional-features-arrow">
             <img src={feature.icon} alt="" />
             {ProoFArray.length !== index + 1 && (
-              <div className="Professional-features-line"></div>
+              <div
+                className="Professional-features-line"
+                data-aos="zoom-in-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              ></div>
             )}
           </div>
           <div className="Professional-features-text" data-aos="fade-up">

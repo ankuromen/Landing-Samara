@@ -60,18 +60,18 @@
 }
 .Professional-features-text h1 {
   margin-block-start: 0;
-  font-size: 2.7em;
+  font-size: 2.25em;
   font-weight: 500;
   margin-bottom: 0.5em;
 }
 .Professional-features-text p {
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 .Professional-features-arrow {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 1em;
+  margin-left: 10em;
 }
 .Professional-features-arrow img {
   position: relative;
@@ -82,13 +82,13 @@
 .Professional-features-line {
   position: relative;
   top: 0em;
-  width: 3px;
+  width: 5px;
   height: 25em;
-  background: black;
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
 }
 .Professional-features-img {
-  width: 18em;
-  height: 20em;
+  width: 14em;
+  height: 15em;
   margin-left: auto;
   margin-right: 2em;
   border-radius: 1em;
