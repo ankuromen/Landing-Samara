@@ -1,9 +1,9 @@
 .Homebanner-container {
   position: relative;
   height: 100vh;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .homebanner-video {
@@ -24,14 +24,33 @@
   gap: 1em;
   font-size: 2.5em;
   z-index: 1;
-  
 }
-.Homebanner-text-head{
-    font-weight: lighter;
-    z-index: 1;
-  }
-#CTA-Home-Banner{
+.Homebanner-text-head {
+  font-weight: lighter;
+  z-index: 1;
+}
+#CTA-Home-Banner {
   font-size: 0.6em;
+}
+.Home-btn {
+  padding: 12px 15px;
+  width: fit-content;
+  border: none;
+  border-radius: 2em;
+  font-weight: 500;
+  font-size: 0.5em;
+  cursor: pointer;
+  background: black;
+  color: white;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border: 1px solid gray;
+    background: #1877f2;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transform: scale(1.1);
+    behavior: smooth;
+  }
 }
 .homebanner-scroll {
   width: 90px;

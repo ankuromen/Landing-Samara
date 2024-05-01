@@ -77,6 +77,26 @@
   background-color: rgb(248, 230, 248);
   cursor: pointer;
 }
+.Bus-btn {
+  padding: 11px 15px;
+  width: fit-content;
+  border: none;
+  border-radius: 2em;
+  font-weight: 500;
+  font-size: 0.5em;
+  cursor: pointer;
+  background: black;
+  color: white;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border: 1px solid gray;
+    background: #1877f2;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transform: scale(1.1);
+    behavior: smooth;
+  }
+}
 
 @keyframes popup-from-side {
   0% {

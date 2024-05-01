@@ -1,8 +1,7 @@
-import './HomeBanner.css'
-import { React, useState } from 'react';
+import "./HomeBanner.css";
+import { React, useState } from "react";
 import BannerVid from "../Assets/HomeBanner.mp4";
 import SignupFormModal from "./SignupFormModal.jsx";
-import GlowButton from './GlowButton';
 // import scrollanimation from '../Assets/scroll-animation.gif'
 
 const HomeBanner = () => {
@@ -21,7 +20,7 @@ const HomeBanner = () => {
             setShowSignup(!showSignup);
           }}
         >
-          <GlowButton buttonText="Register" />
+          <button className="Home-btn">Register</button>
         </div>
 
         {/* <img className='homebanner-scroll' src={scrollanimation} alt='banner'/> */}
@@ -29,6 +28,6 @@ const HomeBanner = () => {
       {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
     </div>
   );
-}
+};
 
 export default HomeBanner;

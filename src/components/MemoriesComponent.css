@@ -69,7 +69,29 @@
   border-radius: 2em;
   object-fit: cover;
 }
-
+.Learn-btn {
+  padding: 10px 20px;
+  width: fit-content;
+  border: none;
+  border-radius: 0.5em;
+  width: 200px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 1.5em;
+  cursor: pointer;
+  background: black;
+  color: white;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border: 1px solid gray;
+    background: #1877f2;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transform: scale(1.1);
+    behavior: smooth;
+  }
+}
 .Memories-btn {
   margin-top: 1.5em;
   width: 120px;
@@ -77,7 +99,6 @@
   color: #fff;
   border-radius: 5px;
   padding: 10px 20px;
-  font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;

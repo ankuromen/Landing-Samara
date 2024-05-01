@@ -1,5 +1,4 @@
 import React from "react";
-import GlowButton from "./GlowButton"; // Adjust the path to where your GlowButton component is located
 import "./ClassicsBusiness.css";
 // import Test from "../Assets/test123.jpg";
 import { Link } from "react-router-dom";
@@ -20,7 +19,7 @@ const ClassicsBusiness = () => {
             pilate classes to Coachella, we have got you covered! :)
           </p>
           <Link to="/professional" style={{ textDecoration: "none" }}>
-            <GlowButton buttonText="Explore" />
+            <button className="Bus-btn">Explore</button>
           </Link>
           {/* Use the GlowButton component here */}
         </section>

@@ -8,10 +8,14 @@
   align-items: center;
   justify-content: center;
   color: white;
-
 }
 .Contact-header {
   font-size: 4em;
   font-weight: 500;
   letter-spacing: 0.07em;
+}
+@media (max-width: 480px) {
+  .Contact-header {
+    font-size: 3em;
+  }
 }

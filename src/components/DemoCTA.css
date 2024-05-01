@@ -12,7 +12,29 @@
 .cta-message {
   font-size: 5em;
 }
-
+.Demo-btn {
+  margin: 2em 20px 3em 20px;
+  padding: 10px 20px;
+  width: fit-content;
+  border: none;
+  border-radius: 2em;
+  font-weight: 500;
+  font-size: 1.25em;
+   height: 45px;
+   width: 150px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border: 1px solid gray;
+    background: #1877f2;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transform: scale(1.1);
+    behavior: smooth;
+  }
+}
 .merged-button {
   width: 150px;
   margin: 2em 20px 3em 20px;

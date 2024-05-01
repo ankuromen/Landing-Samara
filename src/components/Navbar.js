@@ -51,7 +51,6 @@ const Navbar = () => {
     if (pathname === "/") {
       var brand = document.getElementById("brand");
       var mobileIcon = document.getElementById("mobile-icon");
-      console.log(mobileIcon);
       if (
         document.body.scrollTop > 500 ||
         document.documentElement.scrollTop > 500

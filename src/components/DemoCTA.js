@@ -12,7 +12,8 @@ const DemoCTA = () => {
         <br />
         Book a call.
       </p>
-      <button className="merged-button" onClick={() => setShowSignup(!showSignup)}>Demo</button>
+      <button className='Demo-btn' onClick={() => setShowSignup(!showSignup)}>Demo</button>
+      {/* <button className="merged-button" >Demo</button> */}
       {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
     </div>
 

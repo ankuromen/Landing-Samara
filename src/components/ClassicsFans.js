@@ -1,5 +1,4 @@
 import React from "react";
-import GlowButton from "./GlowButton"; // Adjust the path to where your GlowButton component is located
 import "./ClassicsBusiness"; // Make sure you have your CSS correctly linked
 // import Test from "../Assets/test123.jpg";
 import { Link } from "react-router-dom";
@@ -23,7 +22,7 @@ const ClassicsFans = () => {
             visiting the virtual world.
           </p>
           <Link to="/classic" style={{ textDecoration: "none" }}>
-            <GlowButton buttonText="Explore" />
+            <button className="Bus-btn">Explore</button>
           </Link>
           {/* Replacing the old button */}
         </section>

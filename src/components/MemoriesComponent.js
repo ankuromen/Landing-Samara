@@ -27,8 +27,7 @@ const MemoriesComponent = () => {
               unforgettable encounters.
             </p>
             <Link to="/team">
-              {" "}
-              <button className="glow-on-hover" type="button">Learn More</button>
+              <button className="Learn-btn">Learn more</button>
             </Link>
           </div>
         </section>
