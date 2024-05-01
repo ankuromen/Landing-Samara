@@ -1,7 +1,8 @@
 .Memories-Container {
+  padding-top: 3em;
   color: black;
-  height: auto;
-  padding: 5em 0em 5em 0em;
+  height: 80vh;
+  padding: 8em 0em 5em 0em;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
