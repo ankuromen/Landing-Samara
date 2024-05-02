@@ -217,23 +217,6 @@
   top: 0;
   border-radius: 10px;
 }
-.Fadeout {
-  animation: fade-out 1s linear;
-}
-.Fadein {
-  animation: fade-in 1s linear;
-}
-/* @keyframes fade-in {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
 @keyframes fade-in {
   from {
     scale: 0.8;
@@ -259,17 +242,20 @@
     font-size: 4em;
   }
   .Professional-features-header p {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .Professional-features-text {
-    width: 50%;
+    width: 60%;
   }
   .Professional-features-text h1 {
     font-size: 2em;
   }
   .Professional-features-text p {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
+  .Professional-features-img {
+    margin-right: 1em;
+}
 }
 @media (max-width: 1024px) {
   .Professional-features-header h1 {
@@ -286,9 +272,11 @@
     text-transform: uppercase;
   }
   .Professional-features-text p {
-    font-size: 1.25em;
-    text-align: left;
+    font-size: 1em;
   }
+  .Professional-features-arrow {
+    margin-left: 5em;
+}
   .register-button {
     width: 180px;
     height: 50px;
@@ -309,7 +297,7 @@
     font-size: 1.65em;
   }
   .Professional-features-text p {
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: left;
   }
   .register-button {

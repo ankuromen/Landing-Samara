@@ -181,7 +181,7 @@ const ProfessionalFeatures = () => {
             <h1>{feature.title}</h1>
             <p>{feature.para}</p>
           </div>
-          <div className="Professional-features-img" data-aos="fade-left">
+          <div className="Professional-features-img" data-aos="zoom-in-up">
             <img src={feature.image} alt="" />
           </div>
         </div>
