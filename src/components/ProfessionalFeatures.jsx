@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import "./ProfessionalFeatures.css";
-import featurefirsticon from "../Assets/features-first.png";
 import image1 from "../Assets/Professionalfeature1.jpg";
 import image2 from "../Assets/Professionalfeature2.jpg";
 import image3 from "../Assets/Professionalfeature3.jpg";
 import image4 from "../Assets/Professionalfeature4.jpg";
 import image5 from "../Assets/Professionalfeature5.jpg";
 import image6 from "../Assets/Professionalfeature6.jpg";
-import image7 from "../Assets/Professionalfeature7.jpg";
-import image8 from "../Assets/Professionalfeature8.jpg";
 import SignupFormModal from "./SignupFormModal";
 import { useNavigate } from "react-router-dom";
 import AOS from "aos";
