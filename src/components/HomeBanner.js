@@ -2,7 +2,7 @@ import "./HomeBanner.css";
 import { React, useState } from "react";
 import BannerVid from "../Assets/HomeBanner.mp4";
 import SignupFormModal from "./SignupFormModal.jsx";
-// import scrollanimation from '../Assets/scroll-animation.gif'
+import scrollanimation from '../Assets/scroll-animation.gif'
 
 const HomeBanner = () => {
   const [showSignup, setShowSignup] = useState(false);
@@ -23,7 +23,7 @@ const HomeBanner = () => {
           <button className="Home-btn">Register</button>
         </div>
 
-        {/* <img className='homebanner-scroll' src={scrollanimation} alt='banner'/> */}
+        <img className='homebanner-scroll' src={scrollanimation} alt='banner'/>
       </div>
       {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
     </div>

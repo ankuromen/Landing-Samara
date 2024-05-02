@@ -58,6 +58,7 @@
   height: 100px;
   position: absolute;
   right: 0;
+  bottom: 0;
 }
 @media (max-width: 900px) {
   .Homebanner-text {
