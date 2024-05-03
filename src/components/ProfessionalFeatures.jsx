@@ -123,29 +123,6 @@ const ProfessionalFeatures = () => {
     },
   ];
 
-  // window.addEventListener("scroll", checkText);
-
-  // function checkText() {
-  //   const text = document.querySelectorAll(".Professional-features-text");
-  //   const img = document.querySelectorAll(".Professional-features-img");
-  //   const TriggerBottom = window.innerHeight+50;
-  //   text.forEach((text) => {
-  //     const textTop = text.getBoundingClientRect().top;
-  //     if (textTop < TriggerBottom) {
-  //       text.classList.add("Fadein");
-  //     } else {
-  //       text.classList.remove("Fadein");
-  //     }
-  //   });
-  //   img.forEach((img) => {
-  //     const imgTop = img.getBoundingClientRect().top;
-  //     if (imgTop < TriggerBottom) {
-  //       img.classList.add("Fadein");
-  //     } else {
-  //       img.classList.remove("Fadein");
-  //     }
-  //   });
-  // }
   return (
     <div className="Professional-features-container">
       <div className="Professional-features-header">
@@ -164,7 +141,8 @@ const ProfessionalFeatures = () => {
       {ProoFArray.map((feature, index) => (
         <div key={index} className="Professional-features">
           <div className="Professional-features-arrow">
-            <img src={feature.icon} alt="" />
+            <img id="icon" src={feature.icon} alt="" />
+            {console.log(index)}
             {ProoFArray.length !== index + 1 && (
               <div
                 className="Professional-features-line"
@@ -173,6 +151,16 @@ const ProfessionalFeatures = () => {
                 data-aos-duration="1500"
               ></div>
             )}
+            {ProoFArray.length === index + 1 && (
+              <div
+                className="Professional-features-line"
+                id="mobile-last-line"
+                data-aos="zoom-in-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              ></div>
+            )}
+            <img id="icon-mobile" src={feature.icon} alt="" />
           </div>
           <div className="Professional-features-text" data-aos="fade-up">
             <h1>{feature.title}</h1>

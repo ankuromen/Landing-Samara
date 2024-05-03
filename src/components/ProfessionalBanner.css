@@ -127,7 +127,7 @@
     width: 90%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .Professional-banner {
     padding-top: 5em;
     flex-direction: column;

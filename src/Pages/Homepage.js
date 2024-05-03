@@ -12,27 +12,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Mousewheel, Scrollbar } from "swiper/modules";
-import './HomePage.css';
 const Homepage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  // useEffect(() => {
-  //   if (
-  //     (document.body.scrollTop < 200 ||
-  //       document.documentElement.scrollTop < 200) &&
-  //     window.onscroll
-  //   ) {
-  //     scrollFunction();
-  //   }
-  // }, [window.scroll]);
-
-  // function scrollFunction() {
-  //   console.log(window.scroll);
-  //   document
-  //     .querySelector(".Memories-Container")
-  //     .scrollIntoView({ behavior: "smooth" });
-  // }
   return (
     <div className="Homepage-Conatiner">
       <Swiper
