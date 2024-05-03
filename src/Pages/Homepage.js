@@ -36,7 +36,6 @@ const Homepage = () => {
           <MemoriesComponent />
         </SwiperSlide>
       </Swiper>
-
       <CommunitiesComponent />
       <ClassicsBusiness />
       <ClassicsFans />

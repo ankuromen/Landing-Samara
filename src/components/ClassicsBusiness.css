@@ -2,19 +2,20 @@
   position: relative;
   height: auto;
   color: black;
+  margin-bottom: 2em;
 }
 .Classics-Content {
   height: auto;
   display: flex;
 }
 .Bus-Img-Section {
-  width: 50vw;
+  width: 55vw;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  animation: popup-from-side 1s cubic-bezier(0.15, 0.86, 0.42, 0.79);
-  animation-timeline: view(1000px 0px);
+  /* animation: popup-from-side 1s cubic-bezier(0.15, 0.86, 0.42, 0.79);
+  animation-timeline: view(1000px 0px); */
 }
 .Bus-Img-Section-header {
   position: absolute;
@@ -24,7 +25,7 @@
 }
 .fans-Img-Section {
   display: none;
-  width: 50vw;
+  width: 45vw;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -40,13 +41,13 @@
 }
 .Bus-Text-Section {
   box-sizing: border-box;
-  width: 50vw;
+  width: 55vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 2.25em;
-  padding: 4em 2em 3em 2em;
+  padding: 4em 1.5em 3em 1.5em;
   text-align: center;
   /* gap: 1em; */
   animation: fade-in linear;
@@ -60,6 +61,7 @@
   text-align: start;
   width: 80%;
   font-size: 0.5em;
+  margin-bottom: 1em;
 }
 #Bus-Img {
   height: 30em;
@@ -78,8 +80,8 @@
   cursor: pointer;
 }
 .Bus-btn {
-  padding: 11px 15px;
-  width: fit-content;
+  padding: 8px 15px;
+  width: 110px;
   border: none;
   border-radius: 2em;
   font-weight: 500;
@@ -138,7 +140,7 @@
     width: auto;
     padding: 4em 1em 3em 1em;
   }
- 
+
   /* #Bus-Img {
     height: 60%;
     width: 90vw;
@@ -167,7 +169,7 @@
     font-size: 0.65em;
     width: 90%;
   }
-   #Bus-Img {
+  #Bus-Img {
     height: 20em;
   }
 }

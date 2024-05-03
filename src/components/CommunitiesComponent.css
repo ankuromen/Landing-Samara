@@ -11,10 +11,9 @@
 }
 
 .Communities-Text {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Typical font for clean designs */
   font-size: 6rem; /* Increase font size for impact */
   font-weight: 600; /* Semi-bold font weight for the title */
-  letter-spacing: -2px; /* Tighter letter spacing for a modern look */
+  letter-spacing: -1px; /* Tighter letter spacing for a modern look */
   text-align: center; /* Align text to the left */
   max-width: 1200px; /* Max width to prevent overly long lines */
   margin: 0 auto; /* Centering the text block horizontally */

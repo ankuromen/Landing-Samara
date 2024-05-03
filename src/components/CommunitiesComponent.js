@@ -4,19 +4,19 @@ import './CommunitiesComponent.css';
 
 const CommunitiesComponent = () => {
     const eventiqFor = [
-        'Fans',
-        'Content Creators',
-        'Influencers',
-        'Event Promoters',
-        'Events',
-        'Event Organizers',
-        'Venues',
-        'Artists',
-        'Affiliates',
-        'Business Owners',
-        'Communities',
-        'Community Creators',
-        'Event Managers'
+        'Fans.',
+        'Content Creators.',
+        'Influencers.',
+        'Event Promoters.',
+        'Events.',
+        'Event Organizers.',
+        'Venues.',
+        'Artists.',
+        'Affiliates.',
+        'Business Owners.',
+        'Communities.',
+        'Community Creators.',
+        'Event Managers.'
         // Add more items as needed
     ];
 
