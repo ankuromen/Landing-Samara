@@ -8,9 +8,7 @@ import image5 from "../Assets/Professionalfeature5.jpg";
 import image6 from "../Assets/Professionalfeature6.jpg";
 import SignupFormModal from "./SignupFormModal";
 import { useNavigate } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
+
 
 const ProfessionalFeatures = () => {
   const [showSignup, setShowSignup] = useState(false);
@@ -148,7 +146,7 @@ const ProfessionalFeatures = () => {
                 className="Professional-features-line"
                 data-aos="zoom-in-down"
                 data-aos-easing="linear"
-                data-aos-duration="1500"
+                data-aos-duration="2000"
               ></div>
             )}
             {ProoFArray.length === index + 1 && (

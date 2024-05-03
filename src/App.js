@@ -13,6 +13,10 @@ import Page4 from "./Pages/BlogPages/Page4";
 import TeamInfo from "./Pages/TeamInfo";
 import FaqPage from "./Pages/FaqPage";
 import PrivacyPolicy from "./Pages/PrivacyPolicy.js";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 function App() {
   return (
     <Routes>
@@ -24,7 +28,7 @@ function App() {
         <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/team" element={<TeamInfo />} />
         <Route path="/faq" element={<FaqPage />} />
-        <Route path="/policy" element={<PrivacyPolicy/>} />
+        <Route path="/policy" element={<PrivacyPolicy />} />
         <Route path="/page1" element={<Page1 />} />
         <Route path="/page2" element={<Page2 />} />
         <Route path="/page3" element={<Page3 />} />

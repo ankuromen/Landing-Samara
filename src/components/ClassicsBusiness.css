@@ -30,8 +30,8 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  animation: popup-from-side 1s cubic-bezier(0.15, 0.86, 0.42, 0.79);
-  animation-timeline: view(800px 0px);
+  /* animation: popup-from-side 1s cubic-bezier(0.15, 0.86, 0.42, 0.79);
+  animation-timeline: view(800px 0px); */
 }
 .fans-Img-Section h1 {
   position: absolute;
@@ -50,8 +50,8 @@
   padding: 4em 1.5em 3em 1.5em;
   text-align: center;
   /* gap: 1em; */
-  animation: fade-in linear;
-  animation-timeline: view(800px 0px);
+  /* animation: fade-in linear;
+  animation-timeline: view(800px 0px); */
 }
 .Bus-Text-Section-header {
   margin-bottom: 0.5em;

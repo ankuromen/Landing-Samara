@@ -11,7 +11,11 @@ const ClassicsBusiness = () => {
           <video id="Bus-Img" src={video1} autoPlay loop muted></video>
           <h1 className="Bus-Img-Section-header">For business</h1>
         </section>
-        <section className="Bus-Text-Section">
+        <section
+          className="Bus-Text-Section"
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           <h2 className="Bus-Text-Section-header">Shape Moments.</h2>
           <p className="Bus-Text-Section-para">
             Give form to your immagination. Orchestrate events that captivate,
