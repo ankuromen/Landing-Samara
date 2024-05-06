@@ -152,6 +152,9 @@
   .slide-para p {
     font-size: 0.8em;
   }
+  #feature-text h2 {
+    font-size: 1.3em;
+  }
 }
 @media (max-width: 768px) {
   .swiper-full {
@@ -167,6 +170,9 @@
   }
   #slide-text-head {
     font-size: 0.5em;
+  }
+  #feature-text h2 {
+    font-size: 1em;
   }
   .swiper-slide {
     flex-direction: column;
@@ -205,6 +211,9 @@
   }
   .slide-para h2 {
     font-size: 1.5em;
+  }
+  #feature-text h2 {
+    font-size: 0.7em;
   }
   .slide-para p {
     font-size: 0.8em;
