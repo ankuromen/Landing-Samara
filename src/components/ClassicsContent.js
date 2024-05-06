@@ -31,7 +31,7 @@ const ClassicsContent = () => {
       image: video1,
     },
     {
-      title: "Experience and Rewards.",
+      title: "Experience & Rewards.",
       para: "Enjoy a seamless experience whether you're buying tickets for a VR-hosted sports game or signing up for a Pilates class. Earn points through participation and purchases, and use them to get discounts. ",
       image: video1,
     },
@@ -86,7 +86,13 @@ const ClassicsContent = () => {
               <div>
                 <SwiperSlide key={key}>
                   <div className="slide-img">
-                    <video src={feature.image} autoPlay loop muted></video>
+                    <video
+                      src={feature.image}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                    ></video>
                     {/* <img src={feature.image} alt="" /> */}
                   </div>
                   <div className="slide-para animate-popup">
