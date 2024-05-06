@@ -226,6 +226,9 @@
     margin-right: 2em;
     width: 75%;
   }
+  .feature-text-heading {
+    font-size: 1.8em;
+  }
   .slide-para h2 {
     font-size: 1.5em;
   }
