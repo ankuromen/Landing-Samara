@@ -7,20 +7,24 @@ const ClassicsBusiness = () => {
   return (
     <div className="Classic-Business-Container">
       <div className="Classics-Content">
-        <section className="Bus-Img-Section">
+        <section
+          className="Bus-Img-Section"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <video
             id="Bus-Img"
             src={video1}
             autoPlay
             loop
-            muted
+            muted 
             playsInline
           ></video>
           <h1 className="Bus-Img-Section-header">For business</h1>
         </section>
         <section
           className="Bus-Text-Section"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="2000"
         >
           <h2 className="Bus-Text-Section-header">Shape Moments.</h2>

@@ -58,10 +58,10 @@
   display: flex;
   justify-content: center;
   width: 50%;
+  margin-top: -5em;
 }
 
 .Memories-Image-img {
-  margin-top: -5em;
   width: 75%;
   border-radius: 2em;
   object-fit: cover;
@@ -229,6 +229,7 @@
     justify-content: center;
     width: 100%;
     margin-bottom: 2em;
+    margin-top: 2em;  
   }
   .Memories-Text {
     width: 90%;

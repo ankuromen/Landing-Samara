@@ -8,7 +8,11 @@ const ClassicsFans = () => {
     <div className="Classic-Business-Container">
       {/* Check if you want to rename this class */}
       <div className="Classics-Content">
-        <section className="fans-Img-Section">
+        <section
+          className="fans-Img-Section"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <video
             id="Bus-Img"
             src={video1}
@@ -19,7 +23,11 @@ const ClassicsFans = () => {
           ></video>
           <h1 className="Bus-Img-Section-header">For Fans</h1>
         </section>
-        <section className="Bus-Text-Section">
+        <section
+          className="Bus-Text-Section"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <h2 className="Bus-Text-Section-header">Capture the Excitement.</h2>
           <p className="Bus-Text-Section-para">
             Evntiq is where every moment feels like a backstage pass. Connect
@@ -31,9 +39,13 @@ const ClassicsFans = () => {
           <Link to="/classic" style={{ textDecoration: "none" }}>
             <button className="Bus-btn">Explore</button>
           </Link>
-          {/* Replacing the old button */}
         </section>
-        <section className="Bus-Img-Section" id="Bus-Img-Section">
+        <section
+          className="Bus-Img-Section"
+          id="Bus-Img-Section"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <video
             id="Bus-Img"
             src={video1}
