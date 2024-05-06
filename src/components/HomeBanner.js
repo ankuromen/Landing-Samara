@@ -8,7 +8,7 @@ const HomeBanner = () => {
   const [showSignup, setShowSignup] = useState(false);
   return (
     <div className="Homebanner-container">
-      <video className="homebanner-video" autoPlay muted loop>
+      <video className="homebanner-video" autoPlay loop muted playsInline>
         <source src={BannerVid} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -23,7 +23,7 @@ const HomeBanner = () => {
           <button className="Home-btn">Register</button>
         </div>
 
-        <img className='homebanner-scroll' src={scrollanimation} alt='banner'/>
+        <img className="homebanner-scroll" src={scrollanimation} alt="banner" />
       </div>
       {showSignup && <SignupFormModal onClose={() => setShowSignup(false)} />}
     </div>

@@ -9,7 +9,14 @@ const ClassicsFans = () => {
       {/* Check if you want to rename this class */}
       <div className="Classics-Content">
         <section className="fans-Img-Section">
-          <video id="Bus-Img" src={video1} autoPlay loop muted></video>
+          <video
+            id="Bus-Img"
+            src={video1}
+            autoPlay
+            loop
+            muted
+            playsInline
+          ></video>
           <h1 className="Bus-Img-Section-header">For Fans</h1>
         </section>
         <section className="Bus-Text-Section">
@@ -27,7 +34,14 @@ const ClassicsFans = () => {
           {/* Replacing the old button */}
         </section>
         <section className="Bus-Img-Section" id="Bus-Img-Section">
-          <video id="Bus-Img" src={video1} autoPlay loop muted></video>
+          <video
+            id="Bus-Img"
+            src={video1}
+            autoPlay
+            loop
+            muted
+            playsInline
+          ></video>
           <h1 className="Bus-Img-Section-header">For Fans</h1>
         </section>
       </div>
