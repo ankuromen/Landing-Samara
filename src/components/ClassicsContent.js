@@ -109,8 +109,7 @@ const ClassicsContent = () => {
                   among the first to discover a new universe.
                 </h2>
                 <button
-                  className="merged-button"
-                  id="Classics-Slide-Btn"
+                  className="signup-btn"
                   onClick={() => setShowSignup(!showSignup)}
                 >
                   Sign up
